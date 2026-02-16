@@ -37,10 +37,12 @@ img {
   padding: 10px 40px;
   border-radius: 50px;
 }
+
 .btn-primary {
   background: var(--primary);
   color: #fff;
 }
+
 .btn-primary:hover {
   background: var(--primary-hover);
   color: var(--primary);
@@ -50,6 +52,7 @@ img {
   background: var(--primary-hover);
   color: var(--primary);
 }
+
 .btn-secondary:hover {
   background: var(--primary);
   color: var(--secondary);
@@ -69,11 +72,9 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(
-    0deg,
-    #EFD977 0%,
-    #BB7730 100%
-  );
+  background: linear-gradient(0deg,
+      #EFD977 0%,
+      #BB7730 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -81,16 +82,23 @@ body {
 }
 
 .page-header {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
+
+
 .page-header:before,
 .page-header:after {
   content: '';
-  width: 300px; height: 70px;
+  width: 300px;
+  height: 70px;
   background: url(../public/assets/header-graphic.svg) center bottom no-repeat;
   position: absolute;
-  left: 0; top: 0;
+  left: 0;
+  top: 0;
 }
+
 .page-header:after {
   right: 0;
   left: auto;
@@ -99,28 +107,37 @@ body {
 
 .page-header .inner:after {
   content: '';
-  position: absolute; left: 0; bottom: -50px;
+  position: absolute;
+  left: 0;
+  bottom: -50px;
   width: 100%;
   height: 50px;
   background: #091C46;
-  background: linear-gradient(180deg,rgba(9, 28, 70, 1) 0%, rgba(9, 28, 70, 0) 100%);
+  background: linear-gradient(180deg, rgba(9, 28, 70, 1) 0%, rgba(9, 28, 70, 0) 100%);
 }
 
 .home-banner .image:before {
   content: '';
-  position: absolute; right: 0; bottom: 50px;
+  position: absolute;
+  right: 0;
+  bottom: 50px;
   width: 434px;
   height: 165px;
   background: url(../public/assets/cloud-img.svg) center left no-repeat;
   z-index: 1;
 }
+
 .home-banner .image:after {
   content: '';
-  position: absolute; left: 0; top: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
-  background: var(--primary); opacity: .5;
+  background: var(--primary);
+  opacity: .5;
 }
+
 .home-banner .caption {
   position: absolute;
   bottom: 180px;
@@ -130,19 +147,29 @@ body {
 
 
 .bg-gray-circle {
-  background: url(../public/assets/gray-circle-bg.png) center top repeat;
+  background: #fff url(../public/assets/gray-circle-bg.png) center top repeat;
+  background-size: 105%;
+}
+
+.bg-circle-layer {
+  background: url(../public/assets/signature-bg.png) center top repeat;
 }
 
 .intro-section:before {
   content: '';
-  position: absolute; left: 0; bottom: 95px;
+  position: absolute;
+  left: 0;
+  bottom: 150px;
   width: 390px;
   height: 160px;
   background: url(../public/assets/cloud-img.svg) right top no-repeat;
 }
+
 .intro-section:after {
   content: '';
-  position: absolute; right: 69px; top: 0;
+  position: absolute;
+  right: 69px;
+  top: 0;
   width: 180px;
   height: 465px;
   background: url(../public/assets/ornament-lg.svg) center bottom no-repeat;
@@ -160,9 +187,11 @@ body {
   height: 640px;
   background: url(../public/assets/ornament-sm.svg) center bottom no-repeat;
 }
+
 .weekly-offers .ornament.left {
   left: 123px;
 }
+
 .weekly-offers .ornament.right {
   right: 123px;
 }
@@ -174,19 +203,37 @@ body {
   height: 150px;
   background: url(../public/assets/cloud-img.svg) center bottom no-repeat;
 }
+
 .weekly-offers .cloud.left {
-  left: -80px; bottom: 92px;
+  left: -80px;
+  bottom: 92px;
 }
+
 .weekly-offers .cloud.right {
   right: -180px;
 }
 
 .weekly-offers .cards:after {
   content: '';
-  position: absolute; left: 50%; top: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
   width: 672px;
   height: 672px;
   background: url(../public/assets/shadow-circle.png) center center no-repeat;
   z-index: -1;
+}
+
+.khim-experience {
+  padding: 105px 0 81px;
+  background: url(../public/assets/khim-experince.png) center center no-repeat;
+}
+
+.gradient-text {
+  background: linear-gradient(242.21deg, #EFD977 13.5%, #BB7730 73.86%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }

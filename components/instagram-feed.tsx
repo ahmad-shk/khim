@@ -3,29 +3,36 @@ import React from 'react'
 
 const InstagramFeed = () => {
     return (
-        <section className="instagram-feed py-20 bg-white text-center bg-gray-circle">
+        <section className="instagram-feed pt-24 pb-32 bg-white text-center bg-gray-circle relative overflow-hidden ">
+            <div className='ornament left'>
+                <img src="assets/ornament-lg.svg" alt='' />
+            </div>
+            <div className='ornament right'>
+                <img src="assets/ornament-sm.svg" alt='' />
+            </div>
+
             <div className="container">
-                <h2 className="text-3xl md:text-[62px] text-primary font-serif mb-4">
-                    FOLLOW <span className="italic" style={{ fontWeight: '100' }}>@khim.asia.cuisine</span>
+                <h2 className="text-3xl md:text-7xl text-primary font-serif mb-6">
+                    FOLLOW <span className="italic font-extralight">@khim.asia.cuisine</span>
                 </h2>
-                <p className="text-2xl md:text-[40px] text-primary font-light mb-[48px] w-11/12 mx-auto">
+                <p className="text-2xl md:text-[45px] text-primary font-light mb-16 mx-auto">
                     Join us on Instagram for insights into our cuisine, new dishes and exclusive offers.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-                    <div className="aspect-1/1 bg-gray-200 rounded-xl overflow-hidden relative group">
-                        <div className="w-full h-full flex items-center justify-center text-gray-500 group-hover:bg-gray-300 transition-colors">
-                            Instagram Post 1
+                    <div className="bg-gray-200 rounded-3xl overflow-hidden relative group">
+                        <div className='image'>
+                            <img src="assets/social-media-img.png" alt=''/>
                         </div>
                     </div>
-                    <div className="aspect-1/1 bg-gray-200 rounded-xl overflow-hidden relative group">
-                        <div className="w-full h-full flex items-center justify-center text-gray-500 group-hover:bg-gray-300 transition-colors">
-                            Instagram Post 2
+                    <div className="bg-gray-200 rounded-3xl overflow-hidden relative group">
+                        <div className='image'>
+                            <img src="assets/social-media-img.png" alt=''/>
                         </div>
                     </div>
-                    <div className="aspect-1/1 bg-gray-200 rounded-xl overflow-hidden relative group">
-                        <div className="w-full h-full flex items-center justify-center text-gray-500 group-hover:bg-gray-300 transition-colors">
-                            Instagram Post 3
+                    <div className="bg-gray-200 rounded-3xl overflow-hidden relative group">
+                        <div className='image'>
+                            <img src="assets/social-media-img.png" alt=''/>
                         </div>
                     </div>
                 </div>
@@ -36,6 +43,10 @@ const InstagramFeed = () => {
                 >
                     Explore the Feed
                 </Link>
+            </div>
+
+            <div className='cloud'>
+                <img src="assets/cloud-img.svg" alt="" />
             </div>
         </section>
     )

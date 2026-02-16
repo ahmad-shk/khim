@@ -116,6 +116,13 @@ body {
   background: linear-gradient(180deg, rgba(9, 28, 70, 1) 0%, rgba(9, 28, 70, 0) 100%);
 }
 
+.home-banner {
+  padding-bottom: 46.5%;
+}
+.home-banner .image {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+}
+
 .home-banner .image:before {
   content: '';
   position: absolute;
@@ -137,10 +144,13 @@ body {
   background: var(--primary);
   opacity: .5;
 }
+.home-banner .image img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+}
 
 .home-banner .caption {
   position: absolute;
-  bottom: 180px;
+  bottom: 126px;
   left: 0;
   width: 100%;
 }
@@ -151,8 +161,19 @@ body {
   background-size: 105%;
 }
 
-.bg-circle-layer {
+/* .bg-circle-layer {
   background: url(../public/assets/signature-bg.png) center top repeat;
+} */
+
+.signature-wrapper {
+  position: relative;
+}
+.signature-wrapper:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  width: 100%; height: 100%; z-index: 1;
+  background: url(../public/assets/bg-left.svg) left top repeat-y, url(../public/assets/bg-right.svg) right top repeat-y;
 }
 
 .intro-section:before {
@@ -228,12 +249,148 @@ body {
 .khim-experience {
   padding: 105px 0 81px;
   background: url(../public/assets/khim-experince.png) center center no-repeat;
+  background-size: cover;
 }
 
-.gradient-text {
-  background: linear-gradient(242.21deg, #EFD977 13.5%, #BB7730 73.86%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+
+.khim-experience .cloud {
+  width: 515px; height:  150px;
+  position: absolute;
+  left: -245px;
+  bottom: 30px;
+}
+
+.khim-experience .cloud.right {
+  left: auto;
+  right: -245px;
+  bottom: 300px;
+}
+
+.khim-experience .ornament {
+  position: absolute;
+  top: 0;
+  width: 180px;
+  height: 640px;
+  background: url(../public/assets/ornament-sm.svg) center bottom no-repeat;
+}
+
+.khim-experience .ornament.left {
+  left: 123px;
+}
+
+.khim-experience .ornament.right {
+  right: 123px;
+  height: 500px;
+}
+
+
+.instagram-feed .cloud {
+  width: 515px; height:  150px;
+  position: absolute;
+  right: -158px;
+  bottom: 70px;
+}
+.instagram-feed .ornament.left {
+  position: absolute; left: 86px; top: -80px;
+  width: 180px; height: 718px;
+}
+.instagram-feed .ornament.right {
+  position: absolute; right: 102px; top: -150px;
+  width: 160px; height: 450px;
+}
+
+
+.page-footer {
+  background: url(../public/assets/khim-experince.png) center top repeat;
+  position: relative;
+}
+.page-footer .cloud {
+  width: 514px; height: 150px;
+  position: absolute; left: -87px; top: 300px;
+}
+.ornament {
+  width: 180px; height: 690px; position: absolute; top: -190px; right: 130px
+}
+
+
+@media screen and (max-width: 1750px) {
+  .weekly-offers .ornament {display: none; }
+
+  .signature-wrapper:before {background-size: 90px;}
+}
+
+@media screen and (max-width: 1600px) {
+  .page-header:before, .page-header:after {
+    width: 140px; height: 35px; background-size: cover;
+  }
+  header nav,
+  .contact-info {margin-top: 20px;}
+
+  .intro-section:after {
+    width: 90px;
+    height: 265px;
+    right: 20px;
+    background-size: cover;
+  }
+  .intro-section:before {
+    width: 300px;
+    height: 100px;
+    bottom: 80px;
+    left: -70px;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .home-banner {
+    padding-bottom: 60%;
+  }
+  .home-banner .image:before {
+    width: 274px; height: 95px; background-size: cover; right: -80px
+  }
+
+  .intro-section .container {
+    max-width: 70%;
+  }
+
+  .btn {
+    font-size: 18px;
+  }
+
+  .section-title img {
+    max-width: 110px;
+  }
+
+  .weekly-offers {padding-top: 90px;}
+  .weekly-offers .cloud {
+    width: 340px; height: 100px; background-size: contain;
+  }
+  .weekly-offers .cloud.left {bottom: 42px; left: -100px;}
+  .weekly-offers .cloud.right {right: -110px;}
+}
+
+@media screen and (max-width: 992px) {
+  .home-banner {
+    padding-bottom: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .intro-section .button-row {
+    flex-direction: column;
+  }
+  .signature-wrapper:before {background-size: 60px;}
+  
+}
+
+@media screen and (max-width: 500px) {
+  .intro-section .container {max-width: 100%;}
+
+  .intro-section:after {display: none;}
+  .intro-section:before { width: 210px; height: 60px; left: -50px;}
+
+  .section-title {gap: 15px;}
+  .section-title h2 {font-size: 35px;}
+  .section-title img {max-width: 70px;}
+  .section-title p {font-size: 24px} 
 }

@@ -2,14 +2,14 @@ import React from 'react'
 
 const KhimExperience = () => {
     return (
-        <section className="khim-experience bg-primary relative overflow-hidden text-white weekly-offers">
+        <section className="khim-experience bg-primary relative overflow-hidden text-white">
             <div className='ornament left'></div>
             <div className='ornament right'></div>
 
             <div className="container relative z-10">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-[62px] font-serif text-secondary mb-2 font-light">
-                        <span className="gradient-text">THE KHIM</span>  <span className="font-normal text-white italic">EXPERIENCE</span>
+                        <span className="gradient-text">THE KHIM</span>  <span className="font-light text-white italic">EXPERIENCE</span>
                     </h2>
                     <p className="text-gray-300 text-[40px]">"What Defines Our Dining"</p>
                 </div>
@@ -92,6 +92,13 @@ const KhimExperience = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className='cloud left'>
+                <img src="assets/cloud-img.svg" alt="" />
+            </div>
+            <div className='cloud right'>
+                <img src="assets/cloud-img.svg" alt="" />
             </div>
         </section>
     )

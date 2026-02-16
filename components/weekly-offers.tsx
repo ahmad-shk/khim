@@ -8,16 +8,16 @@ const WeeklyOffers = () => {
             <div className='ornament right'></div>
 
             <div className="container relative z-10">
-                <div className="text-center mb-8">
+                <div className="section-title text-center mb-8">
                     <div className="flex items-center justify-center gap-6">
                         {/* Decorative lines/clouds */}
                         <img src="assets/cloud-sm-left.svg" alt="" />
-                        <h2 className="text-4xl md:text-7xl font-light">
+                        <h2 className="text-5xl 2xl:text-7xl font-light">
                             <span className="italic">OUR WEEKLY</span> <span className="font-normal">OFFERS</span>
                         </h2>
                         <img src="assets/cloud-sm.svg" alt="" />
                     </div>
-                    <p className="text-2xl md:text-[40px] text-white font-light">Discover our special dishes of the week ...</p>
+                    <p className="text-3xl 2xl:text-[40px] text-white font-light">Discover our special dishes of the week ...</p>
                 </div>
 
                 <div className="cards grid grid-cols-1 md:grid-cols-3 gap-6 relative">

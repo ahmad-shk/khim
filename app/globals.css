@@ -36,6 +36,7 @@ img {
   text-transform: uppercase;
   padding: 10px 40px;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -119,8 +120,12 @@ body {
 .home-banner {
   padding-bottom: 46.5%;
 }
+
 .home-banner .image {
-  position: absolute; inset: 0; width: 100%; height: 100%;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .home-banner .image:before {
@@ -144,8 +149,13 @@ body {
   background: var(--primary);
   opacity: .5;
 }
+
 .home-banner .image img {
-  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .home-banner .caption {
@@ -168,11 +178,14 @@ body {
 .signature-wrapper {
   position: relative;
 }
+
 .signature-wrapper:before {
   content: '';
   position: absolute;
   inset: 0;
-  width: 100%; height: 100%; z-index: 1;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
   background: url(../public/assets/bg-left.svg) left top repeat-y, url(../public/assets/bg-right.svg) right top repeat-y;
 }
 
@@ -181,7 +194,7 @@ body {
   position: absolute;
   left: 0;
   bottom: 150px;
-  width: 390px;
+  width: 370px;
   height: 160px;
   background: url(../public/assets/cloud-img.svg) right top no-repeat;
 }
@@ -254,7 +267,8 @@ body {
 
 
 .khim-experience .cloud {
-  width: 515px; height:  150px;
+  width: 515px;
+  height: 150px;
   position: absolute;
   left: -245px;
   bottom: 30px;
@@ -285,18 +299,27 @@ body {
 
 
 .instagram-feed .cloud {
-  width: 515px; height:  150px;
+  width: 515px;
+  height: 150px;
   position: absolute;
   right: -158px;
   bottom: 70px;
 }
+
 .instagram-feed .ornament.left {
-  position: absolute; left: 86px; top: -80px;
-  width: 180px; height: 718px;
+  position: absolute;
+  left: 86px;
+  top: -80px;
+  width: 180px;
+  height: 718px;
 }
+
 .instagram-feed .ornament.right {
-  position: absolute; right: 102px; top: -150px;
-  width: 160px; height: 450px;
+  position: absolute;
+  right: 102px;
+  top: -150px;
+  width: 160px;
+  height: 450px;
 }
 
 
@@ -304,27 +327,47 @@ body {
   background: url(../public/assets/khim-experince.png) center top repeat;
   position: relative;
 }
+
 .page-footer .cloud {
-  width: 514px; height: 150px;
-  position: absolute; left: -87px; top: 300px;
+  width: 514px;
+  height: 150px;
+  position: absolute;
+  left: -87px;
+  top: 300px;
 }
+
 .ornament {
-  width: 180px; height: 690px; position: absolute; top: -190px; right: 130px
+  width: 180px;
+  height: 690px;
+  position: absolute;
+  top: -190px;
+  right: 130px
 }
 
 
 @media screen and (max-width: 1750px) {
-  .weekly-offers .ornament {display: none; }
+  .weekly-offers .ornament {
+    display: none;
+  }
 
-  .signature-wrapper:before {background-size: 90px;}
+  .signature-wrapper:before {
+    background-size: 90px;
+  }
 }
 
 @media screen and (max-width: 1600px) {
-  .page-header:before, .page-header:after {
-    width: 140px; height: 35px; background-size: cover;
+
+  .page-header:before,
+  .page-header:after {
+    width: 140px;
+    height: 35px;
+    background-size: cover;
   }
+
   header nav,
-  .contact-info {margin-top: 20px;}
+  .contact-info {
+    margin-top: 20px;
+  }
 
   .intro-section:after {
     width: 90px;
@@ -332,6 +375,7 @@ body {
     right: 20px;
     background-size: cover;
   }
+
   .intro-section:before {
     width: 300px;
     height: 100px;
@@ -345,8 +389,12 @@ body {
   .home-banner {
     padding-bottom: 60%;
   }
+
   .home-banner .image:before {
-    width: 274px; height: 95px; background-size: cover; right: -80px
+    width: 274px;
+    height: 95px;
+    background-size: cover;
+    right: -80px
   }
 
   .intro-section .container {
@@ -361,12 +409,24 @@ body {
     max-width: 110px;
   }
 
-  .weekly-offers {padding-top: 90px;}
-  .weekly-offers .cloud {
-    width: 340px; height: 100px; background-size: contain;
+  .weekly-offers {
+    padding-top: 90px;
   }
-  .weekly-offers .cloud.left {bottom: 42px; left: -100px;}
-  .weekly-offers .cloud.right {right: -110px;}
+
+  .weekly-offers .cloud {
+    width: 340px;
+    height: 100px;
+    background-size: contain;
+  }
+
+  .weekly-offers .cloud.left {
+    bottom: 42px;
+    left: -100px;
+  }
+
+  .weekly-offers .cloud.right {
+    right: -110px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -379,18 +439,179 @@ body {
   .intro-section .button-row {
     flex-direction: column;
   }
-  .signature-wrapper:before {background-size: 60px;}
-  
+
+  .signature-wrapper:before {
+    background-size: 60px;
+  }
+
 }
 
 @media screen and (max-width: 500px) {
-  .intro-section .container {max-width: 100%;}
+  .intro-section .container {
+    max-width: 100%;
+  }
 
-  .intro-section:after {display: none;}
-  .intro-section:before { width: 210px; height: 60px; left: -50px;}
+  .intro-section:after {
+    display: none;
+  }
 
-  .section-title {gap: 15px;}
-  .section-title h2 {font-size: 35px;}
-  .section-title img {max-width: 70px;}
-  .section-title p {font-size: 24px} 
+  .intro-section:before {
+    width: 210px;
+    height: 60px;
+    left: -50px;
+  }
+
+  .section-title {
+    gap: 15px;
+  }
+
+  .section-title h2 {
+    font-size: 35px;
+  }
+
+  .section-title img {
+    max-width: 70px;
+  }
+
+  .section-title p {
+    font-size: 24px
+  }
+}
+
+
+/* inner-page--header */
+.inner--page .page-header .inner:after {
+  height: 30px;
+  bottom: -20px;
+}
+
+.inner-page--header {
+  position: relative;
+  background: url(../public/assets/inner-page-header.png) center bottom;
+  background-size: contain;
+  padding: 190px 0 230px;
+}
+
+.inner-page--header .ornament {
+  position: absolute;
+  top: -60px;
+  width: 180px;
+  height: 590px;
+  background: url(../public/assets/ornament-sm.svg) center bottom no-repeat;
+}
+
+.inner-page--header .ornament.left {
+  left: 94px;
+}
+
+.inner-page--header .ornament.right {
+  right: 123px;
+  width: 134px;
+  background-size: contain;
+  top: -200px;
+}
+
+
+.tab-holder {
+  grid-column-gap: 10px;
+  grid-row-gap: 32px;
+}
+
+.tab-holder .btn {
+  padding: 10px 40px;
+  background-color: #EBEEF6;
+  color: #11285B;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.tab-holder .btn.active {
+  color: #EED675;
+  background-color: #091C46;
+}
+
+/* dist-card */
+.dist-card {
+  background-color: #D9D9D9;
+  padding-top: 26px;
+  border-radius: 28px;
+  margin-top: 95px;
+}
+
+.dist-card .body {
+  background-color: #fff;
+  border: 1px solid #11285B;
+  padding: 0 27px 24px;
+  border-radius: 27px;
+}
+
+.dist-card .icon {
+  width: 154px;
+  height: 154px;
+  border-radius: 100%;
+  background-color: #000;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dist-card .icon img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.dist-card .logo-row {
+  margin-top: -80px;
+}
+
+/* dish-card-lg */
+.dish-card-lg {
+  display: flex;
+  align-items: center;
+  grid-gap: 26px;
+}
+
+.dish-card-lg .icon {
+  width: 125px;
+  height: 125px;
+  border-radius: 15px;
+  background-color: #000;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* experience-boxes */
+.experience-boxes .card {
+  width: 100%;
+  max-width: 360px;
+  padding: 0 44px 36px;
+  border-radius: 30px;
+  background-color: var(--primary);
+  text-align: left;
+}
+
+.experience-boxes .card .icon {
+  width: 114px;
+  height: 114px;
+  background: linear-gradient(242.21deg, #EFD977 13.5%, #BB7730 73.86%);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -60px 0 10px;
+}
+
+.experience-boxes .card .text-color {
+  background: linear-gradient(242.21deg, #EFD977 13.5%, #BB7730 73.86%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }

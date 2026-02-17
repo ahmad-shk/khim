@@ -11,97 +11,99 @@ const ContactPage = () => {
 
             <main>
                 {/* Hero Section */}
-                <section className="bg-primary pt-24 pb-48 text-center relative overflow-hidden">
-                    <img src="/assets/ornament-sm.svg" className="absolute left-10 top-0 h-64 opacity-60" alt="" />
-                    <img src="/assets/ornament-sm.svg" className="absolute right-10 top-0 h-64 opacity-60" alt="" />
+                <section className="inner-page--header">
+                    {/* Lanterns */}
+                    <div className='ornament left'></div>
+                    <div className='ornament right'></div>
 
-                    <div className="container mx-auto px-4 relative z-10">
-                        <div className="flex items-center justify-center gap-4 mb-6">
-                            <img src="/assets/cloud-sm-left.svg" className="w-16" alt="" />
-                            <h1 className="text-4xl md:text-7xl text-white font-serif italic tracking-widest uppercase">
-                                <span className="font-light">Get In </span> <span className="font-bold">Touch With Us!</span>
+                    <div className="container mx-auto px-4 relative z-10 text-center">
+                        <div className="flex items-center justify-center gap-4 mb-7">
+                            <img src="/assets/cloud-sm-left.svg" className="" alt="" />
+                            <h1 className="text-4xl md:text-[62px] text-white font-light tracking-wide uppercase">
+                                <span className="italic">Get In </span> <span className="font-normal">Touch With Us!</span>
                             </h1>
-                            <img src="/assets/cloud-sm.svg" className="w-16" alt="" />
+                            <img src="/assets/cloud-sm.svg" className="" alt="" />
                         </div>
-                        <p className="text-white/80 text-lg md:text-xl font-light italic max-w-3xl mx-auto">
+                        <p className="text-white text-[30px] w-10/12 mx-auto">
                             For reservations, inquiries, or general information, please get in touch with us or visit us during opening hours.
                         </p>
                     </div>
 
-                    {/* Scalloped edge effect */}
-                    <div className="absolute bottom-0 left-0 w-full h-24 bg-white rounded-t-[100%] scale-x-[1.2]"></div>
                 </section>
 
                 {/* Info Boxes Section */}
-                <section className="container mx-auto px-4 -mt-32 relative z-20 pb-20">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-5xl text-primary font-serif italic mb-12">
+                <section className="intro-section pt-20 pb-40 text-center bg-gray-circle relative min-h-[470px]">
+                    <div className="container relative z-1">
+                        <h2 className="text-4xl 2xl:text-[63px] text-primary font-light italic leading-tight mb-[90px]">
                             Experience the diversity of Asia – fresh, <br /> aromatic and prepared with love.
                         </h2>
+                        <div className="flex flex-wrap gap-4 justify-center experience-boxes">
+                            {/* Box 1 */}
+                            <div className="card">
+                                <div className="">
+                                    <div className="icon">
+                                        <svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M44.0391 0C45.2993 0 46.3213 1.02197 46.3213 2.28223V4.56348H49.2881C54.3208 4.56364 58.415 8.65868 58.415 13.6914V26.6973C58.415 27.9574 57.3938 28.9792 56.1338 28.9795C54.8735 28.9795 53.8516 27.9575 53.8516 26.6973V13.6914C53.8516 11.1751 51.8044 9.12712 49.2881 9.12695H46.3213V11.4092C46.3213 12.6694 45.2993 13.6914 44.0391 13.6914C42.779 13.6911 41.7578 12.6693 41.7578 11.4092V9.12695H31.375V11.4092C31.375 12.6694 30.3539 13.6913 29.0938 13.6914C27.8335 13.6914 26.8115 12.6694 26.8115 11.4092V9.12695H16.543V11.4092C16.543 12.6694 15.5219 13.6913 14.2617 13.6914C13.0015 13.6914 11.9795 12.6694 11.9795 11.4092V9.12695H9.12695C6.61073 9.12718 4.56348 11.1751 4.56348 13.6914V49.2881C4.56364 51.8042 6.61083 53.8513 9.12695 53.8516H26.583C27.8433 53.8516 28.8652 54.8735 28.8652 56.1338C28.865 57.3938 27.8431 58.415 26.583 58.415H9.12695C4.09441 58.4148 0.000162796 54.3206 0 49.2881V13.6914C0 8.65871 4.09431 4.5637 9.12695 4.56348H11.9795V2.28223C11.9795 1.02197 13.0015 0 14.2617 0C15.5219 0.000111676 16.543 1.02203 16.543 2.28223V4.56348H26.8115V2.28223C26.8115 1.02197 27.8335 0 29.0938 0C30.3539 0.000143382 31.375 1.02205 31.375 2.28223V4.56348H41.7578V2.28223C41.7578 1.02213 42.779 0.000263041 44.0391 0ZM44.6104 30.8047C52.2224 30.8047 58.4158 36.9973 58.416 44.6094C58.416 52.2216 52.2226 58.415 44.6104 58.415C36.9982 58.415 30.8057 52.2216 30.8057 44.6094C30.8059 36.9974 36.9983 30.8048 44.6104 30.8047ZM44.6104 35.3682C39.5149 35.3682 35.3694 39.5138 35.3691 44.6094C35.3691 49.7051 39.5147 53.8515 44.6104 53.8516C49.706 53.8516 53.8516 49.7052 53.8516 44.6094C53.8513 39.5137 49.7059 35.3682 44.6104 35.3682ZM44.6104 37.6504C45.8703 37.6505 46.8914 38.6717 46.8916 39.9316V42.3281H47.9189C49.1791 42.3282 50.2002 43.3501 50.2002 44.6104C50.1999 45.8703 49.179 46.8915 47.9189 46.8916H44.6104C43.3503 46.8916 42.3284 45.8704 42.3281 44.6104V39.9316C42.3284 38.6716 43.3502 37.6504 44.6104 37.6504ZM14.2617 41.5293C15.5219 41.5293 16.5439 42.5513 16.5439 43.8115C16.5438 45.0716 15.5219 46.0928 14.2617 46.0928C13.0017 46.0926 11.9806 45.0716 11.9805 43.8115C11.9805 42.5514 13.0016 41.5294 14.2617 41.5293ZM24.1875 41.5293C25.4477 41.5293 26.4697 42.5513 26.4697 43.8115C26.4696 45.0716 25.4476 46.0928 24.1875 46.0928C22.9276 46.0925 21.9064 45.0715 21.9062 43.8115C21.9062 42.5514 22.9275 41.5295 24.1875 41.5293ZM14.2617 31.6035C15.5218 31.6035 16.5437 32.6247 16.5439 33.8848C16.5439 35.145 15.5219 36.167 14.2617 36.167C13.0016 36.1669 11.9805 35.1449 11.9805 33.8848C11.9807 32.6248 13.0017 31.6037 14.2617 31.6035ZM24.1875 31.6035C25.4476 31.6035 26.4695 32.6247 26.4697 33.8848C26.4697 35.145 25.4477 36.167 24.1875 36.167C22.9275 36.1667 21.9062 35.1448 21.9062 33.8848C21.9065 32.6249 22.9276 31.6038 24.1875 31.6035ZM14.2617 21.6777C15.5218 21.6777 16.5438 22.6989 16.5439 23.959C16.5439 25.2192 15.5219 26.2412 14.2617 26.2412C13.0016 26.2411 11.9805 25.2191 11.9805 23.959C11.9806 22.699 13.0017 21.6779 14.2617 21.6777ZM24.1875 21.6777C25.4476 21.6777 26.4695 22.6989 26.4697 23.959C26.4697 25.2192 25.4477 26.2412 24.1875 26.2412C22.9275 26.241 21.9062 25.2191 21.9062 23.959C21.9064 22.6991 22.9276 21.678 24.1875 21.6777ZM34.1133 21.6777C35.3734 21.6777 36.3953 22.6989 36.3955 23.959C36.3955 25.2192 35.3735 26.2412 34.1133 26.2412C32.8531 26.2411 31.832 25.2192 31.832 23.959C31.8322 22.699 32.8532 21.6778 34.1133 21.6777ZM44.0391 21.6777C45.2992 21.6777 46.3211 22.6989 46.3213 23.959C46.3213 25.2192 45.2993 26.2412 44.0391 26.2412C42.779 26.241 41.7578 25.2191 41.7578 23.959C41.758 22.699 42.7791 21.6779 44.0391 21.6777Z" fill="#11285B" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <h3 className="text-color text-[36px] mb-4">Opening Hours:</h3>
+                                <div className="font-light text-[25px]">
+                                    <p>11:30 - 14:30</p>
+                                    <p>17:30 - 21:30</p>
+                                </div>
+                            </div>
+
+                            {/* Box 2 */}
+                            <div className="card">
+                                <div className="">
+                                    <div className="icon">
+                                        <svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M44.0391 0C45.2993 0 46.3213 1.02197 46.3213 2.28223V4.56348H49.2881C54.3208 4.56364 58.415 8.65868 58.415 13.6914V26.6973C58.415 27.9574 57.3938 28.9792 56.1338 28.9795C54.8735 28.9795 53.8516 27.9575 53.8516 26.6973V13.6914C53.8516 11.1751 51.8044 9.12712 49.2881 9.12695H46.3213V11.4092C46.3213 12.6694 45.2993 13.6914 44.0391 13.6914C42.779 13.6911 41.7578 12.6693 41.7578 11.4092V9.12695H31.375V11.4092C31.375 12.6694 30.3539 13.6913 29.0938 13.6914C27.8335 13.6914 26.8115 12.6694 26.8115 11.4092V9.12695H16.543V11.4092C16.543 12.6694 15.5219 13.6913 14.2617 13.6914C13.0015 13.6914 11.9795 12.6694 11.9795 11.4092V9.12695H9.12695C6.61073 9.12718 4.56348 11.1751 4.56348 13.6914V49.2881C4.56364 51.8042 6.61083 53.8513 9.12695 53.8516H26.583C27.8433 53.8516 28.8652 54.8735 28.8652 56.1338C28.865 57.3938 27.8431 58.415 26.583 58.415H9.12695C4.09441 58.4148 0.000162796 54.3206 0 49.2881V13.6914C0 8.65871 4.09431 4.5637 9.12695 4.56348H11.9795V2.28223C11.9795 1.02197 13.0015 0 14.2617 0C15.5219 0.000111676 16.543 1.02203 16.543 2.28223V4.56348H26.8115V2.28223C26.8115 1.02197 27.8335 0 29.0938 0C30.3539 0.000143382 31.375 1.02205 31.375 2.28223V4.56348H41.7578V2.28223C41.7578 1.02213 42.779 0.000263041 44.0391 0ZM44.6104 30.8047C52.2224 30.8047 58.4158 36.9973 58.416 44.6094C58.416 52.2216 52.2226 58.415 44.6104 58.415C36.9982 58.415 30.8057 52.2216 30.8057 44.6094C30.8059 36.9974 36.9983 30.8048 44.6104 30.8047ZM44.6104 35.3682C39.5149 35.3682 35.3694 39.5138 35.3691 44.6094C35.3691 49.7051 39.5147 53.8515 44.6104 53.8516C49.706 53.8516 53.8516 49.7052 53.8516 44.6094C53.8513 39.5137 49.7059 35.3682 44.6104 35.3682ZM44.6104 37.6504C45.8703 37.6505 46.8914 38.6717 46.8916 39.9316V42.3281H47.9189C49.1791 42.3282 50.2002 43.3501 50.2002 44.6104C50.1999 45.8703 49.179 46.8915 47.9189 46.8916H44.6104C43.3503 46.8916 42.3284 45.8704 42.3281 44.6104V39.9316C42.3284 38.6716 43.3502 37.6504 44.6104 37.6504ZM14.2617 41.5293C15.5219 41.5293 16.5439 42.5513 16.5439 43.8115C16.5438 45.0716 15.5219 46.0928 14.2617 46.0928C13.0017 46.0926 11.9806 45.0716 11.9805 43.8115C11.9805 42.5514 13.0016 41.5294 14.2617 41.5293ZM24.1875 41.5293C25.4477 41.5293 26.4697 42.5513 26.4697 43.8115C26.4696 45.0716 25.4476 46.0928 24.1875 46.0928C22.9276 46.0925 21.9064 45.0715 21.9062 43.8115C21.9062 42.5514 22.9275 41.5295 24.1875 41.5293ZM14.2617 31.6035C15.5218 31.6035 16.5437 32.6247 16.5439 33.8848C16.5439 35.145 15.5219 36.167 14.2617 36.167C13.0016 36.1669 11.9805 35.1449 11.9805 33.8848C11.9807 32.6248 13.0017 31.6037 14.2617 31.6035ZM24.1875 31.6035C25.4476 31.6035 26.4695 32.6247 26.4697 33.8848C26.4697 35.145 25.4477 36.167 24.1875 36.167C22.9275 36.1667 21.9062 35.1448 21.9062 33.8848C21.9065 32.6249 22.9276 31.6038 24.1875 31.6035ZM14.2617 21.6777C15.5218 21.6777 16.5438 22.6989 16.5439 23.959C16.5439 25.2192 15.5219 26.2412 14.2617 26.2412C13.0016 26.2411 11.9805 25.2191 11.9805 23.959C11.9806 22.699 13.0017 21.6779 14.2617 21.6777ZM24.1875 21.6777C25.4476 21.6777 26.4695 22.6989 26.4697 23.959C26.4697 25.2192 25.4477 26.2412 24.1875 26.2412C22.9275 26.241 21.9062 25.2191 21.9062 23.959C21.9064 22.6991 22.9276 21.678 24.1875 21.6777ZM34.1133 21.6777C35.3734 21.6777 36.3953 22.6989 36.3955 23.959C36.3955 25.2192 35.3735 26.2412 34.1133 26.2412C32.8531 26.2411 31.832 25.2192 31.832 23.959C31.8322 22.699 32.8532 21.6778 34.1133 21.6777ZM44.0391 21.6777C45.2992 21.6777 46.3211 22.6989 46.3213 23.959C46.3213 25.2192 45.2993 26.2412 44.0391 26.2412C42.779 26.241 41.7578 25.2191 41.7578 23.959C41.758 22.699 42.7791 21.6779 44.0391 21.6777Z" fill="#11285B" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <h3 className="text-color text-[36px] mb-4">Contact:</h3>
+                                <div className="font-light text-[25px]">
+                                    <p>+43 677 6317 8906</p>
+                                    <p>khimrest22@yahoo.com</p>
+                                </div>
+                            </div>
+
+                            {/* Box 3 */}
+                            <div className="card">
+                                <div className="">
+                                    <div className="icon">
+                                        <svg width="45" height="66" viewBox="0 0 45 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1667 0C34.4556 0.000181437 44.4285 10.045 44.3367 22.335C44.2657 31.7774 39.1384 37.57 31.2751 47.6309C34.96 48.2901 38.036 49.334 40.2722 50.6777C42.7438 52.163 44.3366 54.1148 44.3367 56.4277C44.3365 57.9726 43.6164 59.3826 42.3718 60.5908C41.1343 61.7919 39.3521 62.8247 37.1267 63.6592C33.076 65.1781 27.7628 66 22.1687 66C16.6618 66 11.4272 65.2033 7.40112 63.7295L7.2107 63.6592C4.98498 62.8246 3.20214 61.7922 1.9646 60.5908C0.720017 59.3826 0.000858253 57.9726 0.000734355 56.4277C0.00081999 54.1138 1.59477 52.1613 4.06812 50.6758C6.30628 49.3317 9.38595 48.2877 13.074 47.6289C5.15194 37.5025 -0.0712303 31.7021 0.000734355 22.002C0.0931784 9.8351 10.0212 0.000164243 22.1667 0ZM21.9099 65.2441H22.1667C21.9587 65.2441 21.7508 65.2406 21.5437 65.2383C21.6654 65.2396 21.7879 65.2436 21.9099 65.2441ZM36.3464 63.1338C36.4564 63.0952 36.5674 63.0601 36.6755 63.0205L36.8611 62.9512L36.3464 63.1338ZM15.8884 51.2773C12.0901 51.7658 9.08837 52.6567 7.03882 53.6641C5.97406 54.1874 5.19507 54.7278 4.69409 55.2344C4.18467 55.7496 4.03108 56.1569 4.03101 56.4277C4.0312 56.8212 4.31103 57.392 5.17456 58.0723C6.01379 58.7333 7.27911 59.3938 8.92066 59.9795C12.1965 61.1482 16.8322 61.9697 22.1687 61.9697C27.5049 61.9697 32.1399 61.1481 35.4158 59.9795C37.0573 59.3939 38.3235 58.7333 39.1628 58.0723C39.9989 57.4136 40.2878 56.8575 40.3054 56.4658L40.3064 56.4277C40.3063 56.1571 40.1524 55.7504 39.6433 55.2354C39.1427 54.729 38.3645 54.1883 37.3005 53.665C35.2529 52.6581 32.2543 51.7672 28.4597 51.2783C26.8981 53.3305 25.4619 55.2771 24.0994 57.1895L23.8123 57.5938C23.4344 58.1262 22.8217 58.4433 22.1687 58.4434H22.1667C21.5128 58.4428 20.8994 58.1246 20.5222 57.5908C19.0601 55.5208 17.5702 53.491 15.8884 51.2773ZM9.31421 60.9131C9.42395 60.9489 9.53595 60.9816 9.6482 61.0166C9.4791 60.9638 9.31273 60.9104 9.14917 60.8564L9.31421 60.9131ZM22.1287 57.6865H22.1658C22.139 57.6865 22.1122 57.6844 22.0857 57.6826C22.0999 57.6836 22.1143 57.6861 22.1287 57.6865ZM23.1238 57.2441C23.14 57.2252 23.1584 57.2075 23.1736 57.1875L23.196 57.1562L23.1238 57.2441ZM43.574 56.6318C43.5753 56.6043 43.578 56.5764 43.5789 56.5488L43.5808 56.4277H43.5798C43.5798 56.4958 43.5773 56.5641 43.574 56.6318ZM3.33081 56.0088C3.29364 56.1501 3.27517 56.2903 3.27515 56.4277C3.27516 56.3591 3.28046 56.2895 3.2898 56.2197C3.29915 56.15 3.3132 56.0794 3.33179 56.0088H3.33081ZM22.1667 4.03027C12.2301 4.03044 4.10669 12.0782 4.03101 22.0322C3.99832 26.4399 5.25263 29.8707 7.67554 33.71C10.0534 37.4777 13.4981 41.5572 17.9392 47.3232L18.3718 47.8867C19.7433 49.6768 20.9836 51.3358 22.1716 52.9717C23.3682 51.3293 24.6264 49.6482 25.9783 47.8867C30.4433 42.0661 34.0006 37.8573 36.4812 33.9502C38.9353 30.0848 40.2742 26.6016 40.3064 22.3047C40.3813 12.2523 32.2214 4.03032 22.1667 4.03027ZM22.2341 13.3516C27.096 13.3882 31.0218 17.3731 30.9851 22.2344C30.9484 27.0734 27.0003 30.9853 22.1697 30.9854C22.1472 30.9854 22.1247 30.9845 22.1023 30.9844C17.2406 30.9477 13.3147 26.9631 13.3513 22.1016C13.3882 17.24 17.371 13.3171 22.2341 13.3516ZM22.1667 15.8701C18.7162 15.8702 15.8959 18.6643 15.8699 22.1211C15.8439 25.5934 18.6483 28.4396 22.1209 28.4658C22.1367 28.4659 22.1538 28.4658 22.1697 28.4658C25.6202 28.4656 28.4394 25.6715 28.4656 22.2148C28.4916 18.7426 25.6881 15.8964 22.2156 15.8701C22.1997 15.87 22.1826 15.8701 22.1667 15.8701ZM26.0554 7.51562C26.288 6.85997 27.0086 6.51652 27.6638 6.74902C34.2228 9.07385 38.5941 15.3199 38.5418 22.291C38.5365 22.9833 37.9738 23.5408 37.283 23.541H37.2732C36.5777 23.5357 36.0182 22.9678 36.0232 22.2725C36.0675 16.3745 32.3698 11.0904 26.822 9.12402C26.1664 8.89151 25.823 8.17135 26.0554 7.51562ZM43.5789 22.1084C43.5791 22.1817 43.5804 22.2556 43.5798 22.3291C43.5789 22.455 43.5768 22.5805 43.574 22.7051C43.5751 22.6536 43.577 22.6015 43.5779 22.5498L43.5808 22.3291C43.5814 22.2556 43.5791 22.1818 43.5789 22.1084ZM41.8162 13.6602C41.7886 13.5967 41.7623 13.5328 41.7341 13.4697C41.6631 13.3106 41.5902 13.1522 41.5154 12.9951H41.5144C41.6189 13.2147 41.7188 13.4367 41.8162 13.6602ZM22.2908 5.79395C22.986 5.80024 23.5457 6.36829 23.5408 7.06348C23.5357 7.75872 22.9674 8.31847 22.2722 8.31348C21.5757 8.30844 21.0163 7.74012 21.0212 7.04492C21.0263 6.34973 21.5944 5.78904 22.2908 5.79395ZM43.5779 21.7744C43.5766 21.7012 43.5731 21.6277 43.571 21.5547C43.5742 21.6684 43.5765 21.7823 43.5779 21.8965C43.5774 21.8558 43.5786 21.8151 43.5779 21.7744ZM43.5652 21.3672C43.5617 21.2736 43.5581 21.1802 43.5535 21.0869C43.5581 21.1802 43.5617 21.2736 43.5652 21.3672Z" fill="#11285B" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <h3 className="text-color text-[36px] mb-4">Address:</h3>
+                                <div className="font-light text-[25px]">
+                                    <p>St. Pöltner Gasse 12,</p>
+                                    <p>3130 St. Polten</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                        {/* Box 1 */}
-                        <div className="bg-primary text-white p-10 pt-20 rounded-[2.5rem] relative shadow-2xl group hover:-translate-y-2 transition-transform duration-300">
-                            <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-24 h-24 bg-[#D4AF37] rounded-full p-4 shadow-lg flex items-center justify-center">
-                                <div className="border border-white/30 rounded-full w-full h-full flex items-center justify-center">
-                                    <img src="/assets/logo.svg" className="w-12 h-12 invert" alt="" />
-                                </div>
-                            </div>
-                            <h3 className="text-secondary text-2xl font-bold italic mb-4">Opening Hours:</h3>
-                            <div className="font-light text-lg">
-                                <p>11:30 - 14:30</p>
-                                <p>17:30 - 21:30</p>
-                            </div>
-                        </div>
-
-                        {/* Box 2 */}
-                        <div className="bg-primary text-white p-10 pt-20 rounded-[2.5rem] relative shadow-2xl group hover:-translate-y-2 transition-transform duration-300">
-                            <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-24 h-24 bg-[#D4AF37] rounded-full p-4 shadow-lg flex items-center justify-center">
-                                <div className="border border-white/30 rounded-full w-full h-full flex items-center justify-center text-white">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
-                                </div>
-                            </div>
-                            <h3 className="text-secondary text-2xl font-bold italic mb-4">Contact:</h3>
-                            <div className="font-light text-lg">
-                                <p>+43 677 6317 8906</p>
-                                <p>khimrest22@yahoo.com</p>
-                            </div>
-                        </div>
-
-                        {/* Box 3 */}
-                        <div className="bg-primary text-white p-10 pt-20 rounded-[2.5rem] relative shadow-2xl group hover:-translate-y-2 transition-transform duration-300">
-                            <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-24 h-24 bg-[#D4AF37] rounded-full p-4 shadow-lg flex items-center justify-center">
-                                <div className="border border-white/30 rounded-full w-full h-full flex items-center justify-center text-white">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10" r="3" /></svg>
-                                </div>
-                            </div>
-                            <h3 className="text-secondary text-2xl font-bold italic mb-4">Address:</h3>
-                            <div className="font-light text-lg">
-                                <p>St. Pöltner Gasse 12,</p>
-                                <p>3130 St. Polten</p>
-                            </div>
-                        </div>
-                    </div>
                 </section>
 
                 {/* Booking Section */}
-                <section className="bg-primary py-24 relative overflow-hidden">
-                    <img src="/assets/ornament-sm.svg" className="absolute left-10 top-0 h-64 opacity-30" alt="" />
-                    <img src="/assets/ornament-sm.svg" className="absolute right-10 top-0 h-64 opacity-30" alt="" />
-                    <div className="absolute inset-0 opacity-10">
-                        <img src="/assets/gray-circle-bg.png" className="w-full h-full object-cover" alt="" />
-                    </div>
+                <section className="khim-experience bg-primary relative overflow-hidden text-white">
+                    <div className="ornament left"></div>
+                    <div className="ornament right"></div>
 
-                    <div className="container mx-auto px-4 relative z-10 text-center">
-                        <div className="flex items-center justify-center gap-4 mb-6">
-                            <img src="/assets/cloud-sm-left.svg" className="w-16" alt="" />
-                            <h2 className="text-4xl md:text-7xl text-white font-serif italic tracking-widest uppercase">
-                                <span className="font-light">Book A </span> <span className="font-bold">Table</span>
+                    <div className="container relative z-10">
+                        <div className="flex items-end justify-center gap-4 mb-7">
+                            <img src="/assets/cloud-sm-left.svg" className="" alt="" />
+                            <h2 className="text-4xl md:text-[62px] font-serif m-0 font-light">
+                                <span className="font-light italic">Book A </span> <span className="font-light text-white ">Table</span>
                             </h2>
-                            <img src="/assets/cloud-sm.svg" className="w-16" alt="" />
+                            <img src="/assets/cloud-sm.svg" className="" alt="" />
                         </div>
-                        <p className="text-white/80 text-lg font-light italic mb-16 max-w-xl mx-auto">
+                        <p className="text-gray-300 text-[32px] text-center lg:w-9/12 mx-auto mb-[50px]">
                             Reserve your table conveniently online. We will get back to you as soon as possible.
                         </p>
 
@@ -136,34 +138,50 @@ const ContactPage = () => {
                             </form>
                         </div>
                     </div>
+
+                    <div className='cloud left'>
+                        <img src="assets/cloud-img.svg" alt="" />
+                    </div>
+                    <div className='cloud right'>
+                        <img src="assets/cloud-img.svg" alt="" />
+                    </div>
                 </section>
 
                 {/* Location Section */}
-                <section className="bg-white py-24 relative overflow-hidden">
-                    <div className="container mx-auto px-4 text-center">
-                        <div className="flex items-center justify-center gap-4 mb-16">
-                            <img src="/assets/cloud-sm-left.svg" className="w-16 opacity-30" alt="" />
-                            <h2 className="text-4xl md:text-7xl text-primary font-serif italic tracking-widest uppercase">
-                                <span className="font-light">Our </span> <span className="font-bold">Location</span>
-                            </h2>
-                            <img src="/assets/cloud-sm.svg" className="w-16 opacity-30" alt="" />
-                        </div>
+                <section className="signature-wrapper">
+                    <div className="bg-gray-circle overflow-hidden relative">
+                        <div className='bg-circle-layer py-24'>
+                            <div className='container relative z-10'>
 
-                        <div className="relative w-full aspect-video rounded-[3rem] overflow-hidden shadow-2xl mb-12">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2658.8340331045953!2d15.621453476904!3d48.20986164620864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476db209e5352c89%3A0xc3f8e58f00dbed4!2sSt.%20P%C3%B6ltner%20Gasse%2012%2C%203130%20St.%20P%C3%B6lten%2C%20Austria!5e0!3m2!1sen!2s!4v1708100000000!5m2!1sen!2s"
-                                width="100%"
-                                height="100%"
-                                style={{ border: 0 }}
-                                allowFullScreen
-                                loading="lazy"
-                                referrerPolicy="no-referrer-when-downgrade"
-                            ></iframe>
-                        </div>
+                                <div className="text-center mb-16">
+                                    <div className="section-title flex items-center justify-center gap-6">
+                                        <img className='' src="assets/cloud-sm-left.svg" alt="" />
+                                        <h2 className="text-5xl 2xl:text-7xl font-light uppercase text-primary">
+                                            <span className="italic">Our </span> <span className="font-normal">Location</span>
+                                        </h2>
+                                        <img className='' src="assets/cloud-sm.svg" alt="" />
+                                    </div>
+                                </div>
 
-                        <button className="bg-primary text-white px-12 py-4 rounded-full text-sm font-bold uppercase tracking-[0.2em] hover:bg-primary/90 transition-all shadow-xl">
-                            Route in Google Maps Planen
-                        </button>
+                                <div className="relative w-full aspect-video rounded-[2rem] overflow-hidden mb-12">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2658.8340331045953!2d15.621453476904!3d48.20986164620864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476db209e5352c89%3A0xc3f8e58f00dbed4!2sSt.%20P%C3%B6ltner%20Gasse%2012%2C%203130%20St.%20P%C3%B6lten%2C%20Austria!5e0!3m2!1sen!2s!4v1708100000000!5m2!1sen!2s"
+                                        width="100%"
+                                        height="100%"
+                                        style={{ border: 0 }}
+                                        allowFullScreen
+                                        loading="lazy"
+                                        referrerPolicy="no-referrer-when-downgrade"
+                                    ></iframe>
+                                </div>
+
+                                <div className='text-center'>
+                                    <button className="btn btn-primary">
+                                        Route in Google Maps Planen
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>

@@ -21,11 +21,11 @@ const Header = () => {
                         </button>
 
                         {/* Desktop Navigation */}
-                        <nav className='hidden md:block navigation'>
+                        <nav className='hidden md:block navigation lg:flex-1'>
                             <ul className='flex gap-10'>
-                                <li><Link href="/" className='uppercase text-base 3xl:text-xl! hover:text-secondary transition-colors'>Home</Link></li>
-                                <li><Link href="/menu" className='uppercase text-base 3xl:text-xl! hover:text-secondary transition-colors'>Menu</Link></li>
-                                <li><Link href="/contact" className='uppercase text-base 3xl:text-xl! hover:text-secondary transition-colors'>Contact</Link></li>
+                                <li><Link href="/" className='uppercase text-base xl:text-xl! hover:text-secondary transition-colors'>Home</Link></li>
+                                <li><Link href="/menu" className='uppercase text-base xl:text-xl! hover:text-secondary transition-colors'>Menu</Link></li>
+                                <li><Link href="/contact" className='uppercase text-base xl:text-xl! hover:text-secondary transition-colors'>Contact</Link></li>
                             </ul>
                         </nav>
 
@@ -54,16 +54,16 @@ const Header = () => {
                         </div>
 
                         {/* Logo */}
-                        <div className="logo bg-white rounded-b-xl 3xl:rounded-b-3xl p-5 3xl:p-9 3xl:pt-6 -mb-10 3xl:-mb-20 relative z-30 shadow-lg">
+                        <div className="logo bg-white rounded-b-xl xl:rounded-b-xl p-5 xl:p-9 xl:pt-6 -mb-10 xl:-mb-20 relative z-30 shadow-lg">
                             <Link href="/">
-                                <img src="/assets/logo.svg" alt="Logo" className='w-20 md:w-28 3xl:w-auto! h-auto' />
+                                <img src="/assets/logo.svg" alt="Logo" className='w-20 md:w-28 xl:w-auto! h-auto' />
                             </Link>
                         </div>
 
                         {/* Contact Info */}
-                        <div className="contact-info text-end hidden md:block">
-                            <p className='gradient-text text-base 3xl:text-xl!'>Order Online Now</p>
-                            <h4 className='text-xl 3xl:text-3xl! font-normal' >+43 677 6317 8906</h4>
+                        <div className="contact-info text-end hidden md:block lg:flex-1">
+                            <p className='gradient-text text-base xl:text-xl!'>Order Online Now</p>
+                            <h4 className='text-xl xl:text-xl! font-normal' >+43 677 6317 8906</h4>
                         </div>
                     </div>
                 </div>

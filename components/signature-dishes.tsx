@@ -9,15 +9,15 @@ const SignatureDishes = () => {
                   <div className="text-center mb-16">
                      <div className="section-title flex items-center justify-center gap-6">
                         <img className='' src="assets/cloud-sm-left.svg" alt="" />
-                        <h2 className="text-5xl 2xl:text-7xl font-light uppercase text-primary">
+                        <h2 className="text-3xl sm:text-4xl lg:text-5xl 3xl:text-7xl! font-light uppercase text-primary">
                            <span className="italic">Signature </span> <span className="font-normal">Dishes</span>
                         </h2>
                         <img className='' src="assets/cloud-sm.svg" alt="" />
                      </div>
-                     <p className="text-3xl 2xl:text-[40px] text-primary font-light">Delicious, fast, cheap: your lunch menu for 12 €.</p>
+                     <p className="text-xl sm:text-2xl lg:text-3xl 3xl:text-[40px]! text-primary font-light">Delicious, fast, cheap: your lunch menu for 12 €.</p>
                   </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                      {/* Using a grid layout to mimic the bento/masonry style roughly */}
 
                      {/* Large item top left */}

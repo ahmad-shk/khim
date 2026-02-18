@@ -1,0 +1,276 @@
+@media screen and (max-width: 1750px) {
+  .signature-wrapper:before {
+    background-size: 90px;
+  }
+
+  .weekly-offers .cloud,
+  .khim-experience .cloud.right,
+  .instagram-feed .cloud,
+  .intro-section:before,
+  .khim-experience .cloud,
+  .home-banner .image:before {
+    width: 425px; height: 110px; background-size: contain;
+  }
+
+  .page-footer .cloud {
+    width: 375px;
+    height: 110px;
+  }
+  .page-footer .ornament {width: 130px; height: 568px; right: 30px; top: -80px;}
+  .page-footer .ornament img {max-height: 100%;}
+
+  .home-banner .image:before {
+    right: -110px;
+  }
+
+  .intro-section:before {left: -140px;}
+  .intro-section:after,
+  .inner-page .intro-section::after {width: 110px; height: 295px; right: 69px;}
+
+  .inner-page .intro-section::after {top: -90px;}
+
+  .instagram-feed .ornament.left {width: 110px; height: 478px; left: 30px;}
+  .instagram-feed .ornament.right {width: 100px; height: 438px; right: 30px;}
+
+  .instagram-feed .ornament img {
+    max-height: 100%;
+  }
+
+  .khim-experience .ornament {
+    width: 110px; height: 478px; background-size: contain; top: -140px;
+  }
+  .khim-experience .ornament.left {left: 30px;}
+  .khim-experience .ornament.right {right: 30px; top: -130px;}
+
+  .weekly-offers .ornament {
+    width: 110px; height: 478px; background-size: contain; top: -100px;
+  }
+  .weekly-offers .ornament.left {left: 60px;}
+  .weekly-offers .ornament.right {right: 60px;}
+
+  .inner-page .signature-wrapper .ornament,
+  .inner-page .intro-section:after {display: none;}
+
+  .inner-page--header {
+    padding: 199px 0 159px 0;
+  }
+  .inner-page--header .ornament {width: 130px; height: 696px; top: -130px;}
+  .inner-page--header .ornament.right {width: 100px; top: -270px; right: 150px;}
+
+  .tab-holder {gap:15px}
+  .tab-holder .btn {font-size: 20px;}
+
+  .btn.lg {font-size: 25px;}
+}
+
+@media screen and (max-width: 1600px) {
+  .weekly-offers .ornament {display: none;}
+
+  .page-header:before,
+  .page-header:after {
+    width: 140px;
+    height: 35px;
+    background-size: cover;
+  }
+
+  header nav,
+  .contact-info {
+    margin-top: 20px;
+  }
+
+  .intro-section:after {
+    width: 90px;
+    height: 265px;
+    right: 20px;
+    background-size: cover;
+  }
+
+  .khim-experience .ornament,
+  .inner-page .intro-section:after {display: none;}
+
+  .intro-section:before {
+    width: 300px;
+    height: 100px;
+    bottom: 80px;
+    left: -70px;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .home-banner {
+    padding-bottom: 60%;
+  }
+
+  .home-banner .image:before {
+    width: 274px;
+    height: 95px;
+    background-size: cover;
+    right: -80px
+  }
+
+  .intro-section .container {
+    max-width: 70%;
+  }
+
+  .btn {
+    font-size: 18px;
+  }
+
+  .section-title img {
+    max-width: 110px;
+  }
+
+  .weekly-offers {
+    padding-top: 90px;
+  }
+
+  .weekly-offers .cloud {
+    width: 340px;
+    height: 100px;
+    background-size: contain;
+  }
+
+  .weekly-offers .cloud.left {
+    bottom: 42px;
+    left: -100px;
+  }
+
+  .weekly-offers .cloud.right {
+    right: -110px;
+  }
+
+  .inner-page--header {min-height: auto; padding: 210px 0 120px; background-size: cover;}
+  .inner-page--header .ornament {display: none;}
+  .inner-page--header p br {display: none;}
+}
+@media screen and (max-width: 1400px) {
+  .instagram-feed .ornament {display: none;}
+}
+@media screen and (max-width: 992px) {
+  .home-banner {
+    padding-bottom: 80%;
+  }
+
+  .page-footer .ornament {display: none;}
+  .page-footer .cloud {width: 315px; height: 100px; top: auto; bottom: 90px;}
+}
+
+@media screen and (max-width: 800px) {
+  .intro-section .button-row {
+    flex-direction: column;
+  }
+
+  .signature-wrapper:before {
+    background-size: 60px;
+  }
+
+  .slider-arrows button {width: 70px;}
+  .slider-arrows button svg {width: 100%;}
+  .logo-badge {max-width: 300px; margin: auto;}
+
+  .khim-experience .ornament {display: none;}
+
+  .page-header:before, .page-header:after {display: none;}
+
+  .home-banner .caption svg {width: 70px;}
+
+  .inner-page .intro-section,
+  .inner-page .khim-experience,
+  .inner-page .signature-wrapper {
+    padding: 70px 0;
+  }
+
+  .form-box {
+    padding: 30px;
+  }
+  .fontrol-label {font-size: 16px;}
+  .form-control {height: 50px;}
+}
+
+@media screen and (max-width: 667px) {
+  .home-banner {
+    padding-bottom: 90%;
+  }
+
+  .intro-section:before,
+  .intro-section:after, 
+  .page-footer .cloud,
+  .weekly-offers .cloud, .khim-experience .cloud.right, .instagram-feed .cloud, .intro-section:before, .khim-experience .cloud, .home-banner .image:before {
+    display: none;
+  }
+
+  .home-banner .caption {
+    bottom: 40px;
+  }
+
+  .intro-section,
+  .signature-wrapper .bg-circle-layer,
+  .khim-experience, 
+  .instagram-feed {padding: 70px 0;}
+
+  .intro-section {padding-bottom: 100px;}
+
+  .page-footer {padding-top: 70px;}
+
+  .experience-boxes .card .icon {width: 80px; height: 80px; margin-top: -40px; padding: 20px;}
+}
+
+@media screen and (max-width: 600px) {
+  .btn {
+    font-size: 16px;
+  }
+
+  .btn.lg {font-size: 18px;}
+
+  .dish-card-lg {gap: 15px;}
+  .dish-card-lg .icon {    width: 90px;
+    height: 80px;}
+}
+
+@media screen and (max-width: 500px) {
+  .intro-section .container {
+    max-width: 100%;
+  }
+
+  .intro-section:after {
+    display: none;
+  }
+
+  .intro-section:before {
+    width: 210px;
+    height: 60px;
+    left: -50px;
+  }
+
+  .section-title {
+    gap: 15px;
+  }
+
+
+  footer h2,
+  .section-title h2 {
+    font-size: 25px;
+  }
+
+
+  .section-title img {
+    max-width: 70px;
+  }
+
+  .section-title p {
+    font-size: 20px 
+  }
+
+  .home-banner {
+    padding-bottom: 100%;
+  }
+  .home-banner .caption {bottom: 20px;}
+  .home-banner .caption svg {width: 50px;}
+
+  .inner-page--header .section-title img {max-width: 70px;}
+  .tab-holder .btn {font-size: 16px; padding: 10px 20px;}
+}
+@media screen and (max-width: 380px) {
+  .btn.lg {font-size: 16px;}
+}

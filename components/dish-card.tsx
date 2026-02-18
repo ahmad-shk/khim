@@ -30,17 +30,17 @@ const DishCard = ({ title, price, image, rating }: DishCardProps) => {
                 </div>
                 {/* Content */}
                 <div className="">
-                    <h3 className="text-primary text-[25px] uppercase italic" style={{ lineHeight: '1.2' }}>
+                    <h3 className="text-black text-xl sm:text-[25px] uppercase italic" style={{ lineHeight: '1.2' }}>
                         {title}
                     </h3>
-                    <p className="text-primary font-light uppercase italic mb-[5px] text-[15px]">(salmon, avocado and rice)</p>
-                    <div className="flex gap-1 mb-2 text-[25px]">
+                    <p className="text-black opacity-90 font-light uppercase italic mb-[5px] text-[15px]">(salmon, avocado and rice)</p>
+                    <div className="flex gap-1 mb-1.5 text-[25px]">
                         {[...Array(5)].map((_, i) => (
                             <span key={i} className={i < rating ? "text-[#FEEC05]" : "text-gray-300"}>★</span>
                         ))}
                     </div>
 
-                    <p className="text-primary text-[22px] italic">€ {price}</p>
+                    <p className="text-black text-[25px] italic">€ {price}</p>
                 </div>
             </div>
         </div>

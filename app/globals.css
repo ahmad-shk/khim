@@ -17,6 +17,8 @@
 
   --color-primary: #091C46;
   --color-secondary: #EFD977;
+
+  --breakpoint-3xl: 1750px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,6 +39,10 @@ img {
   padding: 10px 40px;
   border-radius: 50px;
   cursor: pointer;
+}
+.btn.lg {
+  font-size: 30px;
+  padding: 4px 34px;
 }
 
 .btn-primary {
@@ -85,7 +91,6 @@ body {
 .page-header {
   position: absolute;
   width: 100%;
-  z-index: 1;
 }
 
 
@@ -178,6 +183,9 @@ body {
 .signature-wrapper {
   position: relative;
 }
+.signature-wrapper img {
+  object-fit: cover;
+}
 
 .signature-wrapper:before {
   content: '';
@@ -261,8 +269,7 @@ body {
 
 .khim-experience {
   padding: 105px 0 81px;
-  background: url(../public/assets/khim-experince.png) center center no-repeat;
-  background-size: cover;
+  background: url(../public/assets/khim-experince.png) center center repeat;
 }
 
 
@@ -284,17 +291,17 @@ body {
   position: absolute;
   top: 0;
   width: 180px;
-  height: 640px;
+  height: 796px;
   background: url(../public/assets/ornament-sm.svg) center bottom no-repeat;
+  background-size: contain;
 }
 
 .khim-experience .ornament.left {
-  left: 123px;
+  left: 115px; top: -120px;
 }
 
 .khim-experience .ornament.right {
-  right: 123px;
-  height: 500px;
+  right: 115px; top: -280px;
 }
 
 
@@ -321,6 +328,7 @@ body {
   width: 160px;
   height: 450px;
 }
+.instagram-feed img {width: 100%;}
 
 
 .page-footer {
@@ -336,146 +344,12 @@ body {
   top: 300px;
 }
 
-.ornament {
+.page-footer .ornament {
   width: 180px;
   height: 690px;
   position: absolute;
   top: -190px;
   right: 130px
-}
-
-
-@media screen and (max-width: 1750px) {
-  .weekly-offers .ornament {
-    display: none;
-  }
-
-  .signature-wrapper:before {
-    background-size: 90px;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-
-  .page-header:before,
-  .page-header:after {
-    width: 140px;
-    height: 35px;
-    background-size: cover;
-  }
-
-  header nav,
-  .contact-info {
-    margin-top: 20px;
-  }
-
-  .intro-section:after {
-    width: 90px;
-    height: 265px;
-    right: 20px;
-    background-size: cover;
-  }
-
-  .intro-section:before {
-    width: 300px;
-    height: 100px;
-    bottom: 80px;
-    left: -70px;
-    background-size: cover;
-  }
-}
-
-@media screen and (max-width: 1440px) {
-  .home-banner {
-    padding-bottom: 60%;
-  }
-
-  .home-banner .image:before {
-    width: 274px;
-    height: 95px;
-    background-size: cover;
-    right: -80px
-  }
-
-  .intro-section .container {
-    max-width: 70%;
-  }
-
-  .btn {
-    font-size: 18px;
-  }
-
-  .section-title img {
-    max-width: 110px;
-  }
-
-  .weekly-offers {
-    padding-top: 90px;
-  }
-
-  .weekly-offers .cloud {
-    width: 340px;
-    height: 100px;
-    background-size: contain;
-  }
-
-  .weekly-offers .cloud.left {
-    bottom: 42px;
-    left: -100px;
-  }
-
-  .weekly-offers .cloud.right {
-    right: -110px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .home-banner {
-    padding-bottom: 80%;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .intro-section .button-row {
-    flex-direction: column;
-  }
-
-  .signature-wrapper:before {
-    background-size: 60px;
-  }
-
-}
-
-@media screen and (max-width: 500px) {
-  .intro-section .container {
-    max-width: 100%;
-  }
-
-  .intro-section:after {
-    display: none;
-  }
-
-  .intro-section:before {
-    width: 210px;
-    height: 60px;
-    left: -50px;
-  }
-
-  .section-title {
-    gap: 15px;
-  }
-
-  .section-title h2 {
-    font-size: 35px;
-  }
-
-  .section-title img {
-    max-width: 70px;
-  }
-
-  .section-title p {
-    font-size: 24px
-  }
 }
 
 
@@ -489,27 +363,30 @@ body {
   position: relative;
   background: url(../public/assets/inner-page-header.png) center bottom;
   background-size: contain;
-  padding: 190px 0 230px;
+  padding: 250px 0 250px;
+  background-repeat: repeat-x;
 }
 
 .inner-page--header .ornament {
   position: absolute;
-  top: -60px;
-  width: 180px;
-  height: 590px;
+  top: -130px;
+  width: 150px;
+  height: 786px;
   background: url(../public/assets/ornament-sm.svg) center bottom no-repeat;
+  background-size: contain;
 }
 
+
 .inner-page--header .ornament.left {
-  left: 94px;
+  left: 96px;
 }
 
 .inner-page--header .ornament.right {
-  right: 123px;
-  width: 134px;
-  background-size: contain;
-  top: -200px;
+  width: 130px;
+  top: -240px;
+  right: 150px;
 }
+.inner-page--header .section-title img {max-width: 150px;}
 
 
 .tab-holder {
@@ -518,10 +395,10 @@ body {
 }
 
 .tab-holder .btn {
-  padding: 10px 40px;
+  padding: 10px 35px;
   background-color: #EBEEF6;
   color: #11285B;
-  font-size: 26px;
+  font-size: 30px;
   line-height: 1;
   cursor: pointer;
 }
@@ -535,15 +412,15 @@ body {
 .dist-card {
   background-color: #D9D9D9;
   padding-top: 26px;
-  border-radius: 28px;
+  border-radius: 29px;
   margin-top: 95px;
 }
 
 .dist-card .body {
   background-color: #fff;
   border: 1px solid #11285B;
-  padding: 0 27px 24px;
-  border-radius: 27px;
+  padding: 0 17px 24px 27px;
+  border-radius: 29px;
 }
 
 .dist-card .icon {
@@ -561,7 +438,7 @@ body {
   width: 80%;
   height: 80%;
   object-fit: contain;
-  border-radius: 20px;
+  border-radius: 24px;
   overflow: hidden;
 }
 
@@ -591,11 +468,12 @@ body {
 .experience-boxes .card {
   width: 100%;
   max-width: 360px;
-  padding: 0 44px 36px;
+  padding: 0 20px 30px 35px;
   border-radius: 30px;
-  background-color: var(--primary);
-  text-align: left;
+  background-color: #11285B;
+  text-align: left; margin-top: 50px;
 }
+
 
 .experience-boxes .card .icon {
   width: 114px;
@@ -614,4 +492,36 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+}
+
+
+.inner-page .signature-wrapper .ornament {
+  width: 100px; height: 460px; 
+  background: url(../public/assets/ornament-sm.svg) center bottom no-repeat;
+  background-size: contain; position: absolute; top: -190px;}
+.inner-page .signature-wrapper .ornament.left {left: 150px;}
+.inner-page .signature-wrapper .ornament.right {right: 150px;}
+
+.inner-page .intro-section {overflow: hidden;}
+.inner-page .intro-section:after {
+  width: 158px; height: 697px; background-position: center bottom; background-size: contain; top: -150px; right: 90px;
+}
+
+.inner-page .khim-experience {padding-bottom: 65px;}
+.inner-page .signature-wrapper.location-finder:before {background-repeat: no-repeat;}
+
+
+.fontrol-label{
+  color: #fff; font-size: 20px; display: block; margin-bottom: 10px;
+}
+.form-control {
+  height: 60px; width: 100%; border: 1px solid #fff; border-radius: 10px; padding: 0 20px; background: rgba(255, 255, 255, .1);
+  outline: none !important; box-shadow: none !important; font-style: italic;
+  color: rgba(255, 255, 255, .5);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1) brightness(2);
+  cursor: pointer;
 }

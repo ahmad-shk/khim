@@ -109,21 +109,21 @@ const SignatureDishes = () => {
                </div>
 
                {/* Navigation Arrows */}
-               <div className="flex justify-center items-center gap-12 mt-12 sm:mt-16">
+               <div className="flex justify-center items-center gap-8 mt-12 sm:mt-16">
                   <button 
                      className="swiper-button-prev-custom transition-transform hover:scale-110 active:scale-95 cursor-pointer disabled:opacity-30"
                      aria-label="Previous slide"
                   >
-                     <svg width="60" height="24" viewBox="0 0 60 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M59 12H1M1 12L11 2M1 12L11 22" stroke="#091C46" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                     <svg width="128" height="45" viewBox="0 0 128 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M127.914 22.207L1.41406 22.207M1.41406 22.207L22.9141 43.707M1.41406 22.207L22.9141 0.707022" stroke="#091C46" stroke-width="2"/>
                      </svg>
                   </button>
                   <button 
                      className="swiper-button-next-custom transition-transform hover:scale-110 active:scale-95 cursor-pointer disabled:opacity-30"
                      aria-label="Next slide"
                   >
-                     <svg width="60" height="24" viewBox="0 0 60 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 12H59M59 12L49 2M59 12L49 22" stroke="#091C46" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                     <svg width="128" height="45" viewBox="0 0 128 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 22.207H126.5M126.5 22.207L105 0.707031M126.5 22.207L105 43.707" stroke="#091C46" stroke-width="2"/>
                      </svg>
                   </button>
                </div>

@@ -33,7 +33,7 @@ const MenuPage = () => {
                         <div className="text-center 2xl:mt-16">
                             <div className="section-title flex items-center justify-center gap-6">
                                 <img className='' src="assets/cloud-sm-left.svg" alt="" />
-                                <h2 className="text-3xl sm:text-4xl lg:text-5xl 3xl:text-7xl! font-light uppercase tracking-tight text-white">
+                                <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-7xl! font-light uppercase tracking-tight text-white">
                                 <span className="italic">Discover </span> <span className="font-normal">our dishes!</span>
                                 </h2>
                                 <img className='' src="assets/cloud-sm.svg" alt="" />
@@ -50,7 +50,7 @@ const MenuPage = () => {
                     <div className='ornament right'></div>
 
                     <section className="container mx-auto relative z-10">
-                        <div className="tab-holder flex flex-wrap justify-center mb-[40px] mt-[80px]">
+                        <div className="tab-holder flex flex-wrap justify-center mb-[40px] lg:mt-[80px] mt-[20px]">
                             {categories.map((cat, i) => (
                                 <button
                                     key={cat}

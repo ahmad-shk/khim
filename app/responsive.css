@@ -1,6 +1,6 @@
 @media screen and (max-width: 1750px) {
   .signature-wrapper:before {
-    background-size: 90px;
+    background-size: 120px;
   }
 
   .weekly-offers .cloud,
@@ -52,7 +52,7 @@
   .inner-page .intro-section:after {display: none;}
 
   .inner-page--header {
-    padding: 199px 0 159px 0;
+    padding: 270px 0 159px 0;
   }
   .inner-page--header .ornament {width: 130px; height: 696px; top: -130px;}
   .inner-page--header .ornament.right {width: 100px; top: -270px; right: 150px;}
@@ -63,7 +63,7 @@
   .btn.lg {font-size: 25px;}
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1400px) {
   .weekly-offers .ornament {display: none;}
 
   .page-header:before,
@@ -97,7 +97,7 @@
   }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1400px) {
   .home-banner {
     padding-bottom: 60%;
   }
@@ -154,6 +154,10 @@
 
   .page-footer .ornament {display: none;}
   .page-footer .cloud {width: 315px; height: 100px; top: auto; bottom: 90px;}
+
+  .container {
+    padding: 0 50px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -162,7 +166,7 @@
   }
 
   .signature-wrapper:before {
-    background-size: 60px;
+    background-size: 45px;
   }
 
   .slider-arrows button {width: 70px;}
@@ -273,4 +277,10 @@
 }
 @media screen and (max-width: 380px) {
   .btn.lg {font-size: 16px;}
+}
+
+@media screen and (max-width: 1600px) {
+  html body {
+    zoom: .75;
+  }
 }

@@ -16,7 +16,7 @@ const ContactPage = () => {
                         <div className="text-center 2xl:mt-16">
                             <div className="section-title flex items-center justify-center gap-6">
                                 <img className='' src="assets/cloud-sm-left.svg" alt="" />
-                                <h2 className="text-3xl sm:text-4xl lg:text-5xl 3xl:text-7xl! font-light uppercase tracking-tight text-white">
+                                <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-7xl! font-light uppercase tracking-tight text-white">
                                 <span className="italic">Get in </span> <span className="font-normal">touch with us!</span>
                                 </h2>
                                 <img className='' src="assets/cloud-sm.svg" alt="" />
@@ -160,7 +160,7 @@ const ContactPage = () => {
                                 <div className="flex items-center justify-center gap-6">
                                     {/* Decorative lines/clouds */}
                                     <img src="assets/cloud-sm-left.svg" alt="" />
-                                    <h2 className="text-3xl sm:text-4xl lg:text-5xl 3xl:text-7xl! font-light uppercase">
+                                    <h2 className="text-3xl sm:text-4xl lg:text-5xl 3xl:text-7xl! font-light uppercase text-primary">
                                         <span className="italic">our</span> <span className="font-normal">location</span>
                                     </h2>
                                     <img src="assets/cloud-sm.svg" alt="" />

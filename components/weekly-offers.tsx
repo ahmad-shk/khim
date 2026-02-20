@@ -24,14 +24,14 @@ const WeeklyOffers = () => {
                         </h2>
                         <img src="assets/cloud-sm.svg" alt="" />
                     </div>
-                    <p className="text-xl sm:text-2xl lg:text-3xl 3xl:text-[40px]! text-white font-light">Discover our special dishes of the week ...</p>
+                    <p className="text-xl sm:text-2xl lg:text-3xl 3xl:text-[40px]! text-white font-light md:mt-0 mt-5">Discover our special dishes of the week ...</p>
                 </div>
 
                 <div className="cards relative">
                     <Swiper
                         modules={[Navigation]}
-                        spaceBetween={24}
-                        slidesPerView={1}
+                        spaceBetween={20}
+                        slidesPerView={2}
                         navigation={{
                             prevEl: '.swiper-button-prev-custom',
                             nextEl: '.swiper-button-next-custom',
@@ -48,7 +48,7 @@ const WeeklyOffers = () => {
                     >
                         {/* Offer Card 1 */}
                         <SwiperSlide>
-                            <div className="bg-white text-primary p-5 rounded-4xl shadow-lg h-full">
+                            <div className="bg-white text-primary md:p-5 p-3 md:rounded-4xl rounded-xl shadow-lg h-full">
                                 <div className="aspect-4/3 bg-gray-200 rounded-2xl mb-4 overflow-hidden relative">
                                     <Image src="/assets/pro-img.png" alt="Spring Rolls" fill className="object-cover" />
                                 </div>
@@ -61,7 +61,7 @@ const WeeklyOffers = () => {
 
                         {/* Offer Card 2 */}
                         <SwiperSlide>
-                            <div className="bg-white text-primary p-5 rounded-4xl shadow-lg h-full">
+                            <div className="bg-white text-primary md:p-5 p-3 md:rounded-4xl rounded-xl shadow-lg h-full">
                                 <div className="aspect-4/3 bg-gray-200 rounded-2xl mb-4 overflow-hidden relative">
                                     <Image src="/assets/pro-img.png" alt="Spring Rolls" fill className="object-cover" />
                                 </div>
@@ -74,7 +74,7 @@ const WeeklyOffers = () => {
 
                         {/* Offer Card 3 */}
                         <SwiperSlide>
-                            <div className="bg-white text-primary p-5 rounded-4xl shadow-lg h-full">
+                            <div className="bg-white text-primary md:p-5 p-3 md:rounded-4xl rounded-xl shadow-lg h-full">
                                 <div className="aspect-4/3 bg-gray-200 rounded-2xl mb-4 overflow-hidden relative">
                                     <Image src="/assets/pro-img.png" alt="Spring Rolls" fill className="object-cover" />
                                 </div>
@@ -87,7 +87,7 @@ const WeeklyOffers = () => {
 
                          {/* Offer Card 4 */}
                          <SwiperSlide>
-                            <div className="bg-white text-primary p-5 rounded-4xl shadow-lg h-full">
+                            <div className="bg-white text-primary md:p-5 p-3 md:rounded-4xl rounded-xl shadow-lg h-full">
                                 <div className="aspect-4/3 bg-gray-200 rounded-2xl mb-4 overflow-hidden relative">
                                     <Image src="/assets/pro-img.png" alt="Spring Rolls" fill className="object-cover" />
                                 </div>

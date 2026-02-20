@@ -48,8 +48,8 @@
   .weekly-offers .ornament.left {left: 60px;}
   .weekly-offers .ornament.right {right: 60px;}
 
-  .inner-page .signature-wrapper .ornament,
-  .inner-page .intro-section:after {display: none;}
+  /* .inner-page .signature-wrapper .ornament,
+  .inner-page .intro-section:after {display: none;} */
 
   .inner-page--header {
     padding: 270px 0 159px 0;
@@ -85,8 +85,8 @@
     background-size: cover;
   }
 
-  .khim-experience .ornament,
-  .inner-page .intro-section:after {display: none;}
+  /* .khim-experience .ornament,
+  .inner-page .intro-section:after {display: none;} */
 
   .intro-section:before {
     width: 300px;
@@ -141,23 +141,37 @@
   }
 
   .inner-page--header {min-height: auto; padding: 210px 0 120px; background-size: cover;}
-  .inner-page--header .ornament {display: none;}
+  /* .inner-page--header .ornament {display: none;} */
   .inner-page--header p br {display: none;}
 }
 @media screen and (max-width: 1400px) {
-  .instagram-feed .ornament {display: none;}
+  /* .instagram-feed .ornament {display: none;} */
 }
 @media screen and (max-width: 992px) {
+
+  .inner-page .signature-wrapper .ornament.left {width: 70px; left: 30px; top: -250px;}
+  .inner-page .signature-wrapper .ornament.right {width: 70px; right: 30px; top: -250px;}
+
   .home-banner {
     padding-bottom: 80%;
   }
 
-  .page-footer .ornament {display: none;}
-  .page-footer .cloud {width: 315px; height: 100px; top: auto; bottom: 90px;}
+  .inner-page--header {padding: 300px 0 120px;}
 
-  .container {
+  .inner-page--header .ornament.left {left: 0; width: 70px; top: -400px;}
+  .inner-page--header .ornament.right {right: 0; width: 70px; top: -400px;}
+
+  .instagram-feed .ornament.left {width: 70px; top: -60px; left: 0;}
+  .instagram-feed .ornament.right {width: 70px; top: -60px; right: 0;}
+
+  .instagram-feed .cloud {width: 300px; bottom: 0;}
+
+  .page-footer .ornament {width: 70px; top: -20px; right: 0;}
+  .page-footer .cloud {width: 255px; height: 100px; top: auto; bottom: 90px;}
+
+  /* .container {
     padding: 0 50px;
-  }
+  } */
 }
 
 @media screen and (max-width: 800px) {
@@ -169,11 +183,19 @@
     background-size: 45px;
   }
 
+  .inner-page .intro-section:after {right: -20px; width: 70px;}
+
   .slider-arrows button {width: 70px;}
-  .slider-arrows button svg {width: 100%;}
+  .slider-arrows button svg {width: 100%; color: #fff;}
   .logo-badge {max-width: 300px; margin: auto;}
 
-  .khim-experience .ornament {display: none;}
+  /* .khim-experience .ornament {display: none;} */
+
+  .khim-experience .ornament.left {left: 0px; width: 80px;}
+  .khim-experience .ornament.right {right: 0px; width: 80px;}
+
+  .khim-experience .cloud.left {width: 350px;}
+  .khim-experience .cloud.right {top: 40%; width: 300px; right: -200px;}
 
   .page-header:before, .page-header:after {display: none;}
 
@@ -182,7 +204,7 @@
   .inner-page .intro-section,
   .inner-page .khim-experience,
   .inner-page .signature-wrapper {
-    padding: 70px 0;
+    padding: 70px 40px;
   }
 
   .form-box {
@@ -190,6 +212,9 @@
   }
   .fontrol-label {font-size: 16px;}
   .form-control {height: 50px;}
+
+  .dish-slider .swiper-button-prev-custom svg,
+  .dish-slider .swiper-button-next-custom svg {color: #fff; width: 100px;}
 }
 
 @media screen and (max-width: 667px) {
@@ -197,12 +222,12 @@
     padding-bottom: 90%;
   }
 
-  .intro-section:before,
+  /* .intro-section:before,
   .intro-section:after, 
   .page-footer .cloud,
   .weekly-offers .cloud, .khim-experience .cloud.right, .instagram-feed .cloud, .intro-section:before, .khim-experience .cloud, .home-banner .image:before {
     display: none;
-  }
+  } */
 
   .home-banner .caption {
     bottom: 40px;
@@ -237,14 +262,30 @@
     max-width: 100%;
   }
 
-  .intro-section:after {
+  /* .intro-section:after {
     display: none;
+  } */
+
+  .intro-section {
+    overflow-x: hidden;
+  }
+
+  .bg-gray-circle {
+    background-size: cover;
   }
 
   .intro-section:before {
-    width: 210px;
-    height: 60px;
-    left: -50px;
+    width: 170px;
+    height: 50px;
+    left: -80px;
+    bottom: 44%;
+  }
+
+  .intro-section:after {
+    background-size: cover;
+    width: 70px;
+    height: 265px;
+    right: -10px;
   }
 
   .section-title {
@@ -252,14 +293,17 @@
   }
 
 
+  .weekly-offers .cards:after {display: none;}
+
+
   footer h2,
   .section-title h2 {
-    font-size: 25px;
+    font-size: 30px;
   }
 
 
   .section-title img {
-    max-width: 70px;
+    max-width: 100px;
   }
 
   .section-title p {
@@ -267,12 +311,15 @@
   }
 
   .home-banner {
-    padding-bottom: 100%;
+    padding-bottom: 130%;
   }
-  .home-banner .caption {bottom: 20px;}
-  .home-banner .caption svg {width: 50px;}
+  .home-banner .caption {bottom: 40%; transform: translateY(50%);}
+  /* .home-banner .caption svg {width: 50px;} */
 
-  .inner-page--header .section-title img {max-width: 70px;}
+  .weekly-offers .cloud.right,
+  .weekly-offers .cloud.left {width: 230px;}
+
+  .inner-page--header .section-title img {max-width: 100px;}
   .tab-holder .btn {font-size: 16px; padding: 10px 20px;}
 }
 @media screen and (max-width: 380px) {

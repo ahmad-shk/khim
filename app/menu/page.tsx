@@ -50,7 +50,7 @@ const MenuPage = () => {
                     <div className='ornament right'></div>
 
                     <section className="container mx-auto relative z-10">
-                        <div className="tab-holder flex flex-wrap justify-center mb-[40px] lg:mt-[80px] mt-[20px]">
+                        <div className="tab-holder flex flex-wrap justify-center mb-[40px] lg:mt-[80px] mt-[120px]">
                             {categories.map((cat, i) => (
                                 <button
                                     key={cat}
@@ -84,7 +84,7 @@ const MenuPage = () => {
 
                         <div className="mt-[100px]">
                             <div className="mb-16">
-                                <h2 className="text-3xl sm:text-4xl lg:text-5xl 3xl:text-7xl! italic text-primary uppercase font-light">
+                                <h2 className="text-3xl sm:text-4xl lg:text-5xl 3xl:text-7xl! italic text-primary uppercase font-light md:text-start text-center">
                                     Appetizer
                                 </h2>
                             </div>

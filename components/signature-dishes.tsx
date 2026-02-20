@@ -42,19 +42,19 @@ const dishes = [
 
 const SignatureDishes = () => {
    return (
-      <div className=''>
+      <div className='dish-slider'>
          <section className="bg-gray-circle overflow-hidden relative">
             <section className="py-16 sm:py-24">
                <div className="container relative z-10">
                   <div className="text-center mb-12 sm:mb-16">
                      <div className="section-title flex items-center justify-center gap-4 sm:gap-6 mb-4">
-                        <img className='w-12 sm:w-auto' src="/assets/cloud-sm-left.svg" alt="" />
+                        <img className='' src="/assets/cloud-sm-left.svg" alt="" />
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl 3xl:text-7xl! font-light uppercase text-primary tracking-wide">
-                           <span className="italic">Signature </span> <span className="font-normal">Dishes</span>
+                           <span className="italic">Signature </span> <br className='md:hidden' /> <span className="font-normal">Dishes</span>
                         </h2>
-                        <img className='w-12 sm:w-auto' src="/assets/cloud-sm.svg" alt="" />
+                        <img className='' src="/assets/cloud-sm.svg" alt="" />
                      </div>
-                     <p className="text-lg sm:text-2xl lg:text-3xl 3xl:text-[40px]! text-primary font-light">
+                     <p className="text-2xl lg:text-3xl 3xl:text-[40px]! text-primary font-light md:px-0 px-10">
                         Delicious, fast, cheap: your lunch menu for 12 €.
                      </p>
                   </div>

@@ -13,9 +13,9 @@ const InstagramFeed = () => {
 
             <div className="container">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl 3xl:text-7xl! text-primary font-serif mb-6">
-                    FOLLOW <span className="italic font-extralight">@khim.asia.cuisine</span>
+                    FOLLOW <br className='md:hidden' /> <span className="italic font-extralight">@khim.asia.cuisine</span>
                 </h2>
-                <p className="text-lg sm:text-xl lg:text-2xl 3xl:text-[45px]! text-primary font-light mb-16 mx-auto">
+                <p className="text-2xl 3xl:text-[45px]! text-primary font-light mb-16 mx-auto md:px-0 px-10">
                     Join us on Instagram for insights into our cuisine, new dishes and exclusive offers.
                 </p>
 
@@ -39,7 +39,7 @@ const InstagramFeed = () => {
 
                 <Link
                     href="#"
-                    className="inline-block bg-primary text-white text-lg md:text-xl uppercase tracking-widest px-8 py-[14px] rounded-full hover:bg-opacity-90 transition-colors italic"
+                    className="inline-block bg-primary text-white text-[14px] md:text-xl uppercase tracking-widest px-8 py-[14px] rounded-full hover:bg-opacity-90 transition-colors italic"
                 >
                     Explore the Feed
                 </Link>

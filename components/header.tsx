@@ -14,7 +14,7 @@ const Header = () => {
                     <div className="flex items-center justify-center md:justify-between">
                         {/* Mobile Menu Button */}
                         <button 
-                            className="md:hidden z-50 text-white absolute top-7 left-4"
+                            className="md:hidden z-50 text-white absolute top-7 right-7"
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
                         >
                             {isMenuOpen ? <X size={32} /> : <MenuIcon size={32} />}
@@ -35,7 +35,7 @@ const Header = () => {
                             ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}
                         `}>
                             <button 
-                                className="md:hidden z-50 text-white absolute top-7 left-4"
+                                className="md:hidden z-50 text-white absolute top-7 right-7"
                                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                             >
                                 {isMenuOpen ? <X size={32} /> : <MenuIcon size={32} />}

@@ -82,37 +82,6 @@ const MenuPage = () => {
                         </div>
 
 
-                        <div className="mt-[100px]">
-                            <div className="mb-16">
-                                <h2 className="text-3xl sm:text-4xl lg:text-5xl 3xl:text-7xl! italic text-primary uppercase font-light md:text-start text-center">
-                                    Appetizer
-                                </h2>
-                            </div>
-
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                {Array(10).fill(0).map((_, i) => (
-                                    <div key={i} className="dish-card-lg">
-                                        <div className="icon">
-                                            <img src="/assets/pro-img.png" className="w-full h-full object-contain rounded-2xl" alt="" />
-                                        </div>
-                                        <div className="text-primary">
-                                            <h4 className="text-xl sm:text-2xl 3xl:text-[30px]">A10. SALMON TARTAR DFMN</h4>
-                                            <p className="text-[15px] font-light uppercase italic">
-                                                Salmon | Onion | Garlic
-                                            </p>
-                                            <span className="text-2xl sm:text-3xl 3xl:text-[45px]">€ 10,00</span>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-
-                            <div className="flex justify-center mt-12 sm:mt-24 mb-16 sm:mb-[135px]">
-                                <button className="btn btn-primary lg">
-                                    Explore More
-                                </button>
-                            </div>
-                        </div>
-
                     </section>
                 </section>
 

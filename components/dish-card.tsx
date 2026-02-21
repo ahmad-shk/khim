@@ -7,20 +7,17 @@ interface DishCardProps {
     price: string;
     image: string;
     rating: number;
+    onOpen: () => void; // Naya prop popup kholne ke liye
 }
 
-const DishCard = ({ title, price, image, rating }: DishCardProps) => {
+const DishCard = ({ title, price, image, rating, onOpen }: DishCardProps) => {
     return (
-        <div className="dist-card">
-            {/* Heart Icon */}
+        // Click function yahan add kar di
+        <div className="dist-card cursor-pointer" onClick={onOpen}>
             <div className='body'>
                 <div className='flex items-end gap-2 justify-between mb-[21px] logo-row'>
                     <div className='icon'>
-                        <img
-                            src={image}
-                            alt={title}
-                            className=""
-                        />
+                        <img src={image} alt={title} />
                     </div>
                     <span className='mb-5'>
                         <svg width="33" height="27" viewBox="0 0 33 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +25,6 @@ const DishCard = ({ title, price, image, rating }: DishCardProps) => {
                         </svg>
                     </span>
                 </div>
-                {/* Content */}
                 <div className="">
                     <h3 className="text-black text-xl sm:text-[25px] uppercase italic" style={{ lineHeight: '1.2' }}>
                         {title}
@@ -39,7 +35,6 @@ const DishCard = ({ title, price, image, rating }: DishCardProps) => {
                             <span key={i} className={i < rating ? "text-[#FEEC05]" : "text-gray-300"}>★</span>
                         ))}
                     </div>
-
                     <p className="text-black text-[25px] italic">€ {price}</p>
                 </div>
             </div>

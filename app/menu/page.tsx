@@ -1,47 +1,43 @@
 'use client';
-
 import React, { useState } from 'react'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
 import DishCard from '@/components/dish-card'
 
 const MenuPage = () => {
-    const categories = [
-        "All", "Appetizer", "Soup", "Roll", "Dim Sum", "Maki",
-        "Main Course", "Rice & Noodles", "Bento", "Drinks", "Dessert"
-    ];
-
+    const categories = ["All", "Appetizer", "Soup", "Roll", "Dim Sum", "Maki", "Main Course", "Rice & Noodles", "Bento", "Drinks", "Dessert"];
     const [activeIndex, setActiveIndex] = useState(0);
+
+    // --- POPUP STATE ---
+    const [selectedDish, setSelectedDish] = useState<any>(null);
 
     const dishes = Array(12).fill({
         title: "A10. SALMON TARTAR DFMN",
         price: "10,00",
         image: "/assets/pro-img.png",
-        rating: 5
+        rating: 5,
+        description: "Freshly prepared salmon with premium avocado and traditional seasoned rice."
     });
 
     return (
         <div className="bg-gray-circle">
             <main className='inner-page'>
-                {/* Hero Section */}
+                {/* Hero Section (Same as your code) */}
                 <section className="inner-page--header min-h-[675px]">
-                    {/* Lanterns */}
                     <div className='ornament left'></div>
                     <div className='ornament right'></div>
-
                     <div className="container mx-auto px-4 relative z-10 text-center">
                         <div className="text-center 2xl:mt-16">
                             <div className="section-title flex items-center justify-center gap-6">
-                                <img className='' src="assets/cloud-sm-left.svg" alt="" />
-                                <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-7xl! font-light uppercase tracking-tight text-white">
-                                <span className="italic">Discover </span> <span className="font-normal">our dishes!</span>
+                                <img src="assets/cloud-sm-left.svg" alt="" />
+                                <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-7xl font-light uppercase tracking-tight text-white">
+                                    <span className="italic">Discover </span> <span className="font-normal">our dishes!</span>
                                 </h2>
-                                <img className='' src="assets/cloud-sm.svg" alt="" />
+                                <img src="assets/cloud-sm.svg" alt="" />
                             </div>
-                            <p className="text-xl sm:text-2xl lg:text-3xl 3xl:text-[35px]! text-white font-light mt-5">Experience the diversity of Asia – with lovingly prepared dishes,<br/> fresh ingredients and authentic tastes.</p>
+                            <p className="text-xl sm:text-2xl lg:text-3xl text-white font-light mt-5">Experience the diversity of Asia – with lovingly prepared dishes,<br /> fresh ingredients and authentic tastes.</p>
                         </div>
                     </div>
-
                 </section>
 
                 {/* Filter & Grid Section */}
@@ -52,11 +48,7 @@ const MenuPage = () => {
                     <section className="container mx-auto relative z-10">
                         <div className="tab-holder flex flex-wrap justify-center mb-[40px] lg:mt-[80px] mt-[120px]">
                             {categories.map((cat, i) => (
-                                <button
-                                    key={cat}
-                                    onClick={() => setActiveIndex(i)}
-                                    className={`btn ${activeIndex === i ? "active" : ""}`}
-                                >
+                                <button key={cat} onClick={() => setActiveIndex(i)} className={`btn ${activeIndex === i ? "active" : ""}`}>
                                     {cat}
                                 </button>
                             ))}
@@ -67,26 +59,90 @@ const MenuPage = () => {
                                 <DishCard
                                     key={idx}
                                     id={`dish-${idx}`}
-                                    title={dish.title}
-                                    price={dish.price}
-                                    image={dish.image}
-                                    rating={dish.rating}
+                                    {...dish}
+                                    onOpen={() => setSelectedDish(dish)} // Popup kholne ke liye
                                 />
                             ))}
                         </div>
 
                         <div className="flex justify-center mt-20">
-                            <button className="btn btn-primary lg">
-                                Explore More
-                            </button>
+                            <button className="btn btn-primary lg">Explore More</button>
                         </div>
-
-
                     </section>
                 </section>
-
-
             </main>
+           {/* --- NORMAL CENTERED POPUP --- */}
+{selectedDish && (
+    <div className="fixed inset-0 z-[999] flex items-center justify-center p-5">
+        {/* Overlay with blur */}
+        <div 
+            className="absolute inset-0 bg-black/80 backdrop-blur-sm" 
+            onClick={() => setSelectedDish(null)}
+        ></div>
+        
+        {/* Modal Box */}
+        <div className="bg-white w-full max-w-[400px] lg:max-w-5xl relative z-10 overflow-hidden rounded-lg shadow-2xl animate-in fade-in zoom-in duration-300">
+            
+            {/* Minimal Close Button */}
+            <button 
+                onClick={() => setSelectedDish(null)}
+                className="absolute top-4 right-4 z-[30] text-black/40 hover:text-black transition-colors"
+            >
+                <span className="text-xl">✕</span>
+            </button>
+
+            <div className="flex flex-col lg:flex-row">
+                
+                {/* Image Section (Desktop 60%, Mobile Fixed Height) */}
+                <div className="lg:w-[60%] bg-[#fcfcfc] flex items-center justify-center p-8 lg:p-16 border-b lg:border-b-0 lg:border-r border-gray-100 h-[250px] lg:h-auto">
+                    <img 
+                        src={selectedDish.image} 
+                        alt={selectedDish.title} 
+                        className="max-h-full w-auto drop-shadow-xl" 
+                    />
+                </div>
+
+                {/* Content Section */}
+                <div className="lg:w-[40%] p-6 lg:p-12 flex flex-col justify-center bg-white">
+                    
+                    <h3 className="text-black text-2xl lg:text-4xl uppercase italic font-light leading-tight mb-3">
+                        {selectedDish.title}
+                    </h3>
+
+                    {/* Rating */}
+                    <div className="flex items-center mb-4">
+                        <div className="flex gap-1 text-[#FEEC05] text-lg lg:text-xl">
+                            {[...Array(5)].map((_, i) => (
+                                <span key={i} className={i < selectedDish.rating ? "" : "text-gray-200"}>★</span>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Description */}
+                    <div className="mb-6">
+                        <p className="text-gray-500 italic text-base lg:text-lg leading-relaxed font-light">
+                            {selectedDish.description || "A delicious blend of traditional Asian spices and fresh ingredients."}
+                        </p>
+                    </div>
+
+                    {/* Price */}
+                    <div className="mt-auto pt-4 border-t border-gray-50 flex items-center justify-between">
+                        <div>
+                            <span className="block text-gray-400 text-[10px] uppercase tracking-widest mb-1">Price</span>
+                            <p className="text-black text-3xl lg:text-4xl font-light italic">€{selectedDish.price}</p>
+                        </div>
+                        
+                        {/* Minimal Red Accent */}
+                        <div className="text-[#D7443E] font-serif text-2xl italic opacity-20">
+                            味
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+)}
+
             <Footer />
         </div>
     )

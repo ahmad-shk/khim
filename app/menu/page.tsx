@@ -99,7 +99,7 @@ const MenuPage = () => {
                     <div key={cat} className="w-full mb-20">
                         {/* Heading on LEFT side */}
                         <div className="flex justify-start mb-8 border-b border-gray-100 pb-2">
-                            <h2 className="text-2xl lg:text-4xl italic font-light uppercase tracking-widest text-black/20">
+                            <h2 className="text-3xl sm:text-4xl lg:text-5xl 3xl:text-7xl! italic text-primary uppercase font-light md:text-start text-center">
                                 {cat}
                             </h2>
                         </div>

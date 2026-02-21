@@ -71,77 +71,77 @@ const MenuPage = () => {
                     </section>
                 </section>
             </main>
-           {/* --- NORMAL CENTERED POPUP --- */}
-{selectedDish && (
-    <div className="fixed inset-0 z-[999] flex items-center justify-center p-5">
-        {/* Overlay with blur */}
-        <div 
-            className="absolute inset-0 bg-black/80 backdrop-blur-sm" 
-            onClick={() => setSelectedDish(null)}
-        ></div>
-        
-        {/* Modal Box */}
-        <div className="bg-white w-full max-w-[400px] lg:max-w-5xl relative z-10 overflow-hidden rounded-lg shadow-2xl animate-in fade-in zoom-in duration-300">
-            
-            {/* Minimal Close Button */}
-            <button 
-                onClick={() => setSelectedDish(null)}
-                className="absolute top-4 right-4 z-[30] text-black/40 hover:text-black transition-colors"
-            >
-                <span className="text-xl">✕</span>
-            </button>
+            {/* --- NORMAL CENTERED POPUP --- */}
+            {selectedDish && (
+                <div className="fixed inset-0 z-[999] flex items-center justify-center p-5">
+                    {/* Overlay with blur */}
+                    <div
+                        className="absolute inset-0 bg-black/80 backdrop-blur-sm"
+                        onClick={() => setSelectedDish(null)}
+                    ></div>
 
-            <div className="flex flex-col lg:flex-row">
-                
-                {/* Image Section (Desktop 60%, Mobile Fixed Height) */}
-                <div className="lg:w-[60%] bg-[#fcfcfc] flex items-center justify-center p-8 lg:p-16 border-b lg:border-b-0 lg:border-r border-gray-100 h-[250px] lg:h-auto">
-                    <img 
-                        src={selectedDish.image} 
-                        alt={selectedDish.title} 
-                        className="max-h-full w-auto drop-shadow-xl" 
-                    />
+                    {/* Modal Box */}
+                    <div className="bg-white w-full max-w-[400px] lg:max-w-5xl relative z-10 overflow-hidden rounded-lg shadow-2xl animate-in fade-in zoom-in duration-300">
+
+                        {/* Minimal Close Button */}
+                        <button
+                            onClick={() => setSelectedDish(null)}
+                            className="absolute top-4 right-4 z-[30] text-black/40 hover:text-black transition-colors"
+                        >
+                            <span className="text-xl">✕</span>
+                        </button>
+
+                        <div className="flex flex-col lg:flex-row">
+
+                            {/* Image Section (Desktop 60%, Mobile Fixed Height) */}
+                            <div className="lg:w-[60%] bg-[#fcfcfc] flex items-center justify-center p-8 lg:p-16 border-b lg:border-b-0 lg:border-r border-gray-100 h-[250px] lg:h-auto">
+                                <img
+                                    src={selectedDish.image}
+                                    alt={selectedDish.title}
+                                    className="max-h-full w-auto drop-shadow-xl"
+                                />
+                            </div>
+
+                            {/* Content Section */}
+                            <div className="lg:w-[40%] p-6 lg:p-12 flex flex-col justify-center bg-white">
+
+                                <h3 className="text-black text-2xl lg:text-4xl uppercase italic font-light leading-tight mb-3">
+                                    {selectedDish.title}
+                                </h3>
+
+                                {/* Rating */}
+                                <div className="flex items-center mb-4">
+                                    <div className="flex gap-1 text-[#FEEC05] text-lg lg:text-xl">
+                                        {[...Array(5)].map((_, i) => (
+                                            <span key={i} className={i < selectedDish.rating ? "" : "text-gray-200"}>★</span>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                {/* Description */}
+                                <div className="mb-6">
+                                    <p className="text-gray-500 italic text-base lg:text-lg leading-relaxed font-light">
+                                        {selectedDish.description || "A delicious blend of traditional Asian spices and fresh ingredients."}
+                                    </p>
+                                </div>
+
+                                {/* Price */}
+                                <div className="mt-auto pt-4 border-t border-gray-50 flex items-center justify-between">
+                                    <div>
+                                        <span className="block text-gray-400 text-[10px] uppercase tracking-widest mb-1">Price</span>
+                                        <p className="text-black text-3xl lg:text-4xl font-light italic">€{selectedDish.price}</p>
+                                    </div>
+
+                                    {/* Minimal Red Accent */}
+                                    <div className="text-[#D7443E] font-serif text-2xl italic opacity-20">
+                                        味
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                {/* Content Section */}
-                <div className="lg:w-[40%] p-6 lg:p-12 flex flex-col justify-center bg-white">
-                    
-                    <h3 className="text-black text-2xl lg:text-4xl uppercase italic font-light leading-tight mb-3">
-                        {selectedDish.title}
-                    </h3>
-
-                    {/* Rating */}
-                    <div className="flex items-center mb-4">
-                        <div className="flex gap-1 text-[#FEEC05] text-lg lg:text-xl">
-                            {[...Array(5)].map((_, i) => (
-                                <span key={i} className={i < selectedDish.rating ? "" : "text-gray-200"}>★</span>
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* Description */}
-                    <div className="mb-6">
-                        <p className="text-gray-500 italic text-base lg:text-lg leading-relaxed font-light">
-                            {selectedDish.description || "A delicious blend of traditional Asian spices and fresh ingredients."}
-                        </p>
-                    </div>
-
-                    {/* Price */}
-                    <div className="mt-auto pt-4 border-t border-gray-50 flex items-center justify-between">
-                        <div>
-                            <span className="block text-gray-400 text-[10px] uppercase tracking-widest mb-1">Price</span>
-                            <p className="text-black text-3xl lg:text-4xl font-light italic">€{selectedDish.price}</p>
-                        </div>
-                        
-                        {/* Minimal Red Accent */}
-                        <div className="text-[#D7443E] font-serif text-2xl italic opacity-20">
-                            味
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-)}
+            )}
 
             <Footer />
         </div>

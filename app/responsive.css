@@ -146,6 +146,7 @@
 }
 @media screen and (max-width: 1400px) {
   /* .instagram-feed .ornament {display: none;} */
+  .inner-page--header {padding: 300px 0 120px;}
 }
 @media screen and (max-width: 992px) {
 
@@ -156,7 +157,6 @@
     padding-bottom: 80%;
   }
 
-  .inner-page--header {padding: 300px 0 120px;}
 
   .inner-page--header .ornament.left {left: 0; width: 70px; top: -400px;}
   .inner-page--header .ornament.right {right: 0; width: 70px; top: -400px;}

@@ -135,7 +135,7 @@ const MenuPage = () => {
                                 {cat}
                             </h2>
                         </div>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 gap-y-12">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-y-12 gap-y-6">
                             {displayDishes.map((dish) => (
                                 <DishCard
                                     key={dish.id}
@@ -162,7 +162,7 @@ const MenuPage = () => {
         } else {
             const filteredDishes = DISHES_DATA.filter(dish => dish.category === activeCategory);
             return (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 gap-y-12 mb-20">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-y-12 gap-y-6 mb-20">
                     {filteredDishes.map((dish) => (
                         <DishCard
                             key={dish.id}
@@ -224,20 +224,21 @@ const MenuPage = () => {
                         onClick={() => setSelectedDish(null)}
                     ></div>
 
-                    <div className="bg-white w-full max-w-[400px] lg:max-w-5xl relative z-10 overflow-hidden rounded-lg shadow-2xl animate-in fade-in zoom-in duration-300">
+                    <div className="bg-white w-full max-w-[500px] lg:max-w-5xl relative z-10 overflow-hidden rounded-lg shadow-2xl animate-in fade-in zoom-in duration-300">
                         <button
                             onClick={() => setSelectedDish(null)}
-                            className="absolute top-4 right-4 z-[30] text-black/40 hover:text-black transition-colors"
+                            className="absolute top-4 right-6 z-[30] text-black/70 hover:text-black transition-colors cursor-pointer"
                         >
-                            <span className="text-xl">✕</span>
+                            <span className="text-2xl">✕</span>
                         </button>
 
-                        <div className="flex flex-col lg:flex-row">
-                            <div className="lg:w-[60%] bg-[#fcfcfc] flex items-center justify-center p-8 lg:p-16 border-b lg:border-b-0 lg:border-r border-gray-100 h-[250px] lg:h-auto">
+                        <div className="flex flex-col lg:flex-row md:mt-0 mt-10">
+                            <div className="lg:w-[40%] bg-[#fcfcfc] flex items-center justify-center p-5 border-b lg:border-b-0 lg:border-r border-gray-100 lg:h-auto">
                                 <img
                                     src={selectedDish.image}
                                     alt={selectedDish.title}
-                                    className="max-h-full w-auto drop-shadow-xl"
+                                    className="h-full w-full object-cover drop-shadow-xl rounded-xl"
+                                    style={{maxWidth: '400px'}}
                                 />
                             </div>
 

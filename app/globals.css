@@ -421,6 +421,19 @@ body {
   border: 1px solid #11285B;
   padding: 0 17px 24px 27px;
   border-radius: 29px;
+  height: 100%;
+}
+
+@media screen and (min-width: 991px) {
+  .truncate-2 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    min-height: 60px;
+    -webkit-box-orient: vertical;
+  }
+
 }
 
 .dist-card .icon {

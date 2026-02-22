@@ -26,10 +26,10 @@ const DishCard = ({ title, price, image, rating, description, onOpen }: DishCard
                     </span>
                 </div>
                 <div className="">
-                    <h3 className="text-black text-xl sm:text-[25px] uppercase italic" style={{ lineHeight: '1.2' }}>
+                    <h3 className="text-black text-xl sm:text-[25px] uppercase italic truncate-2" style={{ lineHeight: '1.2' }}>
                         {title}
                     </h3>
-                    <p className="text-black opacity-90 font-light uppercase italic mb-[5px] text-[15px]">{description}</p>
+                    <p className="text-black opacity-90 font-light uppercase italic mb-[5px] text-[15px] truncate-2">{description}</p>
                     <div className="flex gap-1 mb-1.5 text-[25px]">
                         {[...Array(5)].map((_, i) => (
                             <span key={i} className={i < rating ? "text-[#FEEC05]" : "text-gray-300"}>★</span>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
+import ReservationForm from '@/components/reservation-form'
 
 const ContactPage = () => {
     return (
@@ -103,8 +104,8 @@ const ContactPage = () => {
                             </div>
                             <p className="text-xl sm:text-2xl lg:text-3xl 3xl:text-[35px]! mt-2 text-white font-light">Reservieren Sie Ihren Tisch bequem online. Wir melden uns bei Ihnen<br /> so schnell wie möglich.</p>
                         </div>
-
-                        <div className="form-box bg-white/30 backdrop-blur-xs rounded-[30px] p-12">
+                           <ReservationForm />
+                        {/* <div className="form-box bg-white/30 backdrop-blur-xs rounded-[30px] p-12">
                             <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="md:col-span-2">
                                     <label className='fontrol-label' htmlFor="name">Name *</label>
@@ -140,7 +141,7 @@ const ContactPage = () => {
                                     </button>
                                 </div>
                             </form>
-                        </div>
+                        </div> */}
                     </div>
 
                     <div className='cloud left'>

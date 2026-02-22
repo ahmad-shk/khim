@@ -263,9 +263,9 @@ const MenuPage = () => {
                                         <span className="block text-gray-400 text-[10px] uppercase tracking-widest mb-1">Price</span>
                                         <p className="text-black text-3xl lg:text-4xl font-light italic">€{selectedDish.price}</p>
                                     </div>
-                                    <div className="text-[#D7443E] font-serif text-2xl italic opacity-20">
+                                    {/* <div className="text-[#D7443E] font-serif text-2xl italic opacity-20">
                                         味
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>

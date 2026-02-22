@@ -9,9 +9,9 @@ const KhimExperience = () => {
             <div className="container relative z-10">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl 3xl:text-7xl! font-serif text-secondary mb-2 font-light">
-                        <span className="gradient-text">THE KHIM</span>  <span className="font-light text-white italic">EXPERIENCE</span>
+                        <span className="gradient-text">THE KHIM</span>  <span className="font-light text-white italic">ERLEBNIS</span>
                     </h2>
-                    <p className="text-gray-300 text-xl sm:text-2xl lg:text-3xl 3xl:text-5xl!">"What Defines Our Dining"</p>
+                    <p className="text-gray-300 text-xl sm:text-2xl lg:text-3xl 3xl:text-5xl!">"Was unser Restaurant ausmacht"</p>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-[auto_300px_auto] 2xl:grid-cols-[auto_1fr_auto]  gap-[30px] items-center">
@@ -28,8 +28,10 @@ const KhimExperience = () => {
                                 </defs>
                             </svg>
                             <h3 className="text-lg sm:text-[25px] font-normal my-[20px]">Authentic Asian Cuisine</h3>
+                            {/* //translate into german/ */}
                             <p className="text-white" style={{ lineHeight: '1.3' }}>
-                                Traditional Asian flavors, prepared with balance and respect for culinary heritage.
+                                
+                                Traditionelle asiatische Aromen, zubereitet mit Ausgewogenheit und Respekt vor dem kulinarischen Erbe.
                             </p>
                         </div>
 
@@ -43,9 +45,9 @@ const KhimExperience = () => {
                                     </linearGradient>
                                 </defs>
                             </svg>
-                            <h3 className="text-lg  sm:text-[25px] font-normal my-[20px]">Fresh, Quality Ingredients</h3>
+                            <h3 className="text-lg  sm:text-[25px] font-normal my-[20px]">Frische, qualitativ hochwertige Zutaten</h3>
                             <p className="text-white" style={{ lineHeight: '1.3' }}>
-                                Carefully selected ingredients and spices for pure, consistent flavor.
+                                Sorgfältig ausgewählte Zutaten und Gewürze für einen puren, unverfälschten Geschmack.
                             </p>
                         </div>
                     </div>
@@ -69,9 +71,9 @@ const KhimExperience = () => {
                                     </linearGradient>
                                 </defs>
                             </svg>
-                            <h3 className="text-lg  sm:text-[25px] font-normal my-[20px]">Thoughtful Preparation</h3>
+                            <h3 className="text-lg  sm:text-[25px] font-normal my-[20px]">Sorgfältige Zubereitung</h3>
                             <p className="text-white" style={{ lineHeight: '1.3' }}>
-                                Precise and care in every step, from technique to presentation.
+                                Präzision und Sorgfalt in jedem Schritt, von der Technik bis zur Präsentation.
                             </p>
                         </div>
 
@@ -85,9 +87,9 @@ const KhimExperience = () => {
                                     </linearGradient>
                                 </defs>
                             </svg>
-                            <h3 className="text-lg  sm:text-[25px] font-normal my-[20px]">Refined Dining</h3>
+                            <h3 className="text-lg  sm:text-[25px] font-normal my-[20px]">Gehobene Gastronomie</h3>
                             <p className="text-white" style={{ lineHeight: '1.3' }}>
-                                A calm, elegant setting designed for relaxed and comfortable dining.
+                               Ein ruhiges, elegantes Ambiente, geschaffen für entspanntes und komfortables Speisen.
                             </p>
                         </div>
                     </div>

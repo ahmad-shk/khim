@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 relative z-10 text-center">
         <div className="mb-20">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl 3xl:text-[85px]! font-extralight italic text-white mb-16 leading-none uppercase">
-            TRADITIONAL RECIPES FOR <br /> <span className='font-light not-italic' >YOUR DELIGHT</span>
+            Traditionelle Rezepte für <br /> <span className='font-light not-italic' >Ihren Genuss</span>
           </h2>
 
           {/* Large Gold Logo Badge */}
@@ -19,7 +19,7 @@ const Footer = () => {
 
         {/* Bottom bar */}
         <div className="py-5 border-t border-white font-light text-white text-sm sm:text-xl uppercase">
-          <p>© All copyrights reserved</p>
+          <p>© Alle Urheberrechte vorbehalten</p>
         </div>
       </div>
 

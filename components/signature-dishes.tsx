@@ -50,12 +50,12 @@ const SignatureDishes = () => {
                      <div className="section-title flex items-center justify-center gap-4 sm:gap-6 mb-4">
                         <img className='' src="/assets/cloud-sm-left.svg" alt="" />
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl 3xl:text-7xl! font-light uppercase text-primary tracking-wide">
-                           <span className="italic">Signature </span> <br className='md:hidden' /> <span className="font-normal">Dishes</span>
+                           <span className="italic">Signature </span> <br className='md:hidden' /> <span className="font-normal">Gerichte</span>
                         </h2>
                         <img className='' src="/assets/cloud-sm.svg" alt="" />
                      </div>
                      <p className="text-2xl lg:text-3xl 3xl:text-[40px]! text-primary font-light md:px-0 px-10">
-                        Delicious, fast, cheap: your lunch menu for 12 €.
+                        Delikat, schnell, günstig: Ihr Mittagsspeise-Menü für 12 €.
                      </p>
                   </div>
 

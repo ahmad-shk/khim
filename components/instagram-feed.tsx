@@ -13,10 +13,13 @@ const InstagramFeed = () => {
 
             <div className="container">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl 3xl:text-7xl! text-primary font-serif mb-6">
-                    FOLLOW <br className='md:hidden' /> <span className="italic font-extralight">@khim.asia.cuisine</span>
+                   FOLGEN SIE <br className='md:hidden' /> 
+                    <Link href="https://www.instagram.com/khim.asia.cuisine.restaurant?igsh=Mmc4bzF2cW03Z3R6" target="_blank" className="italic font-extralight hover:opacity-80 transition-opacity">
+                        @khim.asia.cuisine
+                    </Link>
                 </h2>
                 <p className="text-2xl 3xl:text-[45px]! text-primary font-light mb-16 mx-auto md:px-0 px-10">
-                    Join us on Instagram for insights into our cuisine, new dishes and exclusive offers.
+                    Besuchen Sie uns auf Instagram für Einblicke in unsere Küche, neue Gerichte und exklusive Angebote.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
@@ -36,13 +39,13 @@ const InstagramFeed = () => {
                         </div>
                     </div>
                 </div>
-
-                <Link
-                    href="#"
-                    className="inline-block bg-primary text-white text-[14px] md:text-xl uppercase tracking-widest px-8 py-[14px] rounded-full hover:bg-opacity-90 transition-colors italic"
-                >
-                    Explore the Feed
-                </Link>
+<Link
+  href="https://www.instagram.com/khim.asia.cuisine"
+  target="_blank"
+  className="btn btn-primary"
+>
+  Zum Feed
+</Link>
             </div>
 
             <div className='cloud'>

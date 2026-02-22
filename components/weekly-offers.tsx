@@ -20,11 +20,11 @@ const WeeklyOffers = () => {
                         {/* Decorative lines/clouds */}
                         <img src="assets/cloud-sm-left.svg" alt="" />
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl 3xl:text-7xl! font-light">
-                            <span className="italic">OUR WEEKLY</span> <span className="font-normal">OFFERS</span>
+                            <span className="italic">UNSERE WÖCHENTLICHE</span> <span className="font-normal">ANGEBOTE</span>
                         </h2>
                         <img src="assets/cloud-sm.svg" alt="" />
                     </div>
-                    <p className="text-xl sm:text-2xl lg:text-3xl 3xl:text-[40px]! text-white font-light md:mt-0 mt-5">Discover our special dishes of the week ...</p>
+                    <p className="text-xl sm:text-2xl lg:text-3xl 3xl:text-[40px]! text-white font-light md:mt-0 mt-5">Entdecken Sie unsere wöchentlichen Spezialitäten ...</p>
                 </div>
 
                 <div className="cards relative">

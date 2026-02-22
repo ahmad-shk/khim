@@ -6,80 +6,112 @@ import DishCard from '@/components/dish-card'
 
 const DISHES_DATA = [
     // APPETIZERS
-    { id: "app-1", title: "A10. SALMON TARTAR", category: "Appetizer", price: "10,00", image: "/assets/pro-img.png", rating: 5, description: "Freshly prepared salmon with premium avocado." },
-    { id: "app-2", title: "A11. SPRING ROLLS", category: "Appetizer", price: "08,00", image: "/assets/pro-img.png", rating: 4, description: "Crispy vegetable rolls with sweet chili sauce." },
-    { id: "app-3", title: "A12. CHICKEN GYOZA", category: "Appetizer", price: "09,50", image: "/assets/pro-img.png", rating: 5, description: "Pan-fried Japanese dumplings." },
-    { id: "app-4", title: "A13. EDAMAME SALT", category: "Appetizer", price: "06,00", image: "/assets/pro-img.png", rating: 4, description: "Steamed green soybeans with sea salt." },
-    { id: "app-5", title: "A14. TEMPURA PRAWNS", category: "Appetizer", price: "12,00", image: "/assets/pro-img.png", rating: 5, description: "Crispy battered deep-fried prawns." },
-    { id: "app-6", title: "A15. SEAWEED SALAD", category: "Appetizer", price: "07,00", image: "/assets/pro-img.png", rating: 4, description: "Fresh marinated seaweed with sesame." },
+    { id: "app-1", title: "A10. Lachs Tartar DFMN", category: "Vorspeise", price: "10,00", image: "/assets/pro-img.png", rating: 5, description: "Lachs, Avocado und Reis." },
+    { id: "app-2", title: "S1. Kimchi", category: "Vorspeise", price: "5,50", image: "/assets/pro-img.png", rating: 4, description: "Fermentierter Chinakohl." },
+    { id: "app-3", title: "S2. Seetang Salat", category: "Vorspeise", price: "6,00", image: "/assets/pro-img.png", rating: 5, description: "" },
+    { id: "app-4", title: "S3. Avocado Salat", category: "Vorspeise", price: "7,00", image: "/assets/pro-img.png", rating: 4, description: "" },
+    { id: "app-5", title: "A1G. Babyrollen A (V)", category: "Vorspeise", price: "5,00", image: "/assets/pro-img.png", rating: 5, description: "" },
+    { id: "app-6", title: "A1. Frühlingsrolle AM", category: "Vorspeise", price: "5,00", image: "/assets/pro-img.png", rating: 4, description: "" },
+    { id: "app-7", title: "A2. Hummer Teigtaschen ABFL", category: "Vorspeise", price: "6,50", image: "/assets/pro-img.png", rating: 5, description: "" },
+    { id: "app-8", title: "A3. Samosa AHMN (V)", category: "Vorspeise", price: "6,00", image: "/assets/pro-img.png", rating: 4, description: "Indische Kartoffelteigtasche mit Tamarindensauce." },
+    { id: "app-9", title: "A7. Edamame F", category: "Vorspeise", price: "5,00", image: "/assets/pro-img.png", rating: 5, description: "Sojabohnen." },
+    { id: "app-10", title: "A3C. Fried Chicken A", category: "Vorspeise", price: "6,00", image: "/assets/pro-img.png", rating: 4, description: "" },
+    { id: "app-11", title: "A6. Gyoza AFL", category: "Vorspeise", price: "6,00", image: "/assets/pro-img.png", rating: 5, description: "Gegrillte Teigtaschen mit Huhn." },
+    { id: "app-12", title: "A6G. Vegetarische Gyoza A", category: "Vorspeise", price: "5,50", image: "/assets/pro-img.png", rating: 4, description: "" },
+    { id: "app-13", title: "A8. Hühner Sateh AEHMNO", category: "Vorspeise", price: "6,00", image: "/assets/pro-img.png", rating: 5, description: "Hühnchenspießchen mit pikanter Erdnusssauce." },
 
     // SOUP
-    { id: "soup-1", title: "S01. MISO SOUP", category: "Soup", price: "05,00", image: "/assets/pro-img.png", rating: 5, description: "Traditional soybean paste soup with tofu." },
-    { id: "soup-2", title: "S02. TOM YUM SOUP", category: "Soup", price: "08,50", image: "/assets/pro-img.png", rating: 5, description: "Spicy and sour Thai soup with shrimp." },
-    { id: "soup-3", title: "S03. WAN-TAN SOUP", category: "Soup", price: "07,50", image: "/assets/pro-img.png", rating: 4, description: "Chicken dumplings in clear broth." },
+    { id: "soup-1", title: "B1. Pikante Suppe ACFNO", category: "Soup", price: "4,50", image: "/assets/pro-img.png", rating: 5, description: "" },
+    { id: "soup-2", title: "B2. Miso Suppe F", category: "Soup", price: "4,50", image: "/assets/pro-img.png", rating: 5, description: "." },
+    { id: "soup-3", title: "B3. Tom-Yamm-Goong BDOR", category: "Soup", price: "6,00", image: "/assets/pro-img.png", rating: 4, description: "Thai scharf-säuerliche Suppe mit Garnelen & Pilzen." },
+    { id: "soup-4", title: "B4. Tom-Kha-Kai HO", category: "Soup", price: "5,50", image: "/assets/pro-img.png", rating: 5, description: "Thai-Kokos Suppe mit Hühnerfleisch & Pilzen." },
+    { id: "soup-5", title: "B5. Wantan Suppe ABCF", category: "Soup", price: "6,00", image: "/assets/pro-img.png", rating: 4, description: "" },
+    { id: "soup-6", title: "B6. Chao Shou ABCEFMN", category: "Soup", price: "6,50", image: "/assets/pro-img.png", rating: 5, description: "Teigtaschen mit Huhn & Garnelen in Chili-Öl."},
 
     // ROLL
-    { id: "roll-1", title: "R01. CALIFORNIA ROLL", category: "Roll", price: "12,00", image: "/assets/pro-img.png", rating: 5, description: "Crab, avocado, and cucumber." },
-    { id: "roll-2", title: "R02. DRAGON ROLL", category: "Roll", price: "15,50", image: "/assets/pro-img.png", rating: 5, description: "Eel and cucumber topped with avocado." },
-    { id: "roll-3", title: "R03. SPICY TUNA ROLL", category: "Roll", price: "14,00", image: "/assets/pro-img.png", rating: 4, description: "Fresh tuna with spicy mayo and scallions." },
-    { id: "roll-4", title: "R04. RAINBOW ROLL", category: "Roll", price: "16,00", image: "/assets/pro-img.png", rating: 5, description: "California roll topped with assorted fish." },
-    { id: "roll-5", title: "R05. TIGER ROLL", category: "Roll", price: "14,50", image: "/assets/pro-img.png", rating: 5, description: "Shrimp tempura and cucumber." },
-    { id: "roll-6", title: "R06. VOLCANO ROLL", category: "Roll", price: "17,00", image: "/assets/pro-img.png", rating: 5, description: "Baked seafood mix on top of California roll." },
+    { id: "roll-1", title: "RS1. Dragon Roll ABDF – 8 Stk.", category: "Roll", price: "17,00", image: "/assets/pro-img.png", rating: 5, description: "Crab, avocado, and cucumber." },
+    { id: "roll-2", title: "RS2. Philadelphia Roll ADGN – 8 Stk.", category: "Roll", price: "13,00", image: "/assets/pro-img.png", rating: 5, description: "Eel and cucumber topped with avocado." },
+    { id: "roll-3", title: "RS3. Hokkaido Roll ABF – 8 Stk.", category: "Roll", price: "15,00", image: "/assets/pro-img.png", rating: 4, description: "Fresh tuna with spicy mayo and scallions." },
+    { id: "roll-4", title: "RS4. Spicy Salmon Roll ABCDG – 8 Stk. ", category: "Roll", price: "14,00", image: "/assets/pro-img.png", rating: 5, description: "California roll topped with assorted fish." },
 
     // DIM SUM
-    { id: "ds-1", title: "D01. SHRIMP HAKAO", category: "Dim Sum", price: "09,00", image: "/assets/pro-img.png", rating: 5, description: "Steamed translucent shrimp dumplings." },
-    { id: "ds-2", title: "D02. PORK SHUMAI", category: "Dim Sum", price: "08,50", image: "/assets/pro-img.png", rating: 4, description: "Open-faced steamed pork dumplings." },
-    { id: "ds-3", title: "D03. BBQ PORK BUNS", category: "Dim Sum", price: "07,50", image: "/assets/pro-img.png", rating: 4, description: "Fluffy steamed buns with sweet BBQ pork." },
-    { id: "ds-4", title: "D04. VEGGIE CRYSTAL", category: "Dim Sum", price: "08,00", image: "/assets/pro-img.png", rating: 5, description: "Steamed mixed vegetable dumplings." },
+    { id: "ds-1", title: "D01. SHRIMP HAKAODS1. Xiao Long Bao AFL – 4 Stk.", category: "Dim Sum", price: "6,00", image: "/assets/pro-img.png", rating: 5, description: "Steamed translucent shrimp dumplings." },
+    { id: "ds-2", title: "DS2. Shao Mai AFL – 4 Stk.", category: "Dim Sum", price: "6,50", image: "/assets/pro-img.png", rating: 4, description: "Open-faced steamed pork dumplings." },
+    { id: "ds-3", title: "DS3. Garnelen Teigtaschen ABFL – 4 Stk.", category: "Dim Sum", price: "6,00", image: "/assets/pro-img.png", rating: 4, description: "Fluffy steamed buns with sweet BBQ pork." },
+    { id: "ds-4", title: "DS4. Dim Sum Mix ABFL – 4 Stk.", category: "Dim Sum", price: "06,50", image: "/assets/pro-img.png", rating: 5, description: "Steamed mixed vegetable dumplings." },
 
     // MAKI
-    { id: "maki-1", title: "M01. SAKE MAKI", category: "Maki", price: "10,00", image: "/assets/pro-img.png", rating: 5, description: "Fresh salmon small roll." },
-    { id: "maki-2", title: "M02. TEKKA MAKI", category: "Maki", price: "12,00", image: "/assets/pro-img.png", rating: 5, description: "Fresh tuna small roll." },
-    { id: "maki-3", title: "M03. AVOCADO MAKI", category: "Maki", price: "08,00", image: "/assets/pro-img.png", rating: 4, description: "Creamy avocado small roll." },
-    { id: "maki-4", title: "M04. UNAGI MAKI", category: "Maki", price: "13,00", image: "/assets/pro-img.png", rating: 5, description: "Grilled eel with sweet soy sauce." },
+    { id: "maki-1", title: "DS5. Gurken Maki FM – 6 / 12 Stk.", category: "Maki", price: " 3,50 / € 6,00", image: "/assets/pro-img.png", rating: 5, description: "Fresh salmon small roll." },
+    { id: "maki-2", title: "DS6. Avocado Maki FMN (V) – 6 / 12 Stk.", category: "Maki", price: " 4,50 / € 8,00", image: "/assets/pro-img.png", rating: 5, description: "Fresh tuna small roll." },
+    { id: "maki-3", title: "DS7. Lachs Maki DFMN – 6 / 12 Stk.", category: "Maki", price: " 4,50 / € 8,00", image: "/assets/pro-img.png", rating: 4, description: "Creamy avocado small roll." },
+    { id: "maki-4", title: "DS8. Lachs Sashimi BDFMN – 3 Stk.", category: "Maki", price: "9,00", image: "/assets/pro-img.png", rating: 5, description: "Grilled eel with sweet soy sauce." },
 
     // MAIN COURSE
-    { id: "main-1", title: "MC1. TERIYAKI CHICKEN", category: "Main Course", price: "18,00", image: "/assets/pro-img.png", rating: 5, description: "Grilled chicken with teriyaki sauce." },
-    { id: "main-2", title: "MC2. BEEF BULGOGI", category: "Main Course", price: "22,00", image: "/assets/pro-img.png", rating: 5, description: "Korean style marinated beef." },
-    { id: "main-3", title: "MC3. RED CURRY DUCK", category: "Main Course", price: "20,50", image: "/assets/pro-img.png", rating: 4, description: "Crispy duck in spicy red curry." },
-    { id: "main-4", title: "MC4. SALMON STEAK", category: "Main Course", price: "24,00", image: "/assets/pro-img.png", rating: 5, description: "Pan-seared salmon with lemon butter." },
+    { id: "main-1", title: "W17. Hühnerfleisch mit Cashewnüssen BDHR", category: "Hauptspeisen", price: "15,00", image: "/assets/pro-img.png", rating: 5, description: "" },
+    { id: "main-2", title: "W2. Indisches Chili Chicken ACFM", category: "Hauptspeisen", price: "15,00", image: "/assets/pro-img.png", rating: 5, description: "" },
+    { id: "main-3", title: "C2. Sabjee Curry MO (V)", category: "Hauptspeisen", price: "13,00", image: "/assets/pro-img.png", rating: 4, description: "" },
+    { id: "main-4", title: "C6G. Kirscherbsen Curry MO (V) ", category: "Hauptspeisen", price: "13,00", image: "/assets/pro-img.png", rating: 5, description: "" },
+    { id: "main-5", title: "W8. Ayam Ros Merah AMNO ", category: "Hauptspeisen", price: "15,00", image: "/assets/pro-img.png", rating: 4, description: "Hühnerfleisch mit Kurkuma gebraten." },
+    { id: "main-6", title: "C6H. Kashmir Chicken Curry FMO", category: "Hauptspeisen", price: "15,00", image: "/assets/pro-img.png", rating: 5, description: "MitErdäpfeln, Cashewnüssen, Rosinen." },
+    { id: "main-7", title: "C3H. Rotes Thai Curry HO ", category: "Hauptspeisen", price: "15,00", image: "/assets/pro-img.png", rating: 5, description: "Mit Hühnerfleisch und Kokosmilch." },
+    { id: "main-8", title: "C3R. Rotes Thai Curry HO", category: "Hauptspeisen", price: "16,50", image: "/assets/pro-img.png", rating: 4, description: "Mit Rindfleisch und Kokosmilch." },
+    { id: "main-9", title: "C3S. Rotes Thai Curry BDHOR", category: "Hauptspeisen", price: "19,00", image: "/assets/pro-img.png", rating: 5, description: "Mit Garnelen und Kokosmilch." },
+    { id: "main-10", title: "C3G. Rotes Thai Curry HO", category: "Hauptspeisen", price: "13,00", image: "/assets/pro-img.png", rating: 5, description: "Mit Tofu, Gemüse und Kokosmilch." },
+    { id: "main-11", title: "W7. Dragon & Phoenix ABCDFHMNOR", category: "Hauptspeisen", price: "18,00", image: "/assets/pro-img.png", rating: 5, description: "Huhn, Garnelen & Gemüse mit leichtem Curry & Kurkuma." },
+    { id: "main-12", title: "W1R. Aus dem Wok gebraten mit Gemüse ABDFR", category: "Hauptspeisen", price: "16,00", image: "/assets/pro-img.png", rating: 4, description: "mit Rindfleisch." },
+    { id: "main-13", title: "AM3. Bulgogi AFN", category: "Hauptspeisen", price: "16,00", image: "/assets/pro-img.png", rating: 5, description: "Mariniertes Rindfleisch." },
+    { id: "main-14", title: "W6. Huhn Spezial AFMNO", category: "Hauptspeisen", price: "15,00", image: "/assets/pro-img.png", rating: 5, description: "Knuspriges Hühnerfilet mit gebratenem Gemüse in Currysauce." },
+    { id: "main-15", title: "AM5. Lachs Teriyaki ADFN", category: "Hauptspeisen", price: "16,00", image: "/assets/pro-img.png", rating: 5, description: "" },
+    { id: "main-16", title: "W6G. Tofu Special FMNO", category: "Hauptspeisen", price: "13,00", image: "/assets/pro-img.png", rating: 5, description: "Knuspriges Tofu auf gebratenem Gemüse mit leichter Currysauce" },
+    { id: "main-17", title: "AM7. Korean Fried Chicken ACFN", category: "Hauptspeisen", price: "15,50", image: "/assets/pro-img.png", rating: 5, description: "" },
+    { id: "main-18", title: "K1. Knusprige Ente ACFNO", category: "Hauptspeisen", price: "16,50", image: "/assets/pro-img.png", rating: 5, description: "Mit Salat & Knoblauchsauce" },
+    { id: "main-19", title: "W1G. Tofu und Gemuse ABDFR", category: "Hauptspeisen", price: "13,00", image: "/assets/pro-img.png", rating: 5, description: "im Wok gebraten." },
+    { id: "main-20", title: "K2. Knuspriges Hühnerfilet AFNO", category: "Hauptspeisen", price: "14,00", image: "/assets/pro-img.png", rating: 5, description: "Mit Salat & Knoblauchsauce." },
+    { id: "main-21", title: "K6H. Mango Chicken F", category: "Hauptspeisen", price: "14,50", image: "/assets/pro-img.png", rating: 5, description: "" },
+    { id: "main-22", title: "W3E. Acht Köstlichkeiten à la KHIM ABCDEFR", category: "Hauptspeisen", price: "16,00", image: "/assets/pro-img.png", rating: 5, description: "Huhn, Rind & Ente mit Gemüse aus dem Wok." },
 
     // RICE & NOODLES
-    { id: "rn-1", title: "RN1. EGG FRIED RICE", category: "Rice & Noodles", price: "11,00", image: "/assets/pro-img.png", rating: 4, description: "Stir-fried rice with eggs and peas." },
-    { id: "rn-2", title: "RN2. YAKI UDON", category: "Rice & Noodles", price: "14,50", image: "/assets/pro-img.png", rating: 5, description: "Thick wheat noodles with vegetables." },
-    { id: "rn-3", title: "RN3. BEEF CHOW MEIN", category: "Rice & Noodles", price: "15,00", image: "/assets/pro-img.png", rating: 5, description: "Stir-fried egg noodles with beef slices." },
-    { id: "rn-4", title: "RN4. SEAFOOD RAMEN", category: "Rice & Noodles", price: "17,00", image: "/assets/pro-img.png", rating: 5, description: "Japanese ramen with shrimp and squid." },
+    { id: "rn-1", title: "N4S. Pad Thai ACFR", category: "Rice & Noodles", price: "14,00", image: "/assets/pro-img.png", rating: 4, description: "Gebratene Reisbandnudeln mit Garnelen." },
+    { id: "rn-2", title: "N4. Gebratene Nudeln ACF", category: "Rice & Noodles", price: "10,00", image: "/assets/pro-img.png", rating: 5, description: "mit Ei und Gemüse." },
+    { id: "rn-3", title: "N4H. Gebratene Nudeln ACF", category: "Rice & Noodles", price: "11,00", image: "/assets/pro-img.png", rating: 5, description: "mit Hühnerfleisch." },
+    { id: "rn-4", title: "N5S. Thai-gebratene Nudeln ACFR", category: "Rice & Noodles", price: "15,00", image: "/assets/pro-img.png", rating: 5, description: "mit Garnelen." },
+    { id: "rn-5", title: "R3H. Gebratener Reis ACF", category: "Rice & Noodles", price: "11,00", image: "/assets/pro-img.png", rating: 4, description: "mit Hühnerfleisch." },
+    { id: "rn-6", title: "R1S. Thai gebratener Reis ACFR", category: "Rice & Noodles", price: "15,00", image: "/assets/pro-img.png", rating: 5, description: "mit Garnelen." },
 
     // BENTO
-    { id: "ben-1", title: "B01. SALMON BENTO", category: "Bento", price: "24,00", image: "/assets/pro-img.png", rating: 5, description: "Salmon teriyaki, tempura, and sides." },
-    { id: "ben-2", title: "B02. CHICKEN KASTU", category: "Bento", price: "21,00", image: "/assets/pro-img.png", rating: 5, description: "Breaded chicken with curry sauce box." },
-    { id: "ben-3", title: "B03. VEGGIE BENTO", category: "Bento", price: "19,00", image: "/assets/pro-img.png", rating: 4, description: "Vegetable tempura and tofu box." },
+    { id: "ben-1", title: "SB1. Avocado Maki Bento DFMN", category: "Bento", price: "13,00", image: "/assets/pro-img.png", rating: 5, description: "" },
+    { id: "ben-2", title: "SB2. Bulgogi Bento ADFMN", category: "Bento", price: "15,00", image: "/assets/pro-img.png", rating: 5, description: "Mariniertes Rindfleisch." },
+    { id: "ben-3", title: "SB3. Gyoza Bento ADFLMN", category: "Bento", price: "14,00", image: "/assets/pro-img.png", rating: 4, description: "Gegrillte Teigtaschen." },
+    { id: "ben-4", title: "SB4. Yasai Bento DFMN", category: "Bento", price: "13,00", image: "/assets/pro-img.png", rating: 5, description: "Gebratenes Gemüse." },
+    { id: "ben-5", title: "SB5. Lachs Bento ADFMN", category: "Bento", price: "15,00", image: "/assets/pro-img.png", rating: 5, description: "" },
+    { id: "ben-6", title: "SB6. Agamo Bento ADFMN", category: "Bento", price: "15,00", image: "/assets/pro-img.png", rating: 4, description: ".Gebratene Ente." },
 
     // DRINKS
-    { id: "dr-1", title: "D01. GREEN TEA", category: "Drinks", price: "04,00", image: "/assets/pro-img.png", rating: 5, description: "Hot Japanese green tea." },
-    { id: "dr-2", title: "D02. ICED MOCHI LATTE", category: "Drinks", price: "06,50", image: "/assets/pro-img.png", rating: 5, description: "Creamy iced coffee." },
-    { id: "dr-3", title: "D03. MANGO LASSI", category: "Drinks", price: "05,50", image: "/assets/pro-img.png", rating: 4, description: "Fresh mango yogurt drink." },
-    { id: "dr-4", title: "D04. SAKE (150ml)", category: "Drinks", price: "12,00", image: "/assets/pro-img.png", rating: 5, description: "Traditional Japanese rice wine." },
+    { id: "dr-1", title: "D1. Hausgemachter Eistee", category: "Getränke", price: "6,00", image: "/assets/pro-img.png", rating: 5, description: "Pfirsich oder Zitrone." },
+    { id: "dr-2", title: "D2. Raspberry-lemon lemonade", category: "Getränke", price: "6,60", image: "/assets/pro-img.png", rating: 5, description: "Cremiges Jogurtgetränk." },
+    { id: "dr-3", title: "D3. Hausgemachte Minz-Limonade", category: "Getränke", price: "6,00", image: "/assets/pro-img.png", rating: 4, description: "Exotisch und süß-fruchtig." },
+    { id: "dr-4", title: "D4. Butterfly Pea Lemonade", category: "Getränke", price: "6,00", image: "/assets/pro-img.png", rating: 5, description: "Erfrischende Limonade mit natürlichem Farbverlauf." },
+    { id: "dr-5", title: "D5. Blue Butterfly Soda", category: "Getränke", price: "6,00", image: "/assets/pro-img.png", rating: 5, description: "Spritziges Erfrischungsgetränk." },
 
     // DESSERT
-    { id: "des-1", title: "DS1. MOCHI ICE CREAM", category: "Dessert", price: "07,00", image: "/assets/pro-img.png", rating: 5, description: "Assorted rice cake ice cream." },
-    { id: "des-2", title: "DS2. MATCHA CAKE", category: "Dessert", price: "08,50", image: "/assets/pro-img.png", rating: 5, description: "Green tea infused cheesecake." },
-    { id: "des-3", title: "DS3. FRIED BANANA", category: "Dessert", price: "06,50", image: "/assets/pro-img.png", rating: 4, description: "Fried banana with honey and vanilla ice cream." },
-    { id: "des-4", title: "DS4. RED BEAN MOCHI", category: "Dessert", price: "07,50", image: "/assets/pro-img.png", rating: 5, description: "Sweet red bean rice cake." },
-    { id: "des-5", title: "DS5. ICE CREAM BOWL", category: "Dessert", price: "09,00", image: "/assets/pro-img.png", rating: 5, description: "Vanilla ice cream with toppings." },
-     { id: "des-6", title: "DS6. SESAME BALLS", category: "Dessert", price: "06,00", image: "/assets/pro-img.png", rating: 4, description: "Deep-fried glutinous rice balls with sesame." },  
+    { id: "des-1", title: "D1. Kuih Tayap AHOG (V)", category: "Dessert", price: "6,00", image: "/assets/pro-img.png", rating: 5, description: "Indonesische Kokospalatschinken." },
+    { id: "des-2", title: "D2. Gebackene Banane mit Honig AN", category: "Dessert", price: "4,50", image: "/assets/pro-img.png", rating: 5, description: "" },
+    { id: "des-3", title: "D3. Volcano ACHO", category: "Dessert", price: "6,00", image: "/assets/pro-img.png", rating: 4, description: "flambiertes Eis." },
+    { id: "des-4", title: "D4. Mango Lassi O 0,4l", category: "Dessert", price: "6,00", image: "/assets/pro-img.png", rating: 5, description: "" },
+    { id: "des-5", title: "D5. Mochi 1 stk. FG", category: "Dessert", price: "5,00", image: "/assets/pro-img.png", rating: 5, description: "Japanische Reiskuchen." },
+    { id: "des-6", title: "D6. Matcha Eis 2 stk. CG", category: "Dessert", price: "5,00", image: "/assets/pro-img.png", rating: 4, description: "" },
 ];
 
 const MenuPage = () => {
-    const categories = ["All", "Appetizer", "Soup", "Roll", "Dim Sum", "Maki", "Main Course", "Rice & Noodles", "Bento", "Drinks", "Dessert"];
+    const categories = ["All", "Vorspeise", "Soup", "Roll", "Dim Sum", "Maki", "Hauptspeisen", "Rice & Noodles", "Bento", "Getränke", "Dessert"];
     const [activeIndex, setActiveIndex] = useState(0);
     const [selectedDish, setSelectedDish] = useState<any>(null);
-    
+
     // State to track which categories are "Expanded" in the "All" view
     const [expandedCategories, setExpandedCategories] = useState<string[]>([]);
 
     const toggleExpand = (cat: string) => {
-        setExpandedCategories(prev => 
+        setExpandedCategories(prev =>
             prev.includes(cat) ? prev.filter(c => c !== cat) : [...prev, cat]
         );
     };
@@ -116,7 +148,7 @@ const MenuPage = () => {
                         {/* Explore More Button per category if more than 4 items */}
                         {categoryDishes.length > 4 && !isExpanded && (
                             <div className="flex justify-center mt-12">
-                                <button 
+                                <button
                                     onClick={() => toggleExpand(cat)}
                                     className="btn btn-primary lg"
                                 >

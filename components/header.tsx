@@ -24,8 +24,8 @@ const Header = () => {
                         <nav className='hidden md:block navigation lg:flex-1'>
                             <ul className='flex gap-10'>
                                 <li><Link href="/" className='uppercase text-base xl:text-xl! hover:text-secondary transition-colors'>Home</Link></li>
-                                <li><Link href="/menu" className='uppercase text-base xl:text-xl! hover:text-secondary transition-colors'>Menu</Link></li>
-                                <li><Link href="/contact" className='uppercase text-base xl:text-xl! hover:text-secondary transition-colors'>Contact</Link></li>
+                                <li><Link href="/menu" className='uppercase text-base xl:text-xl! hover:text-secondary transition-colors'>Speisekarte</Link></li>
+                                <li><Link href="/contact" className='uppercase text-base xl:text-xl! hover:text-secondary transition-colors'>Kontakt</Link></li>
                             </ul>
                         </nav>
 
@@ -43,11 +43,11 @@ const Header = () => {
                             <nav className='text-center'>
                                 <ul className='flex flex-col gap-8 mb-8'>
                                     <li><Link href="/" onClick={() => setIsMenuOpen(false)} className='uppercase text-xl font-bold hover:text-secondary transition-colors'>Home</Link></li>
-                                    <li><Link href="/menu" onClick={() => setIsMenuOpen(false)} className='uppercase text-xl font-bold hover:text-secondary transition-colors'>Menu</Link></li>
-                                    <li><Link href="/contact" onClick={() => setIsMenuOpen(false)} className='uppercase text-xl font-bold hover:text-secondary transition-colors'>Contact</Link></li>
+                                    <li><Link href="/menu" onClick={() => setIsMenuOpen(false)} className='uppercase text-xl font-bold hover:text-secondary transition-colors'>Speisekarte</Link></li>
+                                    <li><Link href="/contact" onClick={() => setIsMenuOpen(false)} className='uppercase text-xl font-bold hover:text-secondary transition-colors'>Kontakt</Link></li>
                                 </ul>
                                 <div className="text-center">
-                                    <p className='gradient-text text-xl mb-2'>Order Online Now</p>
+                                    <p className='gradient-text text-xl mb-2'> Jetzt online bestellen </p>
                                     <h4 className='text-2xl font-normal text-white'>+43 677 6317 8906</h4>
                                 </div>
                             </nav>
@@ -62,7 +62,7 @@ const Header = () => {
 
                         {/* Contact Info */}
                         <div className="contact-info text-end hidden md:block lg:flex-1">
-                            <p className='gradient-text text-base xl:text-xl!'>Order Online Now</p>
+                            <p className='gradient-text text-base xl:text-xl!'>Jetzt online bestellen</p>
                             <h4 className='text-xl xl:text-xl! font-normal' >+43 677 6317 8906</h4>
                         </div>
                     </div>

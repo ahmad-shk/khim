@@ -84,7 +84,7 @@ const SignatureDishes = () => {
                   >
                      {dishes.map((dish, index) => (
                         <SwiperSlide key={index}>
-                           <div className="aspect-[1/1] lg:aspect-[3/4] relative group/card overflow-hidden flex items-center justify-center text-center">
+                           <div className="aspect-[1/1] relative group/card overflow-hidden flex items-center justify-center text-center">
                               <img 
                                  className='absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover/card:scale-120'
                                  src={dish.image} 

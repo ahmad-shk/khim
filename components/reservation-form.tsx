@@ -58,21 +58,32 @@ const ReservationForm: React.FC = () => {
         return Object.keys(tempErrors).length === 0;
     };
 
-    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
+   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
 
-        if (validate()) {
-            console.log("Sending email to Admin: admin@restaurant.com");
-            console.log(`Sending confirmation to Customer: ${formData.email}`);
-            
-            alert("Vielen Dank! Ihre Reservierung wurde gesendet.");
-            
-            setFormData({
-                name: '', phone: '', email: '', date: '', 
-                time: '', person: '', remarks: ''
+    if (validate()) {
+        try {
+            const response = await fetch('/api/reservation', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
             });
+
+            if (response.ok) {
+                alert("Vielen Dank! Die Bestätigung wurde an Ihre E-Mail gesendet.");
+                setFormData({
+                    name: '', phone: '', email: '', date: '', 
+                    time: '', person: '', remarks: ''
+                });
+            } else {
+                alert("Etwas ist schiefgelaufen. Bitte versuchen Sie es später erneut.");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+            alert("Verbindung zum Server fehlgeschlagen.");
         }
-    };
+    }
+};
 
     // Common input class for reusability and black text
     const inputClass = "form-control text-black font-medium";

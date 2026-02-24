@@ -54,7 +54,7 @@ const WeeklyOffers = () => {
                                 </div>
                                 <h3 className="font-normal text-xl md:text-2xl text-primary mb-1">Spring Rolls</h3>
                                 <p className="text-sm md:text-xl font-light text-gray-800 leading-snug">
-                                    Crispy fried rolls filled with fresh vegetables and spices served with homemade sweet and sour sauce.
+                                    Crispy fried spring rolls filled with fresh vegetables and delicate spices. Served with a homemade sweet and sour sauce for the perfect flavor.
                                 </p>
                             </div>
                         </SwiperSlide>
@@ -65,10 +65,9 @@ const WeeklyOffers = () => {
                                 <div className="aspect-4/3 bg-gray-200 rounded-2xl mb-4 overflow-hidden relative">
                                     <Image src="/assets/pro-img.png" alt="Spring Rolls" fill className="object-cover" />
                                 </div>
-                                <h3 className="font-normal text-xl md:text-2xl text-primary mb-1">Spring Rolls</h3>
+                                <h3 className="font-normal text-xl md:text-2xl text-primary mb-1">Chicken satay</h3>
                                 <p className="text-sm md:text-xl font-light text-gray-800 leading-snug">
-                                    Crispy fried rolls filled with fresh vegetables and spices served with homemade sweet and sour sauce.
-                                </p>
+                                    Tenderly grilled chicken skewers with a creamy peanut sauce. Served with fresh coriander and a light lime dip for an authentic flavor.                                </p>
                             </div>
                         </SwiperSlide>
 
@@ -78,9 +77,9 @@ const WeeklyOffers = () => {
                                 <div className="aspect-4/3 bg-gray-200 rounded-2xl mb-4 overflow-hidden relative">
                                     <Image src="/assets/pro-img.png" alt="Spring Rolls" fill className="object-cover" />
                                 </div>
-                                <h3 className="font-normal text-xl md:text-2xl text-primary mb-1">Spring Rolls</h3>
+                                <h3 className="font-normal text-xl md:text-2xl text-primary mb-1">Appetizers</h3>
                                 <p className="text-sm md:text-xl font-light text-gray-800 leading-snug">
-                                    Crispy fried rolls filled with fresh vegetables and spices served with homemade sweet and sour sauce.
+                                    A fine selection of mini spring rolls, dumplings, and crispy vegetable pastries. Perfect for sharing or as a delicious starter to your meal.
                                 </p>
                             </div>
                         </SwiperSlide>
@@ -91,9 +90,9 @@ const WeeklyOffers = () => {
                                 <div className="aspect-4/3 bg-gray-200 rounded-2xl mb-4 overflow-hidden relative">
                                     <Image src="/assets/pro-img.png" alt="Spring Rolls" fill className="object-cover" />
                                 </div>
-                                <h3 className="font-normal text-xl md:text-2xl text-primary mb-1">Spring Rolls</h3>
+                                <h3 className="font-normal text-xl md:text-2xl text-primary mb-1">Chicken wings</h3>
                                 <p className="text-sm md:text-xl font-light text-gray-800 leading-snug">
-                                    Crispy fried rolls filled with fresh vegetables and spices served with homemade sweet and sour sauce.
+                                    Crispy baked chicken wings with a spicy glaze and a subtle hint of chili. Ideal for lovers of bold flavor and tender texture.
                                 </p>
                             </div>
                         </SwiperSlide>

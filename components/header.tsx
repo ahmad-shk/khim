@@ -70,8 +70,14 @@ const Header = () => {
 
                         {/* Contact Info */}
                         <div className="contact-info text-end hidden md:block lg:flex-1">
+
+                            
                             <p className='gradient-text text-base xl:text-xl!'>Jetzt online bestellen</p>
+                            <a 
+                            href='https://wa.me/4367763178906' target='_blank' rel='noopener noreferrer'className="hover:underline" >
                             <h4 className='text-xl xl:text-xl! font-normal' >+43 677 6317 8906</h4>
+                            </a>
+                            
                         </div>
                     </div>
                 </div>

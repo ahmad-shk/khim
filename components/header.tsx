@@ -13,7 +13,7 @@ const Header = () => {
                 <div className="container">
                     <div className="flex items-center justify-center md:justify-between">
                         {/* Mobile Menu Button */}
-                        <button 
+                        <button
                             className="md:hidden z-50 text-white absolute top-7 right-7"
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
                         >
@@ -34,7 +34,7 @@ const Header = () => {
                             fixed inset-0 bg-primary/95 backdrop-blur-sm z-50 flex items-center justify-center transition-transform duration-300 md:hidden
                             ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}
                         `}>
-                            <button 
+                            <button
                                 className="md:hidden z-50 text-white absolute top-7 right-7"
                                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                             >
@@ -46,9 +46,17 @@ const Header = () => {
                                     <li><Link href="/menu" onClick={() => setIsMenuOpen(false)} className='uppercase text-xl font-bold hover:text-secondary transition-colors'>Speisekarte</Link></li>
                                     <li><Link href="/contact" onClick={() => setIsMenuOpen(false)} className='uppercase text-xl font-bold hover:text-secondary transition-colors'>Kontakt</Link></li>
                                 </ul>
-                                <div className="text-center">
-                                    <p className='gradient-text text-xl mb-2'> Jetzt online bestellen </p>
-                                    <h4 className='text-2xl font-normal text-white'>+43 677 6317 8906</h4>
+                                <div className="contact-info text-end hidden md:block lg:flex-1">
+                                    <p className='gradient-text text-base xl:text-xl!'>Jetzt online bestellen</p>
+                                    {/* WhatsApp Redirect Link */}
+                                    <a
+                                        href="https://wa.me/4367763178906"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="hover:underline"
+                                    >
+                                        <h4 className='text-xl xl:text-xl! font-normal'>+43 677 6317 8906</h4>
+                                    </a>
                                 </div>
                             </nav>
                         </div>

@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
@@ -183,7 +184,7 @@ const ContactPage = () => {
                         </div>
 
                         <div className='text-center'>
-                            <button className="btn btn-primary lg">
+                            <button className="btn btn-primary lg" onClick={() => window.open('https://www.google.com/maps?ll=48.202486,15.624584&z=17&t=m&hl=en&gl=AT&mapclient=embed', '_blank')}>
                                 Route in Google Maps Planen
                             </button>
                         </div>

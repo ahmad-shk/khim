@@ -25,7 +25,7 @@ const InstagramFeed = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
                     <div className="bg-gray-200 rounded-3xl overflow-hidden relative group">
                         <div className='image'>
-                            <img src="assets/social-media-img.png" alt=''/>
+                            <img src="assets/amb.png" alt=''/>
                         </div>
                     </div>
                     <div className="bg-gray-200 rounded-3xl overflow-hidden relative group">
@@ -35,7 +35,7 @@ const InstagramFeed = () => {
                     </div>
                     <div className="bg-gray-200 rounded-3xl overflow-hidden relative group">
                         <div className='image'>
-                            <img src="assets/social-media-img.png" alt=''/>
+                            <img src="assets/amb1.png" alt=''/>
                         </div>
                     </div>
                 </div>

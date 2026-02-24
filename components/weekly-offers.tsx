@@ -63,7 +63,7 @@ const WeeklyOffers = () => {
                         <SwiperSlide>
                             <div className="bg-white text-primary md:p-5 p-3 md:rounded-4xl rounded-xl shadow-lg h-full">
                                 <div className="aspect-4/3 bg-gray-200 rounded-2xl mb-4 overflow-hidden relative">
-                                    <Image src="/assets/pro-img.png" alt="Spring Rolls" fill className="object-cover" />
+                                    <Image src="/Khim_item_images/82.png" alt="Spring Rolls" fill className="object-cover" />
                                 </div>
                                 <h3 className="font-normal text-xl md:text-2xl text-primary mb-1">Chicken satay</h3>
                                 <p className="text-sm md:text-xl font-light text-gray-800 leading-snug">
@@ -75,7 +75,7 @@ const WeeklyOffers = () => {
                         <SwiperSlide>
                             <div className="bg-white text-primary md:p-5 p-3 md:rounded-4xl rounded-xl shadow-lg h-full">
                                 <div className="aspect-4/3 bg-gray-200 rounded-2xl mb-4 overflow-hidden relative">
-                                    <Image src="/assets/pro-img.png" alt="Spring Rolls" fill className="object-cover" />
+                                    <Image src="/Khim_item_images/83.png" alt="Spring Rolls" fill className="object-cover" />
                                 </div>
                                 <h3 className="font-normal text-xl md:text-2xl text-primary mb-1">Appetizers</h3>
                                 <p className="text-sm md:text-xl font-light text-gray-800 leading-snug">
@@ -88,7 +88,7 @@ const WeeklyOffers = () => {
                          <SwiperSlide>
                             <div className="bg-white text-primary md:p-5 p-3 md:rounded-4xl rounded-xl shadow-lg h-full">
                                 <div className="aspect-4/3 bg-gray-200 rounded-2xl mb-4 overflow-hidden relative">
-                                    <Image src="/assets/pro-img.png" alt="Spring Rolls" fill className="object-cover" />
+                                    <Image src="/Khim_item_images/84.png" alt="Chicken Wings" fill className="object-cover" />
                                 </div>
                                 <h3 className="font-normal text-xl md:text-2xl text-primary mb-1">Chicken wings</h3>
                                 <p className="text-sm md:text-xl font-light text-gray-800 leading-snug">

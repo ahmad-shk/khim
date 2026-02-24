@@ -9,34 +9,32 @@ import 'swiper/css/navigation'
 
 const dishes = [
   {
-    title: "Kawap",
-    subtitle: "(Lamb Skewers)",
-    description: "Charcoal-grilled lamb seasoned with authentic Uyghur spices.",
-    image: "/assets/dish-large-img.png"
+    title: "Roast duck fillet with mixed vegetables (ADFR)",
+    image: "/assets/amb2.png"
   },
   {
-    title: "Uyghur Desserts",
-    subtitle: "(Sweet treats)",
-    description: "Authentic Uyghur desserts made with honey, nuts and traditional spices.",
-    image: "/assets/dish-small-img.png"
+    title: "Sesame Chicken (ADFN)",
+    image: "/assets/amb3.png"
   },
   {
-    title: "Samsa",
-    subtitle: "(Meat Pastries)",
-    description: "Oven-baked pastry stuffed with spiced meat, golden and crisp.",
-    image: "/assets/dish-small-img.png"
+    title: "Hot Chili Beef (DFR)",
+    image: "/assets/amb4.png"
   },
   {
-    title: "Polo",
-    subtitle: "(Uyghur Pilaf)",
-    description: "Fragrant rice cooked with lamb, carrots, and a touch of sweetness.",
-    image: "/assets/dish-large-img.png"
+    title: "Fried vegetables with glass noodles (F)",
+    image: "/assets/amb5.png"
   },
   {
-    title: "Kawap",
-    subtitle: "(Lamb Skewers)",
-    description: "Charcoal-grilled lamb seasoned with authentic Uyghur spices.",
-    image: "/assets/dish-large-img.png"
+    title: "Chicken Chop Suey (D,F,R)",
+    image: "/assets/amb6.png"
+  },
+  {
+    title: "Eight treasures sharf (DFR)",
+    image: "/assets/amb7.png"
+  },
+  {
+    title: "Japanese katsu curry with crispy chicken fillet (AMNO)",
+    image: "/assets/amb8.png"
   }
 ];
 
@@ -74,7 +72,7 @@ const SignatureDishes = () => {
                               slidesPerView: 2,
                            },
                            1024: {
-                              slidesPerView: 4,
+                              slidesPerView: 3,
                            },
                            1500: {
                               slidesPerView: 4,
@@ -95,12 +93,6 @@ const SignatureDishes = () => {
                                  <h3 className="text-[#EFD977] text-4xl font-normal leading-tight">
                                     {dish.title}
                                  </h3>
-                                 <p className="text-white text-xl sm:text-2xl mb-4">
-                                    {dish.subtitle}
-                                 </p>
-                                 <p className="text-white text-xl font-light max-w-xs">
-                                    {dish.description}
-                                 </p>
                               </div>
                            </div>
                         </SwiperSlide>

@@ -36,9 +36,9 @@ const DISHES_DATA = [
 
     // DIM SUM
     { id: "ds-1", title: "D01. SHRIMP HAKAODS1. Xiao Long Bao AFL – 4 Stk.", category: "Dim Sum", price: "6,00", image: "/Khim_item_images/13.jpg", rating: 5, description: "Steamed translucent shrimp dumplings." },
-    { id: "ds-2", title: "DS2. Shao Mai AFL – 4 Stk.", category: "Dim Sum", price: "6,50", image: "/Khim_item_images/15.jpg", rating: 4, description: "Open-faced steamed pork dumplings." },
+    { id: "ds-2", title: "DS2. Shao Mai AFL – 4 Stk.", category: "Dim Sum", price: "6,00", image: "/Khim_item_images/15.jpg", rating: 4, description: "Open-faced steamed pork dumplings." },
     { id: "ds-3", title: "DS3. Garnelen Teigtaschen ABFL – 4 Stk.", category: "Dim Sum", price: "6,00", image: "/Khim_item_images/14.jpg", rating: 4, description: "Fluffy steamed buns with sweet BBQ pork." },
-    { id: "ds-4", title: "DS4. Dim Sum Mix ABFL – 4 Stk.", category: "Dim Sum", price: "06,50", image: "/Khim_item_images/16.jpg", rating: 5, description: "Steamed mixed vegetable dumplings." },
+    { id: "ds-4", title: "DS4. Dim Sum Mix ABFL – 4 Stk.", category: "Dim Sum", price: "6,50", image: "/Khim_item_images/16.jpg", rating: 5, description: "Steamed mixed vegetable dumplings." },
 
     // MAKI
     { id: "maki-1", title: "DS5. Gurken Maki FM – 6 / 12 Stk.", category: "Maki", price: " 3,50 / € 6,00", image: "/Khim_item_images/24.jpg", rating: 5, description: "Fresh salmon small roll." },
@@ -54,7 +54,7 @@ const DISHES_DATA = [
     { id: "main-5", title: "W8. Ayam Ros Merah AMNO ", category: "Hauptspeisen", price: "15,00", image: "/Khim_item_images/53.jpg", rating: 4, description: "Hühnerfleisch mit Kurkuma gebraten." },
     { id: "main-6", title: "C6H. Kashmir Chicken Curry FMO", category: "Hauptspeisen", price: "15,00", image: "/Khim_item_images/52.jpg", rating: 5, description: "MitErdäpfeln, Cashewnüssen, Rosinen." },
     { id: "main-7", title: "C3H. Rotes Thai Curry HO ", category: "Hauptspeisen", price: "15,00", image: "/Khim_item_images/47.jpg", rating: 5, description: "Mit Hühnerfleisch und Kokosmilch." },
-    { id: "main-8", title: "C3R. Rotes Thai Curry HO", category: "Hauptspeisen", price: "16,50", image: "/Khim_item_images/48.jpg", rating: 4, description: "Mit Rindfleisch und Kokosmilch." },
+    { id: "main-8", title: "C3R. Rotes Thai Curry HO", category: "Hauptspeisen", price: "16,00", image: "/Khim_item_images/48.jpg", rating: 4, description: "Mit Rindfleisch und Kokosmilch." },
     { id: "main-9", title: "C3S. Rotes Thai Curry BDHOR", category: "Hauptspeisen", price: "19,00", image: "/Khim_item_images/50.jpg", rating: 5, description: "Mit Garnelen und Kokosmilch." },
     { id: "main-10", title: "C3G. Rotes Thai Curry HO", category: "Hauptspeisen", price: "13,00", image:"/Khim_item_images/49.jpg" , rating : 5 , description : "" },
     { id:"main-11" , title:"W7. Dragon & Phoenix ABCDFHMNOR" , category:"Hauptspeisen" , price:"18,00" , image:"/Khim_item_images/45.jpg" , rating : 5 , description:"Huhn,Garnelen & Gemüse mit leichtem Curry & Kurkuma." },

@@ -220,6 +220,7 @@ body {
 
 .weekly-offers {
   background: url(../public/assets/offers-bg.png) center top repeat-x;
+  background-size: cover;
 }
 
 .weekly-offers .ornament {

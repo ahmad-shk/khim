@@ -51,7 +51,7 @@ const DISHES_DATA = [
     { id: "main-2", title: "W2. Indisches Chili Chicken ACFM", category: "Hauptspeisen", price: "15,00", image: "/Khim_item_images/51.jpg", rating: 5, description: "" },
     { id: "main-3", title: "C2. Sabjee Curry MO (V)", category: "Hauptspeisen", price: "13,00", image: "/Khim_item_images/56.jpg", rating: 4, description: "" },
     { id: "main-4", title: "C6G. Kirscherbsen Curry MO (V) ", category: "Hauptspeisen", price: "13,00", image: "/Khim_item_images/54.jpg", rating: 5, description: "" },
-    { id: "main-5", title: "W8. Ayam Ros Merah AMNO ", category: "Hauptspeisen", price: "15,00", image: "/Khim_item_images/53.jpg", rating: 4, description: "Hühnerfleisch mit Kurkuma gebraten." },
+    { id: "main-5", title: "W8. Ayam Ros Merah AMNO", category: "Hauptspeisen", price: "15,00", image: "/Khim_item_images/53.jpg", rating: 4, description: "Hühnerfleisch mit Kurkuma gebraten." },
     { id: "main-6", title: "C6H. Kashmir Chicken Curry FMO", category: "Hauptspeisen", price: "15,00", image: "/Khim_item_images/52.jpg", rating: 5, description: "MitErdäpfeln, Cashewnüssen, Rosinen." },
     { id: "main-7", title: "C3H. Rotes Thai Curry HO ", category: "Hauptspeisen", price: "15,00", image: "/Khim_item_images/47.jpg", rating: 5, description: "Mit Hühnerfleisch und Kokosmilch." },
     { id: "main-8", title: "C3R. Rotes Thai Curry HO", category: "Hauptspeisen", price: "16,00", image: "/Khim_item_images/48.jpg", rating: 4, description: "Mit Rindfleisch und Kokosmilch." },

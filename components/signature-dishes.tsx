@@ -26,7 +26,7 @@ const dishes = [
   },
   {
     title: "Chicken Chop Suey (D,F,R)",
-    image: "/assets/amb6.png"
+    image: "/assets/amb9.jpeg"
   },
   {
     title: "Eight treasures sharf (DFR)",

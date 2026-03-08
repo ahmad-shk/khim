@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { Fraunces } from "next/font/google";
+import Script from 'next/script';
 import "./globals.css";
 import "./responsive.css";
 import Header from "@/components/header";
 import PathnameHandler from "@/components/pathname-handler";
 import { ConsentManager } from "./consent-manager";
+import { GoogleTagManager } from '@next/third-parties/google';
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -24,29 +26,46 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-        <html lang="en">
-          <head>
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
+    <html lang="en">
+      <head>
+        <Script
+          id="gtm-script"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-KJG6QK5C');
+            `,
+          }}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
               if (window.location.pathname === '/menu' || window.location.pathname === '/contact') {
                 document.documentElement.classList.add('inner--page');
               }
             `,
-              }}
-            />
-          </head>
-          <body
-            className={`${fraunces.variable} antialiased`}
-          >
-    		<ConsentManager>
-    			
-            <PathnameHandler />
-            <Header />
-            {children}
-          
-    		</ConsentManager>
-    	</body>
-        </html>
-      )
+          }}
+        />
+      </head>
+      <body
+        className={`${fraunces.variable} antialiased`}
+      >
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJG6QK5C"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+        <GoogleTagManager gtmId="GTM-KJG6QK5C" />
+        <ConsentManager>
+
+          <PathnameHandler />
+          <Header />
+          {children}
+
+        </ConsentManager>
+      </body>
+    </html>
+  )
 }

@@ -11,32 +11,3 @@ export default function CookiebotWrapper() {
     />
   );
 }
-
-// "use client";
-
-// import { 
-//   ConsentManagerProvider, 
-//   CookieBanner, 
-//   ConsentManagerDialog 
-// } from '@c15t/nextjs';
-
-// export default function ClientConsentProvider({ children }: { children: React.ReactNode }) {
-//   return (
-//     <ConsentManagerProvider
-//       options={{
-//         // mode: 'c15t',
-//         // mode: 'local',
-//         // backendURL: '/api/c15t',
-//         // consentCategories: ['necessary', 'marketing'],
-// // 
-//         // ignoreGeoLocation: true,
-//       }}
-//     >
-//       <CookieBanner />
-//       <ConsentManagerDialog />
-//       {children}
-//     </ConsentManagerProvider>
-//   );
-// }
-
-

@@ -4,6 +4,7 @@ import "./globals.css";
 import "./responsive.css";
 import Header from "@/components/header";
 import PathnameHandler from "@/components/pathname-handler";
+import { ConsentManager } from "./consent-manager";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -17,32 +18,35 @@ export const metadata: Metadata = {
 };
 
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
+        <html lang="en">
+          <head>
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
               if (window.location.pathname === '/menu' || window.location.pathname === '/contact') {
                 document.documentElement.classList.add('inner--page');
               }
             `,
-          }}
-        />
-      </head>
-      <body
-        className={`${fraunces.variable} antialiased`}
-      >
-        <PathnameHandler />
-        <Header />
-        {children}
-      </body>
-    </html>
-  );
+              }}
+            />
+          </head>
+          <body
+            className={`${fraunces.variable} antialiased`}
+          >
+    		<ConsentManager>
+    			
+            <PathnameHandler />
+            <Header />
+            {children}
+          
+    		</ConsentManager>
+    	</body>
+        </html>
+      )
 }

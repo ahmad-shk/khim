@@ -49,8 +49,8 @@ export function ConsentManager({ children }: { children: ReactNode }) {
 	return (
 		<ConsentManagerProvider
 			options={{
-					// mode: 'offline',
-					mode: 'c15t',
+					mode: 'offline',
+					// mode: 'c15t',
 					backendURL: '/api/c15t',
 					consentCategories: ['necessary', 'marketing'], // Optional: Specify which consent categories to show in the banner. 
 					ignoreGeoLocation: true, // Useful for development to always view the banner.

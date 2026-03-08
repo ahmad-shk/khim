@@ -562,5 +562,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .bg-gradient {
   background: linear-gradient(90deg, #274891 0%, #091C46 100%);
-  opacity: .4;
+  opacity: .3;
+}
+
+.dish-slider .layer {z-index: 1;}
+.dish-slider .layer:hover ~ img,
+.dish-slider .layer:hover ~ img {
+  transform: scale(1.1);
 }

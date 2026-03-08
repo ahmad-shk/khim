@@ -64,8 +64,8 @@ const SignatureDishes = () => {
                      spaceBetween={1}
                      slidesPerView={1}
                      navigation={{
-                           prevEl: '.swiper-button-prev-custom',
-                           nextEl: '.swiper-button-next-custom',
+                           prevEl: '.swiper-button-prev-custom-arrow',
+                           nextEl: '.swiper-button-next-custom-arrow',
                      }}
                      breakpoints={{
                            640: {
@@ -82,15 +82,15 @@ const SignatureDishes = () => {
                   >
                      {dishes.map((dish, index) => (
                         <SwiperSlide key={index}>
-                           <div className="aspect-[1/1] relative group/card overflow-hidden flex items-center justify-center text-center">
+                           <div className="aspect-[1/0.9] relative group/card overflow-hidden flex items-end justify-center text-center p-10">
+                              <div className="layer absolute bg-gradient inset-0 flex flex-col items-center justify-center text-center p-6 transition-colors duration-300 group-hover/card:bg-black/30"></div>
                               <img 
                                  className='absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover/card:scale-120'
                                  src={dish.image} 
                                  alt={dish.title} 
                               />
-                              <div className="absolute bg-gradient inset-0 flex flex-col items-center justify-center text-center p-6 transition-colors duration-300 group-hover/card:bg-black/40"></div>
                               <div className="relative z-1">
-                                 <h3 className="text-[#EFD977] text-4xl font-normal leading-tight">
+                                 <h3 className="text-[#EFD977] text-3xl font-normal leading-tight">
                                     {dish.title}
                                  </h3>
                               </div>
@@ -103,7 +103,7 @@ const SignatureDishes = () => {
                {/* Navigation Arrows */}
                <div className="flex justify-center items-center gap-8 mt-12 sm:mt-16">
                   <button 
-                     className="swiper-button-prev-custom transition-transform hover:scale-110 active:scale-95 cursor-pointer disabled:opacity-30"
+                     className="swiper-button-prev-custom-arrow transition-transform hover:scale-110 active:scale-95 cursor-pointer disabled:opacity-30"
                      aria-label="Previous slide"
                   >
                      <svg width="128" height="45" viewBox="0 0 128 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -111,7 +111,7 @@ const SignatureDishes = () => {
                      </svg>
                   </button>
                   <button 
-                     className="swiper-button-next-custom transition-transform hover:scale-110 active:scale-95 cursor-pointer disabled:opacity-30"
+                     className="swiper-button-next-custom-arrow transition-transform hover:scale-110 active:scale-95 cursor-pointer disabled:opacity-30"
                      aria-label="Next slide"
                   >
                      <svg width="128" height="45" viewBox="0 0 128 45" fill="none" xmlns="http://www.w3.org/2000/svg">

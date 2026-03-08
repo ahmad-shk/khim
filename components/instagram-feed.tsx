@@ -22,46 +22,46 @@ const InstagramFeed = () => {
                     Besuchen Sie uns auf Instagram für Einblicke in unsere Küche, neue Gerichte und exklusive Angebote.
                 </p>
 
-               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-    {/* Bild 1 */}
-    <div className="bg-gray-200 rounded-3xl overflow-hidden relative group cursor-pointer shadow-lg">
-        <div className="image h-full w-full">
-            <img 
-                src="assets/amb.png" 
-                alt="" 
-                className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
-            />
-        </div>
-        {/* Dunkles Overlay beim Hover */}
-        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
-    </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                    {/* Bild 1 */}
+                    <div className="bg-gray-200 rounded-3xl overflow-hidden relative group cursor-pointer shadow-lg">
+                        <div className="layer absolute z-1 inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
+                        <div className="image h-full w-full">
+                            <img
+                                src="assets/amb.png"
+                                alt=""
+                                className="w-full h-full object-cover transition-transform duration-400 ease-in-out group-hover:scale-110"
+                            />
+                        </div>
+                        {/* Dunkles Overlay beim Hover */}
+                    </div>
 
-    {/* Bild 2 */}
-    <div className="bg-gray-200 rounded-3xl overflow-hidden relative group cursor-pointer shadow-lg">
-        <div className="image h-full w-full">
-            <img 
-                src="assets/social-media-img.png" 
-                alt="" 
-                className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
-            />
-        </div>
-        {/* Dunkles Overlay beim Hover */}
-        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
-    </div>
+                    {/* Bild 2 */}
+                    <div className="bg-gray-200 rounded-3xl overflow-hidden relative group cursor-pointer shadow-lg">
+                        {/* Dunkles Overlay beim Hover */}
+                        <div className="layer absolute z-1 inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
+                        <div className="image h-full w-full">
+                            <img
+                                src="assets/social-media-img.png"
+                                alt=""
+                                className="w-full h-full object-cover transition-transform duration-400 ease-in-out group-hover:scale-110"
+                            />
+                        </div>
+                    </div>
 
-    {/* Bild 3 */}
-    <div className="bg-gray-200 rounded-3xl overflow-hidden relative group cursor-pointer shadow-lg">
-        <div className="image h-full w-full">
-            <img 
-                src="assets/amb1.png" 
-                alt="" 
-                className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
-            />
-        </div>
-        {/* Dunkles Overlay beim Hover */}
-        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
-    </div>
-</div>
+                    {/* Bild 3 */}
+                    <div className="bg-gray-200 rounded-3xl overflow-hidden relative group cursor-pointer shadow-lg">
+                        {/* Dunkles Overlay beim Hover */}
+                        <div className="layer absolute z-1 inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
+                        <div className="image h-full w-full">
+                            <img
+                                src="assets/amb1.png"
+                                alt=""
+                                className="w-full h-full object-cover transition-transform duration-400 ease-in-out group-hover:scale-110"
+                            />
+                        </div>
+                    </div>
+                </div>
                 <Link
                     href="https://www.instagram.com/khim.asia.cuisine"
                     target="_blank"

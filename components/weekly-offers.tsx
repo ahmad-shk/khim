@@ -47,13 +47,13 @@ const WeeklyOffers = () => {
                     >
                         {/* Offer Card 1 */}
                         <SwiperSlide>
-                            <div className="group bg-white text-primary md:p-5 p-3 md:rounded-4xl rounded-xl shadow-lg h-full transition-all duration-500 focus:-translate-y-3 hover:-translate-y-3 active:-translate-y-3 hover:shadow-2xl active:shadow-2xl cursor-pointer my-4">
+                            <div className="group bg-white text-primary md:p-5 p-3 md:rounded-4xl rounded-xl shadow-lg h-full transition-all duration-500 cursor-pointer my-4">
                                 <div className="aspect-4/3 bg-gray-200 rounded-2xl mb-4 overflow-hidden relative">
                                     <Image
                                         src="/assets/pro-img.png"
                                         alt="Spring Rolls"
                                         fill
-                                        className="object-cover transition-transform duration-700 group-hover:scale-120 group-active:scale-120"
+                                        className="object-cover transition-transform duration-700"
                                     />
                                 </div>
                                 <h3 className="font-normal text-xl md:text-2xl text-primary mb-1 transition-colors group-hover:text-secondary">Spring Rolls</h3>
@@ -65,13 +65,13 @@ const WeeklyOffers = () => {
 
                         {/* Offer Card 2 */}
                         <SwiperSlide>
-                            <div className="group bg-white text-primary md:p-5 p-3 md:rounded-4xl rounded-xl shadow-lg h-full transition-all duration-500 focus:-translate-y-3 hover:-translate-y-3 active:-translate-y-3 hover:shadow-2xl active:shadow-2xl cursor-pointer my-4">
+                            <div className="group bg-white text-primary md:p-5 p-3 md:rounded-4xl rounded-xl shadow-lg h-full transition-all duration-500 cursor-pointer my-4">
                                 <div className="aspect-4/3 bg-gray-200 rounded-2xl mb-4 overflow-hidden relative">
                                     <Image
                                         src="/Khim_item_images/82.png"
                                         alt="Chicken satay"
                                         fill
-                                        className="object-cover transition-transform duration-700 group-hover:scale-120 group-active:scale-120"
+                                        className="object-cover transition-transform duration-700"
                                     />
                                 </div>
                                 <h3 className="font-normal text-xl md:text-2xl text-primary mb-1 transition-colors group-hover:text-secondary">Chicken satay</h3>
@@ -83,13 +83,13 @@ const WeeklyOffers = () => {
 
                         {/* Offer Card 3 */}
                         <SwiperSlide>
-                            <div className="group bg-white text-primary md:p-5 p-3 md:rounded-4xl rounded-xl shadow-lg h-full transition-all duration-500 focus:-translate-y-3 hover:-translate-y-3 active:-translate-y-3 hover:shadow-2xl active:shadow-2xl cursor-pointer my-4">
+                            <div className="group bg-white text-primary md:p-5 p-3 md:rounded-4xl rounded-xl shadow-lg h-full transition-all duration-500 cursor-pointer my-4">
                                 <div className="aspect-4/3 bg-gray-200 rounded-2xl mb-4 overflow-hidden relative">
                                     <Image
                                         src="/Khim_item_images/83.png"
                                         alt="Appetizers"
                                         fill
-                                        className="object-cover transition-transform duration-700 group-hover:scale-120 group-active:scale-120"
+                                        className="object-cover transition-transform duration-700"
                                     />
                                 </div>
                                 <h3 className="font-normal text-xl md:text-2xl text-primary mb-1 transition-colors group-hover:text-secondary">Appetizers</h3>
@@ -101,13 +101,13 @@ const WeeklyOffers = () => {
 
                         {/* Offer Card 4 */}
                         <SwiperSlide>
-                            <div className="group bg-white text-primary md:p-5 p-3 md:rounded-4xl rounded-xl shadow-lg h-full transition-all duration-500 focus:-translate-y-3 hover:-translate-y-3 active:-translate-y-3 hover:shadow-2xl active:shadow-2xl cursor-pointer my-4">
+                            <div className="group bg-white text-primary md:p-5 p-3 md:rounded-4xl rounded-xl shadow-lg h-full transition-all duration-500 cursor-pointer my-4">
                                 <div className="aspect-4/3 bg-gray-200 rounded-2xl mb-4 overflow-hidden relative">
                                     <Image
                                         src="/Khim_item_images/84.png"
                                         alt="Chicken Wings"
                                         fill
-                                        className="object-cover transition-transform duration-700 group-hover:scale-120 group-active:scale-120"
+                                        className="object-cover transition-transform duration-700"
                                     />
                                 </div>
                                 <h3 className="font-normal text-xl md:text-2xl text-primary mb-1 transition-colors group-hover:text-secondary">Chicken wings</h3>

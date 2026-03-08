@@ -85,7 +85,7 @@ const SignatureDishes = () => {
                            <div className="aspect-[1/0.9] relative group/card overflow-hidden flex items-end justify-center text-center p-8">
                               <div className="layer absolute bg-gradient inset-0 flex flex-col items-center justify-center text-center p-6 transition-colors duration-300 group-hover/card:bg-black/30"></div>
                               <img 
-                                 className='absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover/card:scale-120'
+                                 className='absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover/card:scale-120'
                                  src={dish.image} 
                                  alt={dish.title} 
                               />

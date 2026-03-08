@@ -71,6 +71,26 @@ body {
   font-family: var(--font-fraunces);
 }
 
+/* Target the c15t root container */
+.c15t-root-tnx7V {
+  left: 50% !important;
+  right: auto !important;
+  bottom: 24px !important; /* Distance from bottom */
+  transform: translateX(-50%) !important;
+  
+  /* Reset the library's default "bottom-left" positioning */
+  margin-left: 0 !important;
+}
+
+/* Ensure the banner itself doesn't stretch to full width on desktop */
+.c15t-bannerVisible-bty7Y {
+  width: 90vw !important;
+  max-width: 500px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+}
 
 .container {
   max-width: 1280px;

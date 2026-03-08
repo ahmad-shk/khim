@@ -60,8 +60,9 @@ export default function RootLayout({
             src="https://www.googletagmanager.com/ns.html?id=GTM-KJG6QK5C"
             height="0"
             width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
+            // ✅ Use the object syntax here
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
         </noscript>
 
         <GoogleTagManager gtmId="GTM-KJG6QK5C" />

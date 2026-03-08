@@ -54,7 +54,6 @@ export default function RootLayout({
       <body
         className={`${fraunces.variable} antialiased`}
       >
-        
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-KJG6QK5C"

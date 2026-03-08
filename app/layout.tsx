@@ -63,7 +63,6 @@ export default function RootLayout({
             style={{ display: 'none', visibility: 'hidden' }}
           />
         </noscript>
-
         <GoogleTagManager gtmId="GTM-KJG6QK5C" />
         <ConsentManager>
 

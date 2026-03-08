@@ -130,6 +130,7 @@ const WeeklyOffers = () => {
                         <svg width="128" height="45" viewBox="0 0 128 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 22.2072H126.5M126.5 22.2072L105 0.707153M126.5 22.2072L105 43.7072" stroke="currentColor" strokeWidth="2" />
                         </svg>
+                        
                     </button>
                 </div>
             </div>

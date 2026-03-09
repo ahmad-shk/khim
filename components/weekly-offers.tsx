@@ -56,9 +56,9 @@ const WeeklyOffers = () => {
                                         className="object-cover transition-transform duration-700"
                                     />
                                 </div>
-                                <h3 className="font-normal text-xl md:text-2xl text-primary mb-1 transition-colors group-hover:text-secondary">Spring Rolls</h3>
+                                <h3 className="font-normal text-xl md:text-2xl text-primary mb-1 transition-colors group-hover:text-secondary">Frühlingsrollen.</h3>
                                 <p className="text-sm md:text-xl font-light text-gray-800 leading-snug">
-                                    Crispy fried spring rolls filled with fresh vegetables and delicate spices. Served with a homemade sweet and sour sauce for the perfect flavor.
+                                   Knusprig frittierte Frühlingsrollen, gefüllt mit frischem Gemüse und feinen Gewürzen. Serviert mit einer hausgemachten süß-sauren Sauce für den perfekten Geschmack.
                                 </p>
                             </div>
                         </SwiperSlide>
@@ -74,9 +74,9 @@ const WeeklyOffers = () => {
                                         className="object-cover transition-transform duration-700"
                                     />
                                 </div>
-                                <h3 className="font-normal text-xl md:text-2xl text-primary mb-1 transition-colors group-hover:text-secondary">Chicken satay</h3>
+                                <h3 className="font-normal text-xl md:text-2xl text-primary mb-1 transition-colors group-hover:text-secondary">Hähnchen-Satay</h3>
                                 <p className="text-sm md:text-xl font-light text-gray-800 leading-snug">
-                                    Tenderly grilled chicken skewers with a creamy peanut sauce. Served with fresh coriander and a light lime dip for an authentic flavor.
+                                    Zart gegrillte Hähnchenspieße mit einer cremigen Erdnusssauce. Dazu reichen wir frischen Koriander und einen leichten Limettendip für ein authentisches Aroma.
                                 </p>
                             </div>
                         </SwiperSlide>
@@ -92,9 +92,9 @@ const WeeklyOffers = () => {
                                         className="object-cover transition-transform duration-700"
                                     />
                                 </div>
-                                <h3 className="font-normal text-xl md:text-2xl text-primary mb-1 transition-colors group-hover:text-secondary">Appetizers</h3>
+                                <h3 className="font-normal text-xl md:text-2xl text-primary mb-1 transition-colors group-hover:text-secondary">Vorspeisen</h3>
                                 <p className="text-sm md:text-xl font-light text-gray-800 leading-snug">
-                                    A fine selection of mini spring rolls, dumplings, and crispy vegetable pastries. Perfect for sharing or as a delicious starter to your meal.
+                                    Eine feine Auswahl an Mini-Frühlingsrollen, Dumplings und knusprigen Gemüsetaschen. Perfekt zum Teilen oder als leckerer Einstieg in Ihr Menü.
                                 </p>
                             </div>
                         </SwiperSlide>
@@ -110,9 +110,9 @@ const WeeklyOffers = () => {
                                         className="object-cover transition-transform duration-700"
                                     />
                                 </div>
-                                <h3 className="font-normal text-xl md:text-2xl text-primary mb-1 transition-colors group-hover:text-secondary">Chicken wings</h3>
+                                <h3 className="font-normal text-xl md:text-2xl text-primary mb-1 transition-colors group-hover:text-secondary">Chicken Wings.</h3>
                                 <p className="text-sm md:text-xl font-light text-gray-800 leading-snug">
-                                    Crispy baked chicken wings with a spicy glaze and a subtle hint of chili. Ideal for lovers of bold flavor and tender texture.
+                                    Knusprig gebackene Hähnchenflügel mit einer würzigen Glasur und feiner Chili-Note. Ideal für Liebhaber von kräftigem Geschmack und zarter Textur.
                                 </p>
                             </div>
                         </SwiperSlide>

@@ -96,7 +96,7 @@ const ReservationForm: React.FC = () => {
                     <label className='fontrol-label' htmlFor="name">Name *</label>
                     <input 
                         type="text" id="name" placeholder="Name" 
-                        className={`${inputClass} ${errors.name ? 'border-red-500' : ''}`}
+                        className={`${inputClass} appearance-none ${errors.name ? 'border-red-500' : ''}`}
                         value={formData.name} onChange={handleChange}
                     />
                     {errors.name && <span className="text-red-500 text-sm mt-1 block font-semibold">{errors.name}</span>}
@@ -106,7 +106,7 @@ const ReservationForm: React.FC = () => {
                     <label className='fontrol-label' htmlFor="phone">Telefon (optional)</label>
                     <input 
                         type="tel" id="phone" placeholder="Telefon" 
-                        className={inputClass}
+                        className={`${inputClass} appearance-none`}
                         value={formData.phone} onChange={handleChange}
                     />
                 </div>
@@ -115,7 +115,7 @@ const ReservationForm: React.FC = () => {
                     <label className='fontrol-label' htmlFor="email">E-Mail *</label>
                     <input 
                         type="email" id="email" placeholder="E-Mail" 
-                        className={`${inputClass} ${errors.email ? 'border-red-500' : ''}`}
+                        className={`${inputClass} appearance-none ${errors.email ? 'border-red-500' : ''}`}
                         value={formData.email} onChange={handleChange}
                     />
                     {errors.email && <span className="text-red-500 text-sm mt-1 block font-semibold">{errors.email}</span>}
@@ -125,7 +125,7 @@ const ReservationForm: React.FC = () => {
                     <label className='fontrol-label' htmlFor="date">Datum *</label>
                     <input 
                         type="date" id="date" 
-                        className={`${inputClass} ${errors.date ? 'border-red-500' : ''}`}
+                        className={`${inputClass} appearance-none ${errors.date ? 'border-red-500' : ''}`}
                         value={formData.date} onChange={handleChange}
                     />
                     {errors.date && <span className="text-red-500 text-sm mt-1 block font-semibold">{errors.date}</span>}
@@ -135,7 +135,7 @@ const ReservationForm: React.FC = () => {
                     <label className='fontrol-label' htmlFor="time">Uhrzeit *</label>
                     <input 
                         type="time" id="time" 
-                        className={`${inputClass} ${errors.time ? 'border-red-500' : ''}`}
+                        className={`${inputClass} appearance-none ${errors.time ? 'border-red-500' : ''}`}
                         value={formData.time} onChange={handleChange}
                     />
                     {errors.time && <span className="text-red-500 text-sm mt-1 block font-semibold">{errors.time}</span>}
@@ -145,7 +145,7 @@ const ReservationForm: React.FC = () => {
                     <label className='fontrol-label' htmlFor="person">Anzahl der Personen *</label>
                     <input 
                         type="number" id="person" placeholder="Personen" 
-                        className={`${inputClass} ${errors.person ? 'border-red-500' : ''}`}
+                        className={`${inputClass} appearance-none ${errors.person ? 'border-red-500' : ''}`}
                         value={formData.person} onChange={handleChange}
                     />
                     {errors.person && <span className="text-red-500 text-sm mt-1 block font-semibold">{errors.person}</span>}
@@ -155,7 +155,7 @@ const ReservationForm: React.FC = () => {
                     <label className='fontrol-label' htmlFor="remarks">Anmerkungen (optional)</label>
                     <input 
                         type="text" id="remarks" placeholder="Anmerkungen" 
-                        className={inputClass}
+                        className={`${inputClass} appearance-none`}
                         value={formData.remarks} onChange={handleChange}
                     />
                 </div>

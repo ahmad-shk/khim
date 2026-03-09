@@ -562,5 +562,54 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .bg-gradient {
   background: linear-gradient(90deg, #274891 0%, #091C46 100%);
-  opacity: .4;
+  opacity: .3;
+}
+
+
+.weekly-offers .group:hover,
+.weekly-offers .group:focus {
+  transform: translateY(-12px);
+}
+.weekly-offers .group:hover img,
+.weekly-offers .group:focus img{
+  transform: scale(1.04);
+}
+/* .instagram-feed .layer {z-index: 1;} */
+.instagram-feed .layer:hover,
+.instagram-feed .layer:focus {
+  opacity: 1;
+}
+.instagram-feed .layer:hover ~ .image img,
+.instagram-feed .layer:focus ~ .image img {
+  transform: scale(1.04);
+}
+.dish-slider .layer {z-index: 1;}
+.dish-slider .layer:hover ~ img,
+.dish-slider .layer:focus ~ img {
+  transform: scale(1.04);
+}
+
+@media screen and (max-width: 812px) {
+  .weekly-offers .group:hover,
+  .weekly-offers .group:focus {
+    transform: translateY(-20px);
+  }
+  .weekly-offers .group:hover img,
+  .weekly-offers .group:focus img{
+    transform: scale(1.3);
+  }
+  /* .instagram-feed .layer {z-index: 1;} */
+  .instagram-feed .layer:hover,
+  .instagram-feed .layer:focus {
+    opacity: 1;
+  }
+  .instagram-feed .layer:hover ~ .image img,
+  .instagram-feed .layer:focus ~ .image img {
+    transform: scale(1.3);
+  }
+  .dish-slider .layer {z-index: 1;}
+  .dish-slider .layer:hover ~ img,
+  .dish-slider .layer:focus ~ img {
+    transform: scale(1.3);
+  }
 }

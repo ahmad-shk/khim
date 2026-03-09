@@ -41,6 +41,16 @@ export default function RootLayout({
       <body
         className={`${fraunces.variable} antialiased`}
       >
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-KJG6QK5C"
+            height="0"
+            width="0"
+            // ✅ Use the object syntax here
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
+        <GoogleTagManager gtmId="GTM-KJG6QK5C" />
         <ConsentManager>
 
           <PathnameHandler />

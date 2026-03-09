@@ -24,29 +24,29 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-        <html lang="en">
-          <head>
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
+    <html lang="en">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
               if (window.location.pathname === '/menu' || window.location.pathname === '/contact') {
                 document.documentElement.classList.add('inner--page');
               }
             `,
-              }}
-            />
-          </head>
-          <body
-            className={`${fraunces.variable} antialiased`}
-          >
-    		<ConsentManager>
-    			
-            <PathnameHandler />
-            <Header />
-            {children}
-          
-    		</ConsentManager>
-    	</body>
-        </html>
-      )
+          }}
+        />
+      </head>
+      <body
+        className={`${fraunces.variable} antialiased`}
+      >
+        <ConsentManager>
+
+          <PathnameHandler />
+          <Header />
+          {children}
+
+        </ConsentManager>
+      </body>
+    </html>
+  )
 }

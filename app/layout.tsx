@@ -6,7 +6,6 @@ import "./responsive.css";
 import Header from "@/components/header";
 import PathnameHandler from "@/components/pathname-handler";
 import { ConsentManager } from "./consent-manager";
-import { GoogleTagManager } from '@next/third-parties/google';
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -28,29 +27,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              if (window.location.pathname === '/menu' || window.location.pathname === '/contact') {
-                document.documentElement.classList.add('inner--page');
-              }
-            `,
-          }}
-        />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css"/>
       </head>
       <body
         className={`${fraunces.variable} antialiased`}
       >
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-KJG6QK5C"
-            height="0"
-            width="0"
-            // ✅ Use the object syntax here
-            style={{ display: 'none', visibility: 'hidden' }}
-          />
-        </noscript>
-        <GoogleTagManager gtmId="GTM-KJG6QK5C" />
         <ConsentManager>
 
           <PathnameHandler />

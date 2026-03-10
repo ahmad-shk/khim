@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'; // Korrekter Import für Next.js 13
 import Link from 'next/link'; 
 import { Link as LinkIcon } from 'lucide-react';
 import * as CookieConsent from 'vanilla-cookieconsent';
+import { ensureCookieConsentReady } from './CookieConsent';
 
 const Footer = () => {
   const router = useRouter();
@@ -22,9 +23,10 @@ const Footer = () => {
     });
   };
 
-  const handleOpenCookieSettings = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const handleOpenCookieSettings = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     try {
+      await ensureCookieConsentReady();
       CookieConsent.showPreferences();
     } catch (error) {
       console.error('Cookie preferences could not be opened', error);

@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import { Fraunces } from "next/font/google";
-import Script from 'next/script';
 import "./globals.css";
 import "./responsive.css";
 import Header from "@/components/header";
 import PathnameHandler from "@/components/pathname-handler";
-import { ConsentManager } from "./consent-manager";
+import CookieConsentComponent from "@/components/CookieConsent";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -32,13 +31,10 @@ export default function RootLayout({
       <body
         className={`${fraunces.variable} antialiased`}
       >
-        <ConsentManager>
-
+        <CookieConsentComponent />
           <PathnameHandler />
           <Header />
           {children}
-
-        </ConsentManager>
       </body>
     </html>
   )

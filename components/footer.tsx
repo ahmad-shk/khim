@@ -4,6 +4,7 @@ import React from 'react';
 import { useRouter } from 'next/navigation'; // Korrekter Import für Next.js 13+
 import Link from 'next/link'; 
 import { Link as LinkIcon } from 'lucide-react';
+import * as CookieConsent from 'vanilla-cookieconsent';
 
 const Footer = () => {
   const router = useRouter();
@@ -19,7 +20,18 @@ const Footer = () => {
       top: 0,
       behavior: 'smooth',
     });
-  }; return (
+  };
+
+  const handleOpenCookieSettings = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    try {
+      CookieConsent.showPreferences();
+    } catch (error) {
+      console.error('Cookie preferences could not be opened', error);
+    }
+  };
+
+  return (
     <footer className="page-footer bg-primary text-white pt-24 relative overflow-hidden">
 
       <div className="container mx-auto px-4 relative z-10 text-center">
@@ -66,6 +78,15 @@ const Footer = () => {
           <Link href="/impressum" className="hover:text-secondary transition-colors">
             Impressum
           </Link>
+
+          {/* Cookie-Einstellungen: Öffnet das Consent-Panel erneut */}
+          <button
+            type="button"
+            onClick={handleOpenCookieSettings}
+            className="hover:text-secondary transition-colors underline decoration-dotted underline-offset-4 text-base sm:text-xl"
+          >
+            Cookie&nbsp;Einstellungen
+          </button>
         </div>
         {/* -------------------------------------- */}
 

@@ -4,7 +4,8 @@ import "./globals.css";
 import "./responsive.css";
 import Header from "@/components/header";
 import PathnameHandler from "@/components/pathname-handler";
-import { ConsentManager } from "./consent-manager";
+import 'vanilla-cookieconsent/dist/cookieconsent.css';
+import CookieConsentComponent from '@/components/CookieConsent';
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -26,26 +27,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              if (window.location.pathname === '/menu' || window.location.pathname === '/contact') {
-                document.documentElement.classList.add('inner--page');
-              }
-            `,
-          }}
-        />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css"/>
       </head>
-      <body
-        className={`${fraunces.variable} antialiased`}
-      >
-        <ConsentManager>
-
-          <PathnameHandler />
-          <Header />
-          {children}
-
-        </ConsentManager>
+      <body className={`${fraunces.variable} antialiased`} >
+        <CookieConsentComponent />
+        <PathnameHandler />
+        <Header />
+        {children}
       </body>
     </html>
   )

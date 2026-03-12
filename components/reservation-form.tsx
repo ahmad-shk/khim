@@ -87,7 +87,6 @@ const ReservationForm: React.FC = () => {
 
     // Common input class for reusability and black text
     const inputClass = "form-control text-black font-medium";
-
     return (
         <div className="form-box bg-white/30 backdrop-blur-xs rounded-[30px] p-12">
             <form className="grid grid-cols-1 md:grid-cols-2 gap-6" onSubmit={handleSubmit}>

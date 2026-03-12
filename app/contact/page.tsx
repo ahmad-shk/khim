@@ -105,7 +105,7 @@ const ContactPage = () => {
                             </div>
                             <p className="text-xl sm:text-2xl lg:text-3xl 3xl:text-[35px]! mt-2 text-white font-light">Reservieren Sie Ihren Tisch bequem online. Wir melden uns bei Ihnen<br /> so schnell wie möglich.</p>
                         </div>
-                           <ReservationForm />
+                        <ReservationForm />
                         {/* <div className="form-box bg-white/30 backdrop-blur-xs rounded-[30px] p-12">
                             <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="md:col-span-2">
@@ -172,19 +172,27 @@ const ContactPage = () => {
 
                         <div className="relative w-full aspect-video rounded-4xl overflow-hidden mb-12">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2658.828236528751!2d15.6245843!3d48.2024863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d78a67b7d93dd%3A0xa1462360fdb446a3!2sKHIM%20%7C%20Asia%20Cuisine%20Restaurant!5e0!3m2!1sen!2sat!4v1700000000000!5m2!1sen!2sat"
+                                src="https://www.google.com/maps?q=Schneckgasse+12,+3100+St.+Pölten&output=embed"
                                 width="100%"
                                 height="100%"
                                 style={{ border: 0 }}
                                 allowFullScreen={true}
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
-                                title="KHIM Asia Cuisine Location"
+                                title="Schneckgasse 12 Location"
                             ></iframe>
                         </div>
 
-                        <div className='text-center'>
-                            <button className="btn btn-primary lg" onClick={() => window.open('https://www.google.com/maps?ll=48.202486,15.624584&z=17&t=m&hl=en&gl=AT&mapclient=embed', '_blank')}>
+                        <div className="text-center">
+                            <button
+                                className="btn btn-primary lg"
+                                onClick={() =>
+                                    window.open(
+                                        "https://www.google.com/maps/search/?api=1&query=Schneckgasse+12,+3100+St.+Pölten",
+                                        "_blank"
+                                    )
+                                }
+                            >
                                 Route in Google Maps Planen
                             </button>
                         </div>

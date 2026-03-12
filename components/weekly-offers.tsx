@@ -109,6 +109,7 @@ const WeeklyOffers = () => {
                                         fill
                                         className="object-cover transition-transform duration-700"
                                     />
+                                
                                 </div>
                                 <h3 className="font-normal text-xl md:text-2xl text-primary mb-1 transition-colors group-hover:text-secondary">Chicken Wings.</h3>
                                 <p className="text-sm md:text-xl font-light text-gray-800 leading-snug">

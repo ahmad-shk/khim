@@ -18,49 +18,49 @@ interface Dish {
 
 const dishes: Dish[] = [
    {
-      title: "Roast duck fillet with mixed vegetables (ADFR)",
+      title: "Gebratenes Entenfilet mit work Gemüse（A.D.F.R）",
       image: "/assets/amb2.png",
       description: "Zartes Entenfilet serviert mit einer Auswahl an frischem Marktgemüse.",
       price: "12.00",
       rating: 5
    },
    {
-      title: "Sesame Chicken (ADFN)",
+      title: "Sesam Chicken (A.D.F.N)",
       image: "/assets/amb3.png",
       description: "Knuspriges Hähnchen in einer süß-sauren Sesamsauce.",
       price: "12.00",
       rating: 4
    },
    {
-      title: "Hot Chili Beef (DFR)",
+      title: "Chilli Beef scharf (D.F.R)",
       image: "/assets/amb4.png",
       description: "Scharf angebratenes Rindfleisch mit Chili und Paprika.",
       price: "12.00",
       rating: 5
    },
    {
-      title: "Fried vegetables with glass noodles (F)",
+      title: "Gebratenes Gemüse mit Glasnudeln (F)",
       image: "/assets/amb5.png",
       description: "Leichte Glasnudeln mit knackigem Pfannengemüse.",
       price: "12.00",
       rating: 4
    },
    {
-      title: "Chicken Chop Suey (D,F,R)",
+      title: "Hühnerfleisch Chop-Suey (D,F,R)",
       image: "/assets/amb9.jpeg",
       description: "Klassisches Chop Suey mit Hähnchen und Sprossen.",
       price: "12.00",
       rating: 5
    },
    {
-      title: "Eight treasures sharf (DFR)",
+      title: "Achtschätze  sharf (D.F.R)",
       image: "/assets/amb7.png",
       description: "Traditionelles Gericht mit acht verschiedenen Kostbarkeiten.",
       price: "12.00",
       rating: 4
    },
    {
-      title: "Japanese katsu curry with crispy chicken fillet (AMNO)",
+      title: "Japanisches katsu Curry mit knuspriges Huhnerfilet(A.M.N.O)",
       image: "/assets/amb8.png",
       description: "Knuspriges Katsu-Hähnchen in einer aromatischen Currysauce.",
       price: "12.00",

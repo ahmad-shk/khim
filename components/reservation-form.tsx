@@ -1,14 +1,14 @@
 "use client";
 
 import React, { useState, ChangeEvent, FormEvent } from 'react';
-
+import axios from 'axios';
 interface FormData {
     name: string;
     phone: string;
     email: string;
     date: string;
     time: string;
-    person: string;
+    guests: string;
     remarks: string;
 }
 
@@ -23,7 +23,7 @@ const ReservationForm: React.FC = () => {
         email: '',
         date: '',
         time: '',
-        person: '',
+        guests: '',
         remarks: ''
     });
 
@@ -50,40 +50,37 @@ const ReservationForm: React.FC = () => {
         }
         if (!formData.date) tempErrors.date = "Datum ist erforderlich";
         if (!formData.time) tempErrors.time = "Uhrzeit ist erforderlich";
-        if (!formData.person || parseInt(formData.person) < 1) {
-            tempErrors.person = "Mindestens 1 Person erforderlich";
+        if (!formData.guests || parseInt(formData.guests) < 1) {
+            tempErrors.guests = "Mindestens 1 guests erforderlich";
         }
 
         setErrors(tempErrors);
         return Object.keys(tempErrors).length === 0;
     };
 
-   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+        // e.preventDefault();
 
-    if (validate()) {
-        try {
-            const response = await fetch('/api/reservation', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formData),
-            });
-
-            if (response.ok) {
-                alert("Vielen Dank! Die Bestätigung wurde an Ihre E-Mail gesendet.");
-                setFormData({
-                    name: '', phone: '', email: '', date: '', 
-                    time: '', person: '', remarks: ''
-                });
-            } else {
-                alert("Etwas ist schiefgelaufen. Bitte versuchen Sie es später erneut.");
-            }
-        } catch (error) {
-            console.error("Error:", error);
-            alert("Verbindung zum Server fehlgeschlagen.");
-        }
-    }
-};
+        // if (validate()) {
+        //     try {
+        //         // Fetch ki jagah Axios ka istemal
+        
+        //         // Axios mein 2xx status code "response.status" ya "response.data" se check hota hai
+        //         if (response.status === 200 || response.status === 201) {
+        //             alert("Vielen Dank! Die Bestätigung wurde an Ihre E-Mail gesendet.");
+        //             setFormData({
+        //                 name: '', phone: '', email: '', date: '', 
+        //                 time: '', guests: '', remarks: ''
+        //             });
+        //         } else {
+        //             alert("Etwas ist schiefgelaufen. Bitte versuchen Sie es später erneut.");
+        //         }
+        //     } catch (error: any) {
+        //         console.error("Error details:", error.response?.data || error.message);
+        //         alert("Verbindung zum Server fehlgeschlagen.");
+        //     }
+        // }
+    };
 
     // Common input class for reusability and black text
     const inputClass = "form-control text-black font-medium";
@@ -141,13 +138,13 @@ const ReservationForm: React.FC = () => {
                 </div>
 
                 <div>
-                    <label className='fontrol-label' htmlFor="person">Anzahl der Personen *</label>
+                    <label className='fontrol-label' htmlFor="guests">Anzahl der guestsen *</label>
                     <input 
-                        type="number" id="person" placeholder="Personen" 
-                        className={`${inputClass} appearance-none ${errors.person ? 'border-red-500' : ''}`}
-                        value={formData.person} onChange={handleChange}
+                        type="number" id="guests" placeholder="guestsen" 
+                        className={`${inputClass} appearance-none ${errors.guests ? 'border-red-500' : ''}`}
+                        value={formData.guests} onChange={handleChange}
                     />
-                    {errors.person && <span className="text-red-500 text-sm mt-1 block font-semibold">{errors.person}</span>}
+                    {errors.guests && <span className="text-red-500 text-sm mt-1 block font-semibold">{errors.guests}</span>}
                 </div>
 
                 <div>

@@ -6,7 +6,7 @@ import emailjs from '@emailjs/browser';
 // ─── EmailJS Configuration ───────────────────────────────────────────────────
 const EMAILJS_SERVICE_ID = 'service_wpbcu6l';
 const EMAILJS_TEMPLATE_ID = 'template_vkbhb5w';      // → email to restaurant
-const EMAILJS_CUSTOMER_TEMPLATE = 'template_lu35eac'; // → confirmation to customer
+const EMAILJS_CUSTOMER_TEMPLATE = 'template_u29g94f'; // → confirmation to customer
 const EMAILJS_PUBLIC_KEY = 'Ln1QPxODiYW2IvUJd';
 // ─────────────────────────────────────────────────────────────────────────────
 

@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  trailingSlash: true,
   output: 'export', // One.com static hosting ke liye
   images: {
     unoptimized: true, // Static export mein zaroori hai

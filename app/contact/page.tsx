@@ -48,6 +48,7 @@ const ContactPage = () => {
                                 <h3 className="text-color text-2xl xl:text-[38px] mb-4">Öffnungszeiten:</h3>
                                 <div className="font-light text-xl xl:text-[25px] text-white">
                                     <p>11:30 - 14:30</p>
+                                    <p>Am Dienstag haben wir geschlossen</p>
                                     <p>17:30 - 21:30</p>
                                 </div>
                             </div>
